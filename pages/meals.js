@@ -17,6 +17,7 @@ let clickedCreate = false;
 let clickedChoose = false;
 let clickedModify = false;
 let clickedShow = false;
+let clickedDelete = false;
 
 var macros = {};
 var meals = {};
@@ -1590,6 +1591,47 @@ function okShow() {
     menu = {};
 }
 
+function _delete() {
+  var menuDeleteSelect = document.getElementById("menuDeleteSelect");
+  
+  if (!clickedDelete) {
+    clickedDelete = true;
+
+      for (var i = 0; i < menus.length; i++) {
+        const opt = document.createElement('option');
+        opt.value = menus[i].name;
+        opt.innerHTML = menus[i].name;
+        menuDeleteSelect.appendChild(opt);
+      }
+  }
+  
+  var deleteMenu = document.getElementById("deleteMenu");
+  
+  if (deleteMenu.style.display === "none") {
+    deleteMenu.style.display = "block";
+  } else {
+    deleteMenu.style.display = "none";
+  }
+}
+
+function okDelete() {
+  var menuDeleteSelect = document.getElementById("menuDeleteSelect");
+
+  var deletePosition = -1;
+  
+  for (var i = 0; i < menus.length; i++) {
+    if (menus[i].name == menuDeleteSelect.value) {
+      deletePosition = i;
+    }
+  }
+
+  menus.splice(deletePosition, 1);
+
+  localStorage.setItem('menus', JSON.stringify(menus));
+
+  window.location.reload();
+}
+
 export default function Home() {
   useEffect(() => {
 
@@ -1603,6 +1645,8 @@ export default function Home() {
     document.getElementById("meal8List").style.display = "none";
     document.getElementById("meal9List").style.display = "none";
     document.getElementById("meal10List").style.display = "none";
+
+    document.getElementById("deleteMenu").style.display = "none";
 
     window.onload = _localStorage;
   })
@@ -2348,6 +2392,22 @@ export default function Home() {
           <p></p>
           </div>
           </div>
+      </div>
+
+      <input type="button" id="show" class="btn btn-outline-warning" value="&#128465; DELETE MENU" onClick={() => {_delete()} }></input>
+      
+      <p></p>
+
+      <div id="deleteMenu">
+        <p></p>
+          <div class="col-md-3" id="menuDelete">
+          <label for="menuDeleteSelect" id="menuDeleteLabel">Menu to delete:&ensp;</label>
+          <select class="form-select" id="menuDeleteSelect">
+            <option selected="selected" value="-- Select --">-- Select --</option>
+          </select>
+          </div>
+          <p></p>
+          <input type="button" id="okShow" class="btn btn-outline-success" value="OK" onClick={() => {okDelete()} }></input>
       </div>
 
       </center>

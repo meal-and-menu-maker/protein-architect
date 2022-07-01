@@ -1,0 +1,14 @@
+{
+    "assembled_meals" : [
+      {
+          "name": "Salade | Riz | Cacahuètes | Dates",
+          "type": "night",
+          "elements": [ "Salade composée", "Riz - Parmesan", "Cacahuètes | Dates | Sucette" ],
+          "quantities": [ 1, 1, 1 ],
+          "calories": 2176.3,
+          "proteins": 97.97,
+          "fat": 127.11,
+          "carbs": 162.85
+      }
+    ]
+}

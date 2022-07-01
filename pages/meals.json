@@ -1,0 +1,34 @@
+{
+  "meals" : [
+    {
+        "name": "Salade composée",
+        "type": "night",
+        "elements": [ "Tomate", "Concombre", "Lentilles en conserve", "Boîte de thon", "Leerdammer", "Champignons de Paris en conserve", "Cacahuètes", "Huile (c. à soupe)" ],
+        "quantities": [ 2, 0.5, 1.3, 1.1, 0.75, 1.15, 0.5, 1 ],
+        "calories": 1091.25,
+        "proteins": 74.15,
+        "fat": 70.69,
+        "carbs": 39.85
+    },
+    {
+        "name": "Riz - Parmesan",
+        "type": "night",
+        "elements": [ "Riz Uncle Ben", "Huile (c. à soupe)", "Parmesan" ],
+        "quantities": [ 1.25, 2, 0.1 ],
+        "calories": 416.45,
+        "proteins": 7.32,
+        "fat": 28.62,
+        "carbs": 42.5
+    },
+    {
+        "name": "Cacahuètes | Dates | Sucette",
+        "type": "night",
+        "elements": [ "Cacahuètes", "Dattes", "Sucette (12g)" ],
+        "quantities": [ 0.55, 1, 1 ],
+        "calories": 668.6,
+        "proteins": 16.5,
+        "fat": 27.8,
+        "carbs": 80.5
+    }
+  ]
+}

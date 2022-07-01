@@ -1,0 +1,21 @@
+{
+  "menus" : [
+    {
+        "name": "Test Menu",
+        "monday_noon": "Salade composée",
+        "monday_night": "Riz - Parmesan",
+        "tuesday_noon": "Cacahuètes | Dates | Sucette",
+        "tuesday_night": "Salade composée",
+        "wednesday_noon": "Cacahuètes | Dates | Sucette",
+        "wednesday_night": "Riz - Parmesan",
+        "thursday_noon": "Salade composée",
+        "thursday_night": "Riz - Parmesan",
+        "friday_noon": "Cacahuètes | Dates | Sucette",
+        "friday_night": "Salade composée",
+        "saturday_noon": "Riz - Parmesan",
+        "saturday_night": "Riz - Parmesan",
+        "sunday_noon": "Cacahuètes | Dates | Sucette",
+        "sunday_night": "Salade composée"
+    }
+  ]
+}

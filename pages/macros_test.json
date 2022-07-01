@@ -1,0 +1,809 @@
+{
+  "macros" : [
+    {
+        "name": "** Pâtes **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g coquillettes (blé complet)",
+        "calories": 337,
+        "proteins": 11,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g spaghettis (blé complet)",
+        "calories": 337,
+        "proteins": 11,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g nouilles chinoises (Suzi Wan)",
+        "calories": 135,
+        "proteins": 5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g pennes (blé complet)",
+        "calories": 337,
+        "proteins": 11,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Riz **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g riz Uncle Ben",
+        "calories": 157,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g vermicelles de riz",
+        "calories": 238,
+        "proteins": 4.8,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Viandes **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g bœuf",
+        "calories": 198,
+        "proteins": 25,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g steak (1 charal)",
+        "calories": 129,
+        "proteins": 22,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g poulet",
+        "calories": 239,
+        "proteins": 27,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g lardons",
+        "calories": 253,
+        "proteins": 17,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 tranche jambon (40g)",
+        "calories": 50,
+        "proteins": 8,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 saucisse poulet (35g)",
+        "calories": 59,
+        "proteins": 5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 tranche poulet (40g)",
+        "calories": 40,
+        "proteins": 8,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Poisson **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g thon",
+        "calories": 190,
+        "proteins": 23,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 saumon (125g)",
+        "calories": 289,
+        "proteins": 25,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 sushi",
+        "calories": 50,
+        "proteins": 2.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g petites crevettes",
+        "calories": 35,
+        "proteins": 9,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g crevettes",
+        "calories": 77,
+        "proteins": 17,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Fromages **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g leerdammer",
+        "calories": 356,
+        "proteins": 27,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g parmesan",
+        "calories": 402,
+        "proteins": 32,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g crottin de chèvre",
+        "calories": 367,
+        "proteins": 20,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "125g mozzarella",
+        "calories": 270,
+        "proteins": 21,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Arachides **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g cacahuètes",
+        "calories": 612,
+        "proteins": 26,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g noix de cajou",
+        "calories": 613,
+        "proteins": 19,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Légumes **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "100g lentilles",
+        "calories": 70,
+        "proteins": 6,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g champignons de Paris",
+        "calories": 19,
+        "proteins": 2,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g pommes de terre",
+        "calories": 80,
+        "proteins": 2,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g pommes dauphines",
+        "calories": 280,
+        "proteins": 5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g pommes noisette",
+        "calories": 193,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 légume en moyenne",
+        "calories": 35,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "250g légumes mélangés",
+        "calories": 125,
+        "proteins": 6,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Petite boîte de tomates pelées (D'Aucy)",
+        "calories": 50,
+        "proteins": 2,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Autres **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "1 œuf",
+        "calories": 90,
+        "proteins": 7,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "100g pain",
+        "calories": 265,
+        "proteins": 9,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 burrito (64g) + sauces",
+        "calories": 144,
+        "proteins": 4.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Galette au blé noir (crêperie de Guerlédan)",
+        "calories": 337,
+        "proteins": 11,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Flapjack (MyProtein)",
+        "calories": 342,
+        "proteins": 20,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Sauces **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Pistou (100g)",
+        "calories": 289,
+        "proteins": 4,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Sauce tomate (100g)",
+        "calories": 42,
+        "proteins": 1.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Crème légère (100ml)",
+        "calories": 80,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Gras **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Beurre (10g)",
+        "calories": 74,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Huile (c. à soupe)",
+        "calories": 90,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Yahourts **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "1 duodélisse (100g)",
+        "calories": 133,
+        "proteins": 7,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "1 yahourt fruit (100g)",
+        "calories": 75,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Pâtisseries **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Éclair au chocolat",
+        "calories": 267,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Paris-Brest",
+        "calories": 341,
+        "proteins": 8,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Millefeuille",
+        "calories": 320,
+        "proteins": 6,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Gâteau fondant chocolat",
+        "calories": 230,
+        "proteins": 2,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Tarte aux pommes",
+        "calories": 250,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Sucré **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Miel (3 cuillères)",
+        "calories": 90,
+        "proteins": 0.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Tablette de chocolat Atelier Nestlé (144g)",
+        "calories": 734,
+        "proteins": 8,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Sucette (12g)",
+        "calories": 47,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Bonbon réglisse",
+        "calories": 10,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Boule de glace",
+        "calories": 70,
+        "proteins": 1.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Glace Magnum",
+        "calories": 250,
+        "proteins": 2.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Glace Extrême vanille",
+        "calories": 210,
+        "proteins": 2.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Pot de glace Ben&Jerry’s ",
+        "calories": 1140,
+        "proteins": 18,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "M&Ms (1 sachet de 45g)",
+        "calories": 232,
+        "proteins": 2.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "KitKat (1 paquet de 42g)",
+        "calories": 213,
+        "proteins": 2.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Oreo (1 biscuit de 11g)",
+        "calories": 53,
+        "proteins": 0.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Oreo chocolat blanc (1 biscuit de 21g)",
+        "calories": 107,
+        "proteins": 1.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Oreo double (1 biscuit de 14g)",
+        "calories": 71,
+        "proteins": 0.5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Pizzas **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Reine",
+        "calories": 1400,
+        "proteins": 56,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "4 fromages",
+        "calories": 1480,
+        "proteins": 62,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Pepperoni",
+        "calories": 1410,
+        "proteins": 58,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Sandwichs **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Club poulet crudités mayonnaise",
+        "calories": 736,
+        "proteins": 27,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Club jambon beurre fromage",
+        "calories": 1000,
+        "proteins": 40,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Club thon mayonnaise",
+        "calories": 740,
+        "proteins": 28,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Pan Bagnat",
+        "calories": 595,
+        "proteins": 30,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Burgers **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Cheese Burger",
+        "calories": 290,
+        "proteins": 15,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Double",
+        "calories": 630,
+        "proteins": 35,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Classique",
+        "calories": 280,
+        "proteins": 13,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Salades **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Cesar",
+        "calories": 400,
+        "proteins": 20,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Niçoise",
+        "calories": 500,
+        "proteins": 40,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Kebab **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Moyenne",
+        "calories": 574,
+        "proteins": 38,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** MacDo **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "BigMac",
+        "calories": 550,
+        "proteins": 25,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "McDouble",
+        "calories": 400,
+        "proteins": 22,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Petite portion de frites",
+        "calories": 220,
+        "proteins": 3,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Nuggets (boîte de 4)",
+        "calories": 170,
+        "proteins": 9,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Sundae",
+        "calories": 330,
+        "proteins": 7,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Moyenne glaces",
+        "calories": 500,
+        "proteins": 10,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Burger King **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Bacon & Cheese Whopper",
+        "calories": 790,
+        "proteins": 35,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Double Whopper",
+        "calories": 890,
+        "proteins": 50,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Double Bacon King",
+        "calories": 1313,
+        "proteins": 70,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Frites médium",
+        "calories": 384,
+        "proteins": 5,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Sundae",
+        "calories": 268,
+        "proteins": 6,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "** Alcool **",
+        "calories": "-",
+        "proteins": "-",
+        "fat": "-",
+        "carbs": "-"
+    },
+    {
+        "name": "Bière (25cl)",
+        "calories": 110,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Verre de rouge (15cl)",
+        "calories": 100,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Verre de blanc (15cl)",
+        "calories": 100,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Verre de rosé (15cl)",
+        "calories": 120,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Whisky (10cl)",
+        "calories": 230,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Rhum (10cl)",
+        "calories": 230,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Vodka (15cl)",
+        "calories": 120,
+        "proteins": 1,
+        "fat": 1,
+        "carbs": 1
+    },
+    {
+        "name": "Shot (3cl)",
+        "calories": 70,
+        "proteins": 0,
+        "fat": 1,
+        "carbs": 1
+    }
+  ]
+}

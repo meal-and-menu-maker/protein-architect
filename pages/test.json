@@ -1,0 +1,418 @@
+{
+    "macros" : [
+        {
+            "name": "** Pâtes **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Coquillettes",
+            "calories": 361,
+            "proteins": 12,
+            "fat": 2,
+            "carbs": 72,
+            "category": "pasta",
+            "unit": "100g"
+        },
+        {
+            "name": "** Riz **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Riz Uncle Ben",
+            "calories": 157,
+            "proteins": 3.3,
+            "fat": 0.5,
+            "carbs": 34,
+            "category": "rice",
+            "unit": "100g"
+        },
+        {
+            "name": "** Viandes **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bœuf",
+            "calories": 115,
+            "proteins": 23,
+            "fat": 2.3,
+            "carbs": 0.6,
+            "category": "meat",
+            "unit": "100g"
+        },
+        {
+            "name": "** Poisson **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Boîte de thon",
+            "calories": 218,
+            "proteins": 25,
+            "fat": 8,
+            "carbs": 3,
+            "category": "fish",
+            "unit": "100g"
+        },
+        {
+            "name": "** Fromages & Laits **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Leerdammer",
+            "calories": 356,
+            "proteins": 27,
+            "fat": 27.5,
+            "carbs": 0.05,
+            "category": "cheese & milk",
+            "unit": "100g"
+        },
+        {
+            "name": "** Arachides **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Cacahuètes",
+            "calories": 612,
+            "proteins": 26,
+            "fat": 50,
+            "carbs": 10,
+            "category": "groundnut",
+            "unit": "100g"
+        },
+        {
+            "name": "** Fruits **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Dates",
+            "calories": 0,
+            "proteins": 0,
+            "fat": 0,
+            "carbs": 0,
+            "category": "fruit",
+            "unit": "100g"
+        },
+        {
+            "name": "** Légumes **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Tomate",
+            "calories": 22,
+            "proteins": 1.08,
+            "fat": 0.25,
+            "carbs": 4.82,
+            "category": "vegetable",
+            "unit": "1"
+        },
+        {
+            "name": "** Autres **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Œuf",
+            "calories": 90,
+            "proteins": 7,
+            "fat": 5.5,
+            "carbs": 0.7,
+            "category": "other",
+            "unit": "1"
+        },
+        {
+            "name": "** Sauces **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Pistou",
+            "calories": 289,
+            "proteins": 4.1,
+            "fat": 26.8,
+            "carbs": 6.8,
+            "category": "salsa",
+            "unit": "100g"
+        },
+        {
+            "name": "** Gras **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Beurre (10g)",
+            "calories": 74,
+            "proteins": 0,
+            "fat": 12,
+            "carbs": 0,
+            "category": "fat",
+            "unit": "1"
+        },
+        {
+            "name": "** Yahourts **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Duodélisse (100g)",
+            "calories": 133,
+            "proteins": 7,
+            "fat": 0,
+            "carbs": 0,
+            "category": "yogurt",
+            "unit": "1"
+        },
+        {
+            "name": "** Pâtisseries **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Éclair au chocolat",
+            "calories": 267,
+            "proteins": 4.9,
+            "fat": 17.45,
+            "carbs": 43.3,
+            "category": "pastry",
+            "unit": "1"
+        },
+        {
+            "name": "** Sucré **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Miel (3 cuillères)",
+            "calories": 90,
+            "proteins": 0.5,
+            "fat": 0,
+            "carbs": 40,
+            "category": "sweet",
+            "unit": "1"
+        },
+        {
+            "name": "** Pizzas **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Reine",
+            "calories": 1400,
+            "proteins": 60,
+            "fat": 76,
+            "carbs": 116,
+            "category": "pizza",
+            "unit": "1"
+        },
+        {
+            "name": "** Sandwichs **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Club poulet crudités mayonnaise",
+            "calories": 736,
+            "proteins": 27,
+            "fat": 26,
+            "carbs": 69,
+            "category": "sandwich",
+            "unit": "1"
+        },
+        {
+            "name": "** Burger **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Cheese Burger",
+            "calories": 295,
+            "proteins": 16,
+            "fat": 14,
+            "carbs": 26.5,
+            "category": "burger",
+            "unit": "1"
+        },
+        {
+            "name": "** Salades **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Cesar",
+            "calories": 309,
+            "proteins": 8,
+            "fat": 8,
+            "carbs": 12,
+            "category": "salad",
+            "unit": "1"
+        },
+        {
+            "name": "** Kebab **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Kebab (moyenne)",
+            "calories": 620,
+            "proteins": 38,
+            "fat": 17,
+            "carbs": 77,
+            "category": "kebab",
+            "unit": "1"
+        },
+        {
+            "name": "** McDo **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "BigMac",
+            "calories": 550,
+            "proteins": 25,
+            "fat": 30,
+            "carbs": 45,
+            "category": "mcdonald",
+            "unit": "1"
+        },
+        {
+            "name": "** Burger King **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bacon & Cheese Whopper",
+            "calories": 790,
+            "proteins": 35,
+            "fat": 51,
+            "carbs": 50,
+            "category": "burger king",
+            "unit": "1"
+        },
+        {
+            "name": "** Alcool **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bière (25cl)",
+            "calories": 110,
+            "proteins": 1.41,
+            "fat": 0,
+            "carbs": 10.8,
+            "category": "alcohol",
+            "unit": "1"
+        },
+        {
+            "name": "** Cocktails **",
+            "calories": "-",
+            "proteins": "-",
+            "fat": "-",
+            "carbs": "-",
+            "category": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bacardi",
+            "calories": 117,
+            "proteins": 0,
+            "fat": 0,
+            "carbs": 6.19,
+            "category": "cocktail",
+            "unit": "1"
+        }
+    ]
+}

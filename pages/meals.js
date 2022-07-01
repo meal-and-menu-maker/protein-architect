@@ -1174,7 +1174,7 @@ function okShow() {
                   quantity = parseFloat(meals_and_assembled[i].quantities[j]).toFixed(1);
                 }
               }
-              mondayNoonFood.innerHTML = mondayNoonFood.innerHTML + '<br/>' + '&bull; ' + quantity + ' ' + meals[i].elements[j];
+              mondayNoonFood.innerHTML = mondayNoonFood.innerHTML + '<br/>' + '&bull; ' + quantity + ' ' + meals_and_assembled[i].elements[j];
             }
             mondayNoonCalories.innerHTML = parseFloat(meals_and_assembled[i].calories).toFixed(2);
             mondayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);

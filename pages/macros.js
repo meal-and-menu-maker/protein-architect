@@ -35,11 +35,16 @@ var alcoholPosition = -1;
 var cocktailPosition = -1;
 
 function _localStorage() {
-    if (localStorage.getItem('macros') != null) {
-        macros = JSON.parse(localStorage.getItem('macros'));
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
+        macros = all_macros.macros;
     }
     else {
-        localStorage.setItem('macros', JSON.stringify(all_macros.macros));
+        if (localStorage.getItem('macros') != null) {
+            macros = JSON.parse(localStorage.getItem('macros'));
+        }
+        else {
+            localStorage.setItem('macros', JSON.stringify(all_macros.macros));
+        }
     }
 
     table();
@@ -49,10 +54,10 @@ function table() {
 
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
         macros = all_macros.macros;
-      }
-      else {
+    }
+    else {
         macros = JSON.parse(localStorage.getItem('macros'));
-      }
+    }
 
     $(document).ready(function () {
         var html = '<table class="table table-striped">';

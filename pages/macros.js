@@ -569,6 +569,7 @@ export default function Home() {
             <Head>
                 <title>Macros</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+                <link rel="icon" href="/logo_meal.ico" />
             </Head>
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>

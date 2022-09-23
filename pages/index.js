@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Macro Meal & Menu Maker</title>
+        <title>Protein Architect</title>
         <link rel="icon" href="/logo_meal.ico" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
       </Head>
@@ -76,7 +76,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Macro <font color="#008000"> Meal & Menu </font> Test Maker
+          Protein <font color="#008000"> Architect </font>
         </h1>
 
         <div className="grid">

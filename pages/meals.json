@@ -1,34 +1,572 @@
 {
   "meals" : [
-    {
+    [
+      {
+        "name": "Monday night / Sunday night",
+        "type": "night",
+        "elements": [
+          "Escalope de veau",
+          "Beurre (10g)",
+          "200g légumes mélangés",
+          "Farine (1 cuillère)",
+          "Jaune d'oeuf",
+          "Crème fraîche 7%",
+          "Champignons de Paris pieds et morceaux",
+          "Riz long grain",
+          "Parmesan",
+          "Courgette",
+          "Oignon",
+          "Whey (50g)",
+          "Oreo (1 biscuit de 11g)",
+          "Huile (c. à soupe)"
+        ],
+        "quantities": [
+          2.4,
+          3.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.575,
+          0.8,
+          0.2,
+          1,
+          1,
+          1,
+          8,
+          0.5
+        ],
+        "calories": 1835.9250000000002,
+        "proteins": 121.28750000000001,
+        "fat": 88.49,
+        "carbs": 159.41500000000002
+      },
+      {
+        "name": "Tuesday night",
+        "type": "night",
+        "elements": [
+          "Spaghettis (blé complet)",
+          "Lardons fumés",
+          "Œuf",
+          "Pecorino Romano",
+          "Huile (c. à soupe)",
+          "Filet de poulet",
+          "Gousse d'ail",
+          "200g légumes mélangés",
+          "Whey (50g)",
+          "Bonbon à la réglisse"
+        ],
+        "quantities": [
+          1,
+          0.75,
+          3,
+          0.3,
+          4,
+          2.1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "calories": 1841.95,
+        "proteins": 146.65,
+        "fat": 107.48,
+        "carbs": 97.6775
+      },
+      {
+        "name": "Wednesday night",
+        "type": "night",
+        "elements": [
+          "Oignon",
+          "Beurre (10g)",
+          "Gousse d'ail",
+          "Filet de poulet",
+          "Œuf",
+          "Riz long grain",
+          "200g légumes mélangés",
+          "Bonbon à la réglisse",
+          "KitKat (1 paquet de 42g)",
+          "Whey (50g)"
+        ],
+        "quantities": [
+          1,
+          1,
+          3,
+          1.5,
+          4,
+          1.2,
+          1,
+          3,
+          2,
+          1
+        ],
+        "calories": 1829.7,
+        "proteins": 122.78,
+        "fat": 64.95,
+        "carbs": 187.45
+      },
+      {
+        "name": "Thursday night",
+        "type": "night",
+        "elements": [
+          "Tomate",
+          "Concombre",
+          "Lentilles en conserve",
+          "Boîte de thon",
+          "Leerdammer",
+          "Champignons de Paris pieds et morceaux",
+          "Cacahuètes",
+          "Huile (c. à soupe)",
+          "Riz long grain",
+          "Parmesan",
+          "Bonbon à la réglisse",
+          "200g légumes mélangés",
+          "Whey (50g)"
+        ],
+        "quantities": [
+          2,
+          0.5,
+          1.3,
+          1.1,
+          0.4,
+          1.15,
+          0.3,
+          3,
+          1.1,
+          0.2,
+          2,
+          1,
+          1
+        ],
+        "calories": 1831.5500000000002,
+        "proteins": 121.53500000000001,
+        "fat": 84.16499999999999,
+        "carbs": 156.215
+      },
+      {
+        "name": "Friday night",
+        "type": "night",
+        "elements": [
+          "Spaghettis (blé complet)",
+          "Lardons fumés",
+          "Œuf",
+          "Pecorino Romano",
+          "Boîte de thon",
+          "Leerdammer",
+          "Beurre (10g)",
+          "200g légumes mélangés",
+          "Whey (50g)",
+          "Oreo (1 biscuit de 11g)"
+        ],
+        "quantities": [
+          1,
+          0.5,
+          4,
+          0.2,
+          1.1,
+          0.5,
+          1,
+          1,
+          1,
+          2
+        ],
+        "calories": 1838.5,
+        "proteins": 144.89999999999998,
+        "fat": 85.15,
+        "carbs": 110.25
+      },
+      {
+        "name": "Saturday night",
+        "type": "night",
+        "elements": [
+          "Saumon (125g)",
+          "Beurre (10g)",
+          "Coquillettes",
+          "Parmesan",
+          "Tranche de jambon cuit (40g)",
+          "200g légumes mélangés",
+          "Bonbon à la réglisse",
+          "Ferrero rocher noisettes et amandes",
+          "Whey (50g)"
+        ],
+        "quantities": [
+          1,
+          1,
+          1.15,
+          0.2,
+          2,
+          1,
+          3,
+          1,
+          1
+        ],
+        "calories": 1829.5,
+        "proteins": 116.19999999999999,
+        "fat": 63.455,
+        "carbs": 158.75
+      },
+      {
+        "name": "Sunday night / Monday night",
+        "type": "night",
+        "elements": [
+          "Burrito (64g) + sauces",
+          "Bœuf",
+          "Leerdammer",
+          "Tomate",
+          "Laitue Iceberg",
+          "200g légumes mélangés",
+          "Bonbon à la réglisse",
+          "Oreo (1 biscuit de 11g)",
+          "Whey (50g)"
+        ],
+        "quantities": [
+          4,
+          2.5,
+          0.7,
+          1,
+          0.5,
+          1.2,
+          3,
+          6,
+          1
+        ],
+        "calories": 1835.3,
+        "proteins": 148.57999999999998,
+        "fat": 44.46,
+        "carbs": 95.505
+      },
+      {
+        "name": "Optimized meal",
+        "type": "night",
+        "elements": [
+          "Pennes (blé complet)",
+          "Chia",
+          "Boîte de thon",
+          "Lentilles en conserve",
+          "Cacahuètes",
+          "Œuf",
+          "Leerdammer",
+          "200g légumes mélangés",
+          "Huile (c. à soupe)",
+          "Mix fruits rouges",
+          "Bonbon à la réglisse",
+          "Whey (50g)",
+          "Sauce soja (1 c.)"
+        ],
+        "quantities": [
+          1.15,
+          0.25,
+          1.1,
+          1.3,
+          0.3,
+          2,
+          0.3,
+          1,
+          1,
+          1.5,
+          3,
+          1,
+          1
+        ],
+        "calories": 1833.4999999999998,
+        "proteins": 134.20000000000002,
+        "fat": 74.02499999999999,
+        "carbs": 146.23000000000002
+      },
+      {
+        "name": "Weekly noon",
+        "type": "noon",
+        "elements": [
+          "Collagène (30g)",
+          "Cracotte",
+          "Cuillère de confiture (14g)"
+        ],
+        "quantities": [
+          1,
+          4,
+          4
+        ],
+        "calories": 363.16,
+        "proteins": 29.28,
+        "fat": 0.8,
+        "carbs": 58.8
+      },
+      {
+        "name": "Week-end noon #1",
+        "type": "noon",
+        "elements": [
+          "Courgette",
+          "Crevettes",
+          "Huile (c. à soupe)",
+          "Beurre (10g)",
+          "Gousse d'ail"
+        ],
+        "quantities": [
+          1,
+          1.5,
+          1.3,
+          1,
+          3
+        ],
+        "calories": 363.5,
+        "proteins": 27.9,
+        "fat": 32.15,
+        "carbs": 7.5
+      },
+      {
+        "name": "Week-end noon #2",
+        "type": "noon",
+        "elements": [
+          "Tomate",
+          "Concombre",
+          "Tranche de jambon cru (20g)",
+          "Fêta",
+          "Bonbon à la réglisse"
+        ],
+        "quantities": [
+          1,
+          0.5,
+          3,
+          0.75,
+          1
+        ],
+        "calories": 362,
+        "proteins": 28.159999999999997,
+        "fat": 22.765,
+        "carbs": 15.385000000000002
+      },
+      {
+        "name": "Salade Farfalle 1 | Magnum",
+        "type": "night",
+        "elements": [
+          "Farfalle",
+          "Tomate",
+          "Concombre",
+          "Œuf",
+          "Boîte de thon",
+          "Leerdammer",
+          "Haricots rouges en conserve",
+          "Champignons de Paris en conserve",
+          "Cacahuètes",
+          "Huile (c. à soupe)",
+          "Magnum double caramel"
+        ],
+        "quantities": [
+          1.25,
+          2,
+          0.5,
+          4,
+          1.1,
+          0.42,
+          1.3,
+          1.15,
+          0.1,
+          1,
+          1
+        ],
+        "calories": 1818.7199999999998,
+        "proteins": 103.89,
+        "fat": 79.725,
+        "carbs": 154.096
+      },
+      {
+        "name": "Salade Farfalle 2 | Activia",
+        "type": "night",
+        "elements": [
+          "Farfalle",
+          "Tomate",
+          "Concombre",
+          "Œuf",
+          "Boîte de thon",
+          "Huile (c. à soupe)",
+          "Haricots blancs en conserve",
+          "Lentilles en conserve",
+          "Cacahuètes",
+          "Activia nature",
+          "Miel (3 cuillères)"
+        ],
+        "quantities": [
+          1.25,
+          2,
+          0.5,
+          4,
+          1.1,
+          1,
+          1.3,
+          1.3,
+          0.24,
+          2,
+          1
+        ],
+        "calories": 1820.39,
+        "proteins": 104.96,
+        "fat": 69.595,
+        "carbs": 195.297
+      },
+      {
+        "name": "Salade Fusilli 1 | Activia",
+        "type": "night",
+        "elements": [
+          "Fusili",
+          "Tomate",
+          "Concombre",
+          "Lentilles en conserve",
+          "Boîte de thon",
+          "Leerdammer",
+          "Haricots rouges en conserve",
+          "Cacahuètes",
+          "Huile (c. à soupe)",
+          "Activia nature",
+          "Miel (3 cuillères)"
+        ],
+        "quantities": [
+          1.25,
+          2,
+          0.5,
+          1.3,
+          1.1,
+          0.75,
+          1.3,
+          0.36,
+          1,
+          2,
+          1
+        ],
+        "calories": 1820.91,
+        "proteins": 103.96,
+        "fat": 74.58,
+        "carbs": 193.2305
+      },
+      {
+        "name": "Salade Fusili 2 | Magnum",
+        "type": "night",
+        "elements": [
+          "Fusili",
+          "Tomate",
+          "Concombre",
+          "Haricots rouges en conserve",
+          "Boîte de thon",
+          "Leerdammer",
+          "Champignons de Paris en conserve",
+          "Cacahuètes",
+          "Huile (c. à soupe)",
+          "Magnum double caramel"
+        ],
+        "quantities": [
+          1.25,
+          2,
+          0.5,
+          1.3,
+          1.1,
+          0.75,
+          1.15,
+          0.5,
+          1,
+          1
+        ],
+        "calories": 1818.6,
+        "proteins": 95.6,
+        "fat": 88,
+        "carbs": 153.6325
+      },
+      {
+        "name": "Salade de riz | Activia | 1940kcal",
+        "type": "night",
+        "elements": [
+          "Riz Uncle Ben",
+          "Salade",
+          "Tomate",
+          "Œuf",
+          "Leerdammer",
+          "Boîte de thon",
+          "Lentilles en conserve",
+          "Cacahuètes",
+          "Huile (c. à soupe)",
+          "Activia nature",
+          "Miel (3 cuillères)"
+        ],
+        "quantities": [
+          1.25,
+          0.5,
+          1,
+          4,
+          0.8,
+          1.1,
+          1.3,
+          0.5,
+          1,
+          2,
+          2
+        ],
+        "calories": 1939.9499999999998,
+        "proteins": 113.995,
+        "fat": 101.705,
+        "carbs": 167.16
+      },
+      {
         "name": "Salade composée",
         "type": "night",
-        "elements": [ "Tomate", "Concombre", "Lentilles en conserve", "Boîte de thon", "Leerdammer", "Champignons de Paris en conserve", "Cacahuètes", "Huile (c. à soupe)" ],
-        "quantities": [ 2, 0.5, 1.3, 1.1, 0.75, 1.15, 0.5, 1 ],
+        "elements": [
+          "Tomate",
+          "Concombre",
+          "Lentilles en conserve",
+          "Boîte de thon",
+          "Leerdammer",
+          "Champignons de Paris en conserve",
+          "Cacahuètes",
+          "Huile (c. à soupe)"
+        ],
+        "quantities": [
+          2,
+          0.5,
+          1.3,
+          1.1,
+          0.75,
+          1.15,
+          0.5,
+          1
+        ],
         "calories": 1091.25,
         "proteins": 74.15,
         "fat": 70.69,
         "carbs": 39.85
-    },
-    {
+      },
+      {
         "name": "Riz - Parmesan",
         "type": "night",
-        "elements": [ "Riz Uncle Ben", "Huile (c. à soupe)", "Parmesan" ],
-        "quantities": [ 1.25, 2, 0.1 ],
-        "calories": 416.45,
-        "proteins": 7.32,
-        "fat": 28.62,
+        "elements": [
+          "Riz Uncle Ben",
+          "Huile (c. à soupe)",
+          "Parmesan"
+        ],
+        "quantities": [
+          1.25,
+          2,
+          0.15
+        ],
+        "calories": 436.55,
+        "proteins": 8.925,
+        "fat": 28.625,
         "carbs": 42.5
-    },
-    {
+      },
+      {
         "name": "Cacahuètes | Dates | Sucette",
         "type": "night",
-        "elements": [ "Cacahuètes", "Dattes", "Sucette (12g)" ],
-        "quantities": [ 0.55, 1, 1 ],
+        "elements": [
+          "Cacahuètes",
+          "Dattes",
+          "Sucette (12g)"
+        ],
+        "quantities": [
+          0.55,
+          1,
+          1
+        ],
         "calories": 668.6,
         "proteins": 16.5,
         "fat": 27.8,
         "carbs": 80.5
-    }
+      }
+    ]
   ]
 }

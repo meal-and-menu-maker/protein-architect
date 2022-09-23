@@ -76,7 +76,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Macro <font color="#008000"> Meal & Menu </font> Maker
+          Macro <font color="#008000"> Meal & Menu </font> Creator
         </h1>
 
         <div className="grid">

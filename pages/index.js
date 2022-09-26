@@ -108,13 +108,13 @@ export default function Home() {
             <mark>NOON</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNoon"></input>
-            | Proteins:
+            &nbsp;| Proteins:
             <input class="col-sm-1" type="text" id="proteinsNoon"></input>
-            | Fat:
+            &nbsp;| Fat:
             <input class="col-sm-1" type="text" id="fatNoon"></input>
-            | Carbs:
+            &nbsp;| Carbs:
             <input class="col-sm-1" type="text" id="carbsNoon"></input>
-            | Fibers:
+            &nbsp;| Fibers:
             <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
           </div>
 
@@ -122,13 +122,13 @@ export default function Home() {
             <mark>NIGHT</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNight"></input>
-            | Proteins:
+            &nbsp;| Proteins:
             <input class="col-sm-1" type="text" id="proteinsNight"></input>
-            | Fat:
+            &nbsp;| Fat:
             <input class="col-sm-1" type="text" id="fatNight"></input>
-            | Carbs:
+            &nbsp;| Carbs:
             <input class="col-sm-1" type="text" id="carbsNight"></input>
-            | Fibers:
+            &nbsp;| Fibers:
             <input class="col-sm-1" type="text" id="fibersNight"></input></code>
           </div>
         </center>

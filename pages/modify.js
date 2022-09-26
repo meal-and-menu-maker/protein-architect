@@ -11,6 +11,8 @@ let clicked = false;
 
 var count = 0;
 
+var test = 0;
+
 var meal = {};
 var noon = {};
 var night = {};

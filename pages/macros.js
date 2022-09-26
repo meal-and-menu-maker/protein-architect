@@ -163,6 +163,7 @@ function addElement() {
     document.getElementById("proteins").style.display = "block";
     document.getElementById("fat").style.display = "block";
     document.getElementById("carbs").style.display = "block";
+    document.getElementById("fibers").style.display = "block";
     document.getElementById("categoryAdd").style.display = "block";
     document.getElementById("unit").style.display = "block";
 
@@ -181,6 +182,7 @@ function okAddElement() {
     document.getElementById("proteins").style.display = "none";
     document.getElementById("fat").style.display = "none";
     document.getElementById("carbs").style.display = "none";
+    document.getElementById("fibers").style.display = "none";
     document.getElementById("categoryAdd").style.display = "none";
     document.getElementById("unit").style.display = "none";
 
@@ -189,6 +191,7 @@ function okAddElement() {
     macros_.proteins = parseFloat(document.getElementById("mealProteins").value);
     macros_.fat = parseFloat(document.getElementById("mealFat").value);
     macros_.carbs = parseFloat(document.getElementById("mealCarbs").value);
+    macros_.fibers = parseFloat(document.getElementById("mealfibers").value);
     macros_.category = document.getElementById("categoryAddSelect").value;
     macros_.unit = document.getElementById("mealUnit").value;
     
@@ -268,7 +271,7 @@ function okAddElement() {
 
     document.getElementById("okAddSelect").style.display = "none";
 
-    table();
+    window.location.reload();
 }
 
 function modifyElement() {
@@ -296,6 +299,7 @@ function ok1ModifyElement() {
     document.getElementById("proteinsModify").style.display = "block";
     document.getElementById("fatModify").style.display = "block";
     document.getElementById("carbsModify").style.display = "block";
+    document.getElementById("fibersModify").style.display = "block";
     document.getElementById("categoryModify").style.display = "block";
     document.getElementById("unitModify").style.display = "block";
 
@@ -306,6 +310,7 @@ function ok1ModifyElement() {
     var proteins = document.getElementById("mealProteinsModify");
     var fat = document.getElementById("mealFatModify");
     var carbs = document.getElementById("mealCarbsModify");
+    var fibers = document.getElementById("mealFibersModify");
     var category = document.getElementById("categoryModifySelect");
     var unit = document.getElementById("mealUnitModify");
 
@@ -316,6 +321,7 @@ function ok1ModifyElement() {
             proteins.value = macros[i].proteins;
             fat.value = macros[i].fat;
             carbs.value = macros[i].carbs;
+            fibers.value = macros[i].fibers;
             category.value = macros[i].category;
             unit.value = macros[i].unit;
 
@@ -334,6 +340,7 @@ function ok2ModifyElement() {
     document.getElementById("proteinsModify").style.display = "none";
     document.getElementById("fatModify").style.display = "none";
     document.getElementById("carbsModify").style.display = "none";
+    document.getElementById("fibersModify").style.display = "none";
     document.getElementById("categoryModify").style.display = "none";
     document.getElementById("unitModify").style.display = "none";
 
@@ -345,6 +352,7 @@ function ok2ModifyElement() {
     macros_.proteins = parseFloat(document.getElementById("mealProteinsModify").value);
     macros_.fat = parseFloat(document.getElementById("mealFatModify").value);
     macros_.carbs = parseFloat(document.getElementById("mealCarbsModify").value);
+    macros_.fibers = parseFloat(document.getElementById("mealFibersModify").value);
     macros_.category = document.getElementById("categoryModifySelect").value;
     macros_.unit = document.getElementById("mealUnitModify").value;
 
@@ -499,14 +507,9 @@ function ok2ModifyElement() {
         macros[macroPosition].proteins = macros_.proteins;
         macros[macroPosition].fat = macros_.fat;
         macros[macroPosition].carbs = macros_.carbs;
+        macros[macroPosition].fibers = macros_.fibers;
         macros[macroPosition].unit = macros_.unit;
     }
-
-    /* var msg1 = document.getElementById('msg1');
-    msg1.innerHTML = JSON.stringify(macros_);
-
-    var msg2 = document.getElementById('msg2');
-    msg2.innerHTML = JSON.stringify(m); */
 
     localStorage.setItem('macros', JSON.stringify(macros));
     
@@ -563,6 +566,7 @@ export default function Home() {
         document.getElementById("proteinsModify").style.display = "none";
         document.getElementById("fatModify").style.display = "none";
         document.getElementById("carbsModify").style.display = "none";
+        document.getElementById("fibersModify").style.display = "none";
         document.getElementById("categoryModify").style.display = "none";
         document.getElementById("unitModify").style.display = "none";
 
@@ -650,6 +654,13 @@ export default function Home() {
                             <div class="col-sm-3">
                                 <p>carbs: </p>
                                 <input type="textMeal" id="mealCarbs" name="mealCarbs"></input>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid py-2" id="fibers">
+                            <div class="col-sm-3">
+                                <p>fibers: </p>
+                                <input type="textMeal" id="mealFibers" name="mealFibers"></input>
                             </div>
                         </div>
 
@@ -767,6 +778,13 @@ export default function Home() {
                                 <div class="col-sm-3">
                                     <p>carbs: </p>
                                     <input type="textMeal" id="mealCarbsModify" name="mealCarbsModify"></input>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid py-2" id="fibersModify">
+                                <div class="col-sm-3">
+                                    <p>fibers: </p>
+                                    <input type="textMeal" id="mealFibersModify" name="mealFibersModify"></input>
                                 </div>
                             </div>
 

@@ -42,6 +42,7 @@ function loadMacros() {
     document.getElementById('proteinsNoon').value = noon.proteins;
     document.getElementById('fatNoon').value = noon.fat;
     document.getElementById('carbsNoon').value = noon.carbs;
+    document.getElementById('fibersNoon').value = noon.fibers;
   }
 
   if (localStorage.getItem('night') != null) {
@@ -51,6 +52,7 @@ function loadMacros() {
     document.getElementById('proteinsNight').value = night.proteins;
     document.getElementById('fatNight').value = night.fat;
     document.getElementById('carbsNight').value = night.carbs;
+    document.getElementById('fibersNight').value = night.fibers;
   }
 }
 
@@ -120,6 +122,7 @@ function updateMacros() {
         noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
         noon.fat = parseFloat(document.getElementById('fatNoon').value);
         noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
+        noon.fibers = parseFloat(document.getElementById('fibersNoon').value);
 
         localStorage.setItem('noon', JSON.stringify(noon));
     }
@@ -129,6 +132,7 @@ function updateMacros() {
         night.proteins = parseFloat(document.getElementById('proteinsNight').value);
         night.fat = parseFloat(document.getElementById('fatNight').value);
         night.carbs = parseFloat(document.getElementById('carbsNight').value);
+        night.fibers = parseFloat(document.getElementById('fibersNight').value);
 
         localStorage.setItem('night', JSON.stringify(night));
     }
@@ -195,7 +199,7 @@ function okShowMeal() {
                 showAllMeals.innerHTML = showAllMeals.innerHTML +'<br/>' + '&bull; ' + quantity + ' ' + meals[i].elements[j];
             }
 
-            showAllMeals.innerHTML = showAllMeals.innerHTML + '<br/>' + '<br/>' + "<code>Calories: " + parseFloat(meals[i].calories).toFixed(2) + " kcal | Proteins: " + parseFloat(meals[i].proteins).toFixed(2) + "g | Fat: " + parseFloat(meals[i].fat).toFixed(2) + "g | Carbs: " + parseFloat(meals[i].carbs).toFixed(2) + "g </code>";
+            showAllMeals.innerHTML = showAllMeals.innerHTML + '<br/>' + '<br/>' + "<code>Calories: " + parseFloat(meals[i].calories).toFixed(2) + " kcal | Proteins: " + parseFloat(meals[i].proteins).toFixed(2) + "g | Fat: " + parseFloat(meals[i].fat).toFixed(2) + "g | Carbs: " + parseFloat(meals[i].carbs).toFixed(2) + "g | Fibers: " + parseFloat(meals[i].fibers).toFixed(2) + "g </code>";
         }
     }
 
@@ -212,7 +216,7 @@ function okShowMeal() {
               showAllMeals.innerHTML = showAllMeals.innerHTML +'<br/>' + '&bull; ' + quantity + ' ' + assembled_meals[i].elements[j];
           }
 
-          showAllMeals.innerHTML = showAllMeals.innerHTML + '<br/>' + '<br/>' + "<code>Calories: " + parseFloat(assembled_meals[i].calories).toFixed(2) + " kcal | Proteins: " + parseFloat(assembled_meals[i].proteins).toFixed(2) + "g | Fat: " + parseFloat(assembled_meals[i].fat).toFixed(2) + "g | Carbs: " + parseFloat(assembled_meals[i].carbs).toFixed(2) + "g </code>";
+          showAllMeals.innerHTML = showAllMeals.innerHTML + '<br/>' + '<br/>' + "<code>Calories: " + parseFloat(assembled_meals[i].calories).toFixed(2) + " kcal | Proteins: " + parseFloat(assembled_meals[i].proteins).toFixed(2) + "g | Fat: " + parseFloat(assembled_meals[i].fat).toFixed(2) + "g | Carbs: " + parseFloat(assembled_meals[i].carbs).toFixed(2) + "g | Fibers: " + parseFloat(assembled_meals[i].fibers).toFixed(2) + "g </code>";
       }
   }
 
@@ -412,47 +416,58 @@ function macrosUpdate() {
   var proteins1 = 0;
   var fat1 = 0;
   var carbs1 = 0;
+  var fibers1 = 0;
   var calories2 = 0;
   var proteins2 = 0;
   var fat2 = 0;
   var carbs2 = 0;
+  var fibers2 = 0;
   var calories3 = 0;
   var proteins3 = 0;
   var fat3 = 0;
   var carbs3 = 0;
+  var fibers3 = 0;
   var calories4 = 0;
   var proteins4 = 0;
   var fat4 = 0;
   var carbs4 = 0;
+  var fibers4 = 0;
   var calories5 = 0;
   var proteins5 = 0;
   var fat5 = 0;
   var carbs5 = 0;
+  var fibers5 = 0;
   var calories6 = 0;
   var proteins6 = 0;
   var fat6 = 0;
   var carbs6 = 0;
+  var fibers6 = 0;
   var calories7 = 0;
   var proteins7 = 0;
   var fat7 = 0;
   var carbs7 = 0;
+  var fibers7 = 0;
   var calories8 = 0;
   var proteins8 = 0;
   var fat8 = 0;
   var carbs8 = 0;
+  var fibers8 = 0;
   var calories9 = 0;
   var proteins9 = 0;
   var fat9 = 0;
   var carbs9 = 0;
+  var fibers9 = 0;
   var calories10 = 0;
   var proteins10 = 0;
   var fat10 = 0;
   var carbs10 = 0;
+  var fibers10 = 0;
   
   var caloriesTotal = document.getElementById("caloriesTotal");
   var proteinsTotal = document.getElementById("proteinsTotal");
   var fatTotal = document.getElementById("fatTotal");
   var carbsTotal = document.getElementById("carbsTotal");
+  var fibersTotal = document.getElementById("fibersTotal");
   
   for (var j = 0; j < meals.length; j++) {
       if (meal1 == meals[j].name) {
@@ -460,60 +475,70 @@ function macrosUpdate() {
           proteins1 = parseFloat(meals[j].proteins)
           fat1 = parseFloat(meals[j].fat)
           carbs1 = parseFloat(meals[j].carbs)
+          fibers1 = parseFloat(meals[j].fibers)
       }
       if (meal2 == meals[j].name) {
           calories2 = parseFloat(meals[j].calories)
           proteins2 = parseFloat(meals[j].proteins)
           fat2 = parseFloat(meals[j].fat)
           carbs2 = parseFloat(meals[j].carbs)
+          fibers2 = parseFloat(meals[j].fibers)
       }
       if (meal3 == meals[j].name) {
           calories3 = parseFloat(meals[j].calories)
           proteins3 = parseFloat(meals[j].proteins)
           fat3 = parseFloat(meals[j].fat)
           carbs3 = parseFloat(meals[j].carbs)
+          fibers3 = parseFloat(meals[j].fibers)
       }
       if (meal4 == meals[j].name) {
           calories4 = parseFloat(meals[j].calories)
           proteins4 = parseFloat(meals[j].proteins)
           fat4 = parseFloat(meals[j].fat)
           carbs4 = parseFloat(meals[j].carbs)
+          fibers4 = parseFloat(meals[j].fibers)
       }
       if (meal5 == meals[j].name) {
           calories5 = parseFloat(meals[j].calories)
           proteins5 = parseFloat(meals[j].proteins)
           fat5 = parseFloat(meals[j].fat)
           carbs5 = parseFloat(meals[j].carbs)
+          fibers5 = parseFloat(meals[j].fibers)
       }
       if (meal6 == meals[j].name) {
           calories6 = parseFloat(meals[j].calories)
           proteins6 = parseFloat(meals[j].proteins)
           fat6 = parseFloat(meals[j].fat)
           carbs6 = parseFloat(meals[j].carbs)
+          fibers6 = parseFloat(meals[j].fibers)
       }
       if (meal7 == meals[j].name) {
           calories7 = parseFloat(meals[j].calories)
           proteins7 = parseFloat(meals[j].proteins)
           fat7 = parseFloat(meals[j].fat)
           carbs7 = parseFloat(meals[j].carbs)
+          fibers7 = parseFloat(meals[j].fibers)
       }
       if (meal8 == meals[j].name) {
           calories8 = parseFloat(meals[j].calories)
           proteins8 = parseFloat(meals[j].proteins)
           fat8 = parseFloat(meals[j].fat)
           carbs8 = parseFloat(meals[j].carbs)
+          fibers8 = parseFloat(meals[j].fibers)
       }
       if (meal9 == meals[j].name) {
           calories9 = parseFloat(meals[j].calories)
           proteins9 = parseFloat(meals[j].proteins)
           fat9 = parseFloat(meals[j].fat)
           carbs9 = parseFloat(meals[j].carbs)
+          fibers9 = parseFloat(meals[j].fibers)
       }
       if (meal10 == meals[j].name) {
           calories10 = parseFloat(meals[j].calories)
           proteins10 = parseFloat(meals[j].proteins)
           fat10 = parseFloat(meals[j].fat)
           carbs10 = parseFloat(meals[j].carbs)
+          fibers10 = parseFloat(meals[j].fibers)
       }
   }
   
@@ -533,10 +558,15 @@ function macrosUpdate() {
   
   carbsTotal.value += carbs1 + carbs2 + carbs3 + carbs4 + carbs5 + carbs6 + carbs7 + carbs8 + carbs9 + carbs10;
 
+  fibersTotal.value = "";
+  
+  fibersTotal.value += fibers1 + fibers2 + fibers3 + fibers4 + fibers5 + fibers6 + fibers7 + fibers8 + fibers9 + fibers10;
+
   parseFloat(caloriesTotal.value);
   parseFloat(proteinsTotal.value);
   parseFloat(fatTotal.value);
   parseFloat(carbsTotal.value);
+  parseFloat(fibersTotal.value);
 }
 
 function save() {
@@ -612,6 +642,7 @@ function save() {
     assembled_meal.proteins = parseFloat(document.getElementById("proteinsTotal").value);
     assembled_meal.fat = parseFloat(document.getElementById("fatTotal").value);
     assembled_meal.carbs = parseFloat(document.getElementById("carbsTotal").value);
+    assembled_meal.fibers = parseFloat(document.getElementById("fibersTotal").value);
 
     assembled_meals.push(assembled_meal);
 
@@ -983,6 +1014,7 @@ function okShow() {
       meal_and_assembled.proteins = meals[i].proteins;
       meal_and_assembled.fat = meals[i].fat;
       meal_and_assembled.carbs = meals[i].carbs;
+      meal_and_assembled.fibers = meals[i].fibers;
 
       JSON.stringify(meal_and_assembled);
 
@@ -1000,6 +1032,7 @@ function okShow() {
       meal_and_assembled.proteins = assembled_meals[i].proteins;
       meal_and_assembled.fat = assembled_meals[i].fat;
       meal_and_assembled.carbs = assembled_meals[i].carbs;
+      meal_and_assembled.fibers = assembled_meals[i].fibers;
 
       JSON.stringify(meal_and_assembled);
 
@@ -1015,119 +1048,140 @@ function okShow() {
     var mondayNoonProteins = document.getElementById("mondayNoonProteins");
     var mondayNoonFat = document.getElementById("mondayNoonFat");
     var mondayNoonCarbs = document.getElementById("mondayNoonCarbs");
+    var mondayNoonFibers = document.getElementById("mondayNoonFibers");
     
     var mondayNightFood = document.getElementById("mondayNightFood");
     var mondayNightCalories = document.getElementById("mondayNightCalories");
     var mondayNightProteins = document.getElementById("mondayNightProteins");
     var mondayNightFat = document.getElementById("mondayNightFat");
     var mondayNightCarbs = document.getElementById("mondayNightCarbs");
+    var mondayNightFibers = document.getElementById("mondayNightFibers");
     
     var mondayTotalCalories = document.getElementById("mondayTotalCalories");
     var mondayTotalProteins = document.getElementById("mondayTotalProteins");
     var mondayTotalFat = document.getElementById("mondayTotalFat");
     var mondayTotalCarbs = document.getElementById("mondayTotalCarbs");
+    var mondayTotalFibers = document.getElementById("mondayTotalFibers");
 
     var tuesdayNoonFood = document.getElementById("tuesdayNoonFood");
     var tuesdayNoonCalories = document.getElementById("tuesdayNoonCalories");
     var tuesdayNoonProteins = document.getElementById("tuesdayNoonProteins");
     var tuesdayNoonFat = document.getElementById("tuesdayNoonFat");
     var tuesdayNoonCarbs = document.getElementById("tuesdayNoonCarbs");
+    var tuesdayNoonFibers = document.getElementById("tuesdayNoonFibers");
     
     var tuesdayNightFood = document.getElementById("tuesdayNightFood");
     var tuesdayNightCalories = document.getElementById("tuesdayNightCalories");
     var tuesdayNightProteins = document.getElementById("tuesdayNightProteins");
     var tuesdayNightFat = document.getElementById("tuesdayNightFat");
     var tuesdayNightCarbs = document.getElementById("tuesdayNightCarbs");
+    var tuesdayNightFibers = document.getElementById("tuesdayNightFibers");
     
     var tuesdayTotalCalories = document.getElementById("tuesdayTotalCalories");
     var tuesdayTotalProteins = document.getElementById("tuesdayTotalProteins");
     var tuesdayTotalFat = document.getElementById("tuesdayTotalFat");
     var tuesdayTotalCarbs = document.getElementById("tuesdayTotalCarbs");
+    var tuesdayTotalFibers = document.getElementById("tuesdayTotalFibers");
     
     var wednesdayNoonFood = document.getElementById("wednesdayNoonFood");
     var wednesdayNoonCalories = document.getElementById("wednesdayNoonCalories");
     var wednesdayNoonProteins = document.getElementById("wednesdayNoonProteins");
     var wednesdayNoonFat = document.getElementById("wednesdayNoonFat");
     var wednesdayNoonCarbs = document.getElementById("wednesdayNoonCarbs");
+    var wednesdayNoonFibers = document.getElementById("wednesdayNoonFibers");
     
     var wednesdayNightFood = document.getElementById("wednesdayNightFood");
     var wednesdayNightCalories = document.getElementById("wednesdayNightCalories");
     var wednesdayNightProteins = document.getElementById("wednesdayNightProteins");
     var wednesdayNightFat = document.getElementById("wednesdayNightFat");
     var wednesdayNightCarbs = document.getElementById("wednesdayNightCarbs");
+    var wednesdayNightFibers = document.getElementById("wednesdayNightFibers");
     
     var wednesdayTotalCalories = document.getElementById("wednesdayTotalCalories");
     var wednesdayTotalProteins = document.getElementById("wednesdayTotalProteins");
     var wednesdayTotalFat = document.getElementById("wednesdayTotalFat");
     var wednesdayTotalCarbs = document.getElementById("wednesdayTotalCarbs");
+    var wednesdayTotalFibers = document.getElementById("wednesdayTotalFibers");
     
     var thursdayNoonFood = document.getElementById("thursdayNoonFood");
     var thursdayNoonCalories = document.getElementById("thursdayNoonCalories");
     var thursdayNoonProteins = document.getElementById("thursdayNoonProteins");
     var thursdayNoonFat = document.getElementById("thursdayNoonFat");
     var thursdayNoonCarbs = document.getElementById("thursdayNoonCarbs");
+    var thursdayNoonFibers = document.getElementById("thursdayNoonFibers");
     
     var thursdayNightFood = document.getElementById("thursdayNightFood");
     var thursdayNightCalories = document.getElementById("thursdayNightCalories");
     var thursdayNightProteins = document.getElementById("thursdayNightProteins");
     var thursdayNightFat = document.getElementById("thursdayNightFat");
     var thursdayNightCarbs = document.getElementById("thursdayNightCarbs");
+    var thursdayNightFibers = document.getElementById("thursdayNightFibers");
     
     var thursdayTotalCalories = document.getElementById("thursdayTotalCalories");
     var thursdayTotalProteins = document.getElementById("thursdayTotalProteins");
     var thursdayTotalFat = document.getElementById("thursdayTotalFat");
     var thursdayTotalCarbs = document.getElementById("thursdayTotalCarbs");
+    var thursdayTotalFibers = document.getElementById("thursdayTotalFibers");
     
     var fridayNoonFood = document.getElementById("fridayNoonFood");
     var fridayNoonCalories = document.getElementById("fridayNoonCalories");
     var fridayNoonProteins = document.getElementById("fridayNoonProteins");
     var fridayNoonFat = document.getElementById("fridayNoonFat");
     var fridayNoonCarbs = document.getElementById("fridayNoonCarbs");
+    var fridayNoonFibers = document.getElementById("fridayNoonFibers");
     
     var fridayNightFood = document.getElementById("fridayNightFood");
     var fridayNightCalories = document.getElementById("fridayNightCalories");
     var fridayNightProteins = document.getElementById("fridayNightProteins");
     var fridayNightFat = document.getElementById("fridayNightFat");
     var fridayNightCarbs = document.getElementById("fridayNightCarbs");
+    var fridayNightFibers = document.getElementById("fridayNightFibers");
     
     var fridayTotalCalories = document.getElementById("fridayTotalCalories");
     var fridayTotalProteins = document.getElementById("fridayTotalProteins");
     var fridayTotalFat = document.getElementById("fridayTotalFat");
     var fridayTotalCarbs = document.getElementById("fridayTotalCarbs");
+    var fridayTotalFibers = document.getElementById("fridayTotalFibers");
     
     var saturdayNoonFood = document.getElementById("saturdayNoonFood");
     var saturdayNoonCalories = document.getElementById("saturdayNoonCalories");
     var saturdayNoonProteins = document.getElementById("saturdayNoonProteins");
     var saturdayNoonFat = document.getElementById("saturdayNoonFat");
     var saturdayNoonCarbs = document.getElementById("saturdayNoonCarbs");
+    var saturdayNoonFibers = document.getElementById("saturdayNoonFibers");
     
     var saturdayNightFood = document.getElementById("saturdayNightFood");
     var saturdayNightCalories = document.getElementById("saturdayNightCalories");
     var saturdayNightProteins = document.getElementById("saturdayNightProteins");
     var saturdayNightFat = document.getElementById("saturdayNightFat");
     var saturdayNightCarbs = document.getElementById("saturdayNightCarbs");
+    var saturdayNightFibers = document.getElementById("saturdayNightFibers");
     
     var saturdayTotalCalories = document.getElementById("saturdayTotalCalories");
     var saturdayTotalProteins = document.getElementById("saturdayTotalProteins");
     var saturdayTotalFat = document.getElementById("saturdayTotalFat");
     var saturdayTotalCarbs = document.getElementById("saturdayTotalCarbs");
+    var saturdayTotalFibers = document.getElementById("saturdayTotalFibers");
     
     var sundayNoonFood = document.getElementById("sundayNoonFood");
     var sundayNoonCalories = document.getElementById("sundayNoonCalories");
     var sundayNoonProteins = document.getElementById("sundayNoonProteins");
     var sundayNoonFat = document.getElementById("sundayNoonFat");
     var sundayNoonCarbs = document.getElementById("sundayNoonCarbs");
+    var sundayNoonFibers = document.getElementById("sundayNoonFibers");
     
     var sundayNightFood = document.getElementById("sundayNightFood");
     var sundayNightCalories = document.getElementById("sundayNightCalories");
     var sundayNightProteins = document.getElementById("sundayNightProteins");
     var sundayNightFat = document.getElementById("sundayNightFat");
     var sundayNightCarbs = document.getElementById("sundayNightCarbs");
+    var sundayNightFibers = document.getElementById("sundayNightFibers");
     
     var sundayTotalCalories = document.getElementById("sundayTotalCalories");
     var sundayTotalProteins = document.getElementById("sundayTotalProteins");
     var sundayTotalFat = document.getElementById("sundayTotalFat");
     var sundayTotalCarbs = document.getElementById("sundayTotalCarbs");
+    var sundayTotalFibers = document.getElementById("sundayTotalFibers");
 
     var quantity = 0;
 
@@ -1180,6 +1234,7 @@ function okShow() {
             mondayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             mondayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             mondayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            mondayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.monday_night) {
@@ -1208,6 +1263,7 @@ function okShow() {
             mondayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             mondayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             mondayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            mondayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.tuesday_noon) {
@@ -1236,6 +1292,7 @@ function okShow() {
             tuesdayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             tuesdayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             tuesdayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            tuesdayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.tuesday_night) {
@@ -1264,6 +1321,7 @@ function okShow() {
             tuesdayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             tuesdayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             tuesdayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            tuesdayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.wednesday_noon) {
@@ -1292,6 +1350,7 @@ function okShow() {
             wednesdayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             wednesdayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             wednesdayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            wednesdayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.wednesday_night) {
@@ -1320,6 +1379,7 @@ function okShow() {
             wednesdayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             wednesdayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             wednesdayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            wednesdayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.thursday_noon) {
@@ -1348,6 +1408,7 @@ function okShow() {
             thursdayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             thursdayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             thursdayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            thursdayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.thursday_night) {
@@ -1376,6 +1437,7 @@ function okShow() {
             thursdayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             thursdayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             thursdayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            thursdayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.friday_noon) {
@@ -1404,6 +1466,7 @@ function okShow() {
             fridayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             fridayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             fridayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            fridayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.friday_night) {
@@ -1432,6 +1495,7 @@ function okShow() {
             fridayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             fridayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             fridayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            fridayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.saturday_noon) {
@@ -1460,6 +1524,7 @@ function okShow() {
             saturdayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             saturdayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             saturdayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            saturdayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.saturday_night) {
@@ -1488,6 +1553,7 @@ function okShow() {
             saturdayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             saturdayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             saturdayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            saturdayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.sunday_noon) {
@@ -1516,6 +1582,7 @@ function okShow() {
             sundayNoonProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             sundayNoonFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             sundayNoonCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            sundayNoonFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
         
         if (meals_and_assembled[i].name == menu.sunday_night) {
@@ -1544,6 +1611,7 @@ function okShow() {
             sundayNightProteins.innerHTML = parseFloat(meals_and_assembled[i].proteins).toFixed(2);
             sundayNightFat.innerHTML = parseFloat(meals_and_assembled[i].fat).toFixed(2);
             sundayNightCarbs.innerHTML = parseFloat(meals_and_assembled[i].carbs).toFixed(2);
+            sundayNightFibers.innerHTML = parseFloat(meals_and_assembled[i].fibers).toFixed(2);
         }
       }
 
@@ -1553,36 +1621,43 @@ function okShow() {
     mondayTotalProteins.innerHTML = (Number(mondayNoonProteins.innerText) + Number(mondayNightProteins.innerText)).toFixed(2);
     mondayTotalFat.innerHTML = (Number(mondayNoonFat.innerText) + Number(mondayNightFat.innerText)).toFixed(2);
     mondayTotalCarbs.innerHTML = (Number(mondayNoonCarbs.innerText) + Number(mondayNightCarbs.innerText)).toFixed(2);
+    mondayTotalFibers.innerHTML = (Number(mondayNoonFibers.innerText) + Number(mondayNightFibers.innerText)).toFixed(2);
 
     tuesdayTotalCalories.innerHTML = (Number(tuesdayNoonCalories.innerText) + Number(tuesdayNightCalories.innerText)).toFixed(2);
     tuesdayTotalProteins.innerHTML = (Number(tuesdayNoonProteins.innerText) + Number(tuesdayNightProteins.innerText)).toFixed(2);
     tuesdayTotalFat.innerHTML = (Number(tuesdayNoonFat.innerText) + Number(tuesdayNightFat.innerText)).toFixed(2);
     tuesdayTotalCarbs.innerHTML = (Number(tuesdayNoonCarbs.innerText) + Number(tuesdayNightCarbs.innerText)).toFixed(2);
+    tuesdayTotalFibers.innerHTML = (Number(tuesdayNoonFibers.innerText) + Number(tuesdayNightFibers.innerText)).toFixed(2);
 
     wednesdayTotalCalories.innerHTML = (Number(wednesdayNoonCalories.innerText) + Number(wednesdayNightCalories.innerText)).toFixed(2);
     wednesdayTotalProteins.innerHTML = (Number(wednesdayNoonProteins.innerText) + Number(wednesdayNightProteins.innerText)).toFixed(2);
     wednesdayTotalFat.innerHTML = (Number(wednesdayNoonFat.innerText) + Number(wednesdayNightFat.innerText)).toFixed(2);
     wednesdayTotalCarbs.innerHTML = (Number(wednesdayNoonCarbs.innerText) + Number(wednesdayNightCarbs.innerText)).toFixed(2);
+    wednesdayTotalFibers.innerHTML = (Number(wednesdayNoonFibers.innerText) + Number(wednesdayNightFibers.innerText)).toFixed(2);
 
     thursdayTotalCalories.innerHTML = (Number(thursdayNoonCalories.innerText) + Number(thursdayNightCalories.innerText)).toFixed(2);
     thursdayTotalProteins.innerHTML = (Number(thursdayNoonProteins.innerText) + Number(thursdayNightProteins.innerText)).toFixed(2);
     thursdayTotalFat.innerHTML = (Number(thursdayNoonFat.innerText) + Number(thursdayNightFat.innerText)).toFixed(2);
     thursdayTotalCarbs.innerHTML = (Number(thursdayNoonCarbs.innerText) + Number(thursdayNightCarbs.innerText)).toFixed(2);
+    thursdayTotalFibers.innerHTML = (Number(thursdayNoonFibers.innerText) + Number(thursdayNightFibers.innerText)).toFixed(2);
 
     fridayTotalCalories.innerHTML = (Number(fridayNoonCalories.innerText) + Number(fridayNightCalories.innerText)).toFixed(2);
     fridayTotalProteins.innerHTML = (Number(fridayNoonProteins.innerText) + Number(fridayNightProteins.innerText)).toFixed(2);
     fridayTotalFat.innerHTML = (Number(fridayNoonFat.innerText) + Number(fridayNightFat.innerText)).toFixed(2);
     fridayTotalCarbs.innerHTML = (Number(fridayNoonCarbs.innerText) + Number(fridayNightCarbs.innerText)).toFixed(2);
+    fridayTotalFibers.innerHTML = (Number(fridayNoonFibers.innerText) + Number(fridayNightFibers.innerText)).toFixed(2);
 
     saturdayTotalCalories.innerHTML = (Number(saturdayNoonCalories.innerText) + Number(saturdayNightCalories.innerText)).toFixed(2);
     saturdayTotalProteins.innerHTML = (Number(saturdayNoonProteins.innerText) + Number(saturdayNightProteins.innerText)).toFixed(2);
     saturdayTotalFat.innerHTML = (Number(saturdayNoonFat.innerText) + Number(saturdayNightFat.innerText)).toFixed(2);
     saturdayTotalCarbs.innerHTML = (Number(saturdayNoonCarbs.innerText) + Number(saturdayNightCarbs.innerText)).toFixed(2);
+    saturdayTotalFibers.innerHTML = (Number(saturdayNoonFibers.innerText) + Number(saturdayNightFibers.innerText)).toFixed(2);
 
     sundayTotalCalories.innerHTML = (Number(sundayNoonCalories.innerText) + Number(sundayNightCalories.innerText)).toFixed(2);
     sundayTotalProteins.innerHTML = (Number(sundayNoonProteins.innerText) + Number(sundayNightProteins.innerText)).toFixed(2);
     sundayTotalFat.innerHTML = (Number(sundayNoonFat.innerText) + Number(sundayNightFat.innerText)).toFixed(2);
     sundayTotalCarbs.innerHTML = (Number(sundayNoonCarbs.innerText) + Number(sundayNightCarbs.innerText)).toFixed(2);
+    sundayTotalFibers.innerHTML = (Number(sundayNoonFibers.innerText) + Number(sundayNightFibers.innerText)).toFixed(2);
         
     var showedMenu = document.getElementById("showedMenu");
 
@@ -1684,7 +1759,9 @@ export default function Home() {
                 | Fat:
                 <input class="col-sm-1" type="text" id="fatNoon"></input>
                 | Carbs:
-                <input class="col-sm-1" type="text" id="carbsNoon"></input></code>
+                <input class="col-sm-1" type="text" id="carbsNoon"></input>
+                | Fibers:
+                <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
             </div>
 
             <div class="container-fluid py-2" id="nightMacros">
@@ -1696,7 +1773,9 @@ export default function Home() {
                 | Fat:
                 <input class="col-sm-1" type="text" id="fatNight"></input>
                 | Carbs:
-                <input class="col-sm-1" type="text" id="carbsNight"></input></code>
+                <input class="col-sm-1" type="text" id="carbsNight"></input>
+                | Fibers:
+                <input class="col-sm-1" type="text" id="fibersNight"></input></code>
             </div>
 
             <div class="text-center">
@@ -1934,7 +2013,9 @@ export default function Home() {
                     | Fat:
                     <input class="col-sm-1" type="text" id="fatTotal"></input>
                     | Carbs:
-                    <input class="col-sm-1" type="text" id="carbsTotal"></input></font></code>
+                    <input class="col-sm-1" type="text" id="carbsTotal"></input>
+                    | Fibers:
+                    <input class="col-sm-1" type="text" id="fibersTotal"></input></font></code>
                 </div>
 
                 <p></p>
@@ -2232,7 +2313,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="mondayNoonFood"></p>
-          <p><code>Calories: <span id="mondayNoonCalories"></span> kcal | Proteins: <span id="mondayNoonProteins"></span>g | Fat: <span id="mondayNoonFat"></span>g | Carbs: <span id="mondayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="mondayNoonCalories"></span> kcal | Proteins: <span id="mondayNoonProteins"></span>g | Fat: <span id="mondayNoonFat"></span>g | Carbs: <span id="mondayNoonCarbs"></span>g | Fibers: <span id="mondayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2240,11 +2321,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="mondayNightFood"></p>
-          <p><code>Calories: <span id="mondayNightCalories"></span> kcal | Proteins: <span id="mondayNightProteins"></span>g | Fat: <span id="mondayNightFat"></span>g | Carbs: <span id="mondayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="mondayNightCalories"></span> kcal | Proteins: <span id="mondayNightProteins"></span>g | Fat: <span id="mondayNightFat"></span>g | Carbs: <span id="mondayNightCarbs"></span>g | Fibers: <span id="mondayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="mondayTotalCalories"></span> kcal | Proteins: <span id="mondayTotalProteins"></span>g | Fat: <span id="mondayTotalFat"></span>g | Carbs: <span id="mondayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="mondayTotalCalories"></span> kcal | Proteins: <span id="mondayTotalProteins"></span>g | Fat: <span id="mondayTotalFat"></span>g | Carbs: <span id="mondayTotalCarbs"></span>g | Fibers: <span id="mondayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2256,7 +2337,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="tuesdayNoonFood"></p>
-          <p><code>Calories: <span id="tuesdayNoonCalories"></span> kcal | Proteins: <span id="tuesdayNoonProteins"></span>g | Fat: <span id="tuesdayNoonFat"></span>g | Carbs: <span id="tuesdayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="tuesdayNoonCalories"></span> kcal | Proteins: <span id="tuesdayNoonProteins"></span>g | Fat: <span id="tuesdayNoonFat"></span>g | Carbs: <span id="tuesdayNoonCarbs"></span>g | Fibers: <span id="tuesdayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2264,11 +2345,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="tuesdayNightFood"></p>
-          <p><code>Calories: <span id="tuesdayNightCalories"></span> kcal | Proteins: <span id="tuesdayNightProteins"></span>g | Fat: <span id="tuesdayNightFat"></span>g | Carbs: <span id="tuesdayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="tuesdayNightCalories"></span> kcal | Proteins: <span id="tuesdayNightProteins"></span>g | Fat: <span id="tuesdayNightFat"></span>g | Carbs: <span id="tuesdayNightCarbs"></span>g | Fibers: <span id="tuesdayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="tuesdayTotalCalories"></span> kcal | Proteins: <span id="tuesdayTotalProteins"></span>g | Fat: <span id="tuesdayTotalFat"></span>g | Carbs: <span id="tuesdayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="tuesdayTotalCalories"></span> kcal | Proteins: <span id="tuesdayTotalProteins"></span>g | Fat: <span id="tuesdayTotalFat"></span>g | Carbs: <span id="tuesdayTotalCarbs"></span>g | Fibers: <span id="tuesdayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2280,7 +2361,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="wednesdayNoonFood"></p>
-          <p><code>Calories: <span id="wednesdayNoonCalories"></span> kcal | Proteins: <span id="wednesdayNoonProteins"></span>g | Fat: <span id="wednesdayNoonFat"></span>g | Carbs: <span id="wednesdayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="wednesdayNoonCalories"></span> kcal | Proteins: <span id="wednesdayNoonProteins"></span>g | Fat: <span id="wednesdayNoonFat"></span>g | Carbs: <span id="wednesdayNoonCarbs"></span>g | Fibers: <span id="wednesdayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2288,11 +2369,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="wednesdayNightFood"></p>
-          <p><code>Calories: <span id="wednesdayNightCalories"></span> kcal | Proteins: <span id="wednesdayNightProteins"></span>g | Fat: <span id="wednesdayNightFat"></span>g | Carbs: <span id="wednesdayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="wednesdayNightCalories"></span> kcal | Proteins: <span id="wednesdayNightProteins"></span>g | Fat: <span id="wednesdayNightFat"></span>g | Carbs: <span id="wednesdayNightCarbs"></span>g | Fibers: <span id="wednesdayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="wednesdayTotalCalories"></span> kcal | Proteins: <span id="wednesdayTotalProteins"></span>g | Fat: <span id="wednesdayTotalFat"></span>g | Carbs: <span id="wednesdayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="wednesdayTotalCalories"></span> kcal | Proteins: <span id="wednesdayTotalProteins"></span>g | Fat: <span id="wednesdayTotalFat"></span>g | Carbs: <span id="wednesdayTotalCarbs"></span>g | Fibers: <span id="wednesdayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2304,7 +2385,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="thursdayNoonFood"></p>
-          <p><code>Calories: <span id="thursdayNoonCalories"></span> kcal | Proteins: <span id="thursdayNoonProteins"></span>g | Fat: <span id="thursdayNoonFat"></span>g | Carbs: <span id="thursdayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="thursdayNoonCalories"></span> kcal | Proteins: <span id="thursdayNoonProteins"></span>g | Fat: <span id="thursdayNoonFat"></span>g | Carbs: <span id="thursdayNoonCarbs"></span>g | Fibers: <span id="thursdayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2312,11 +2393,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="thursdayNightFood"></p>
-          <p><code>Calories: <span id="thursdayNightCalories"></span> kcal | Proteins: <span id="thursdayNightProteins"></span>g | Fat: <span id="thursdayNightFat"></span>g | Carbs: <span id="thursdayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="thursdayNightCalories"></span> kcal | Proteins: <span id="thursdayNightProteins"></span>g | Fat: <span id="thursdayNightFat"></span>g | Carbs: <span id="thursdayNightCarbs"></span>g | Fibers: <span id="thursdayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="thursdayTotalCalories"></span> kcal | Proteins: <span id="thursdayTotalProteins"></span>g | Fat: <span id="thursdayTotalFat"></span>g | Carbs: <span id="thursdayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="thursdayTotalCalories"></span> kcal | Proteins: <span id="thursdayTotalProteins"></span>g | Fat: <span id="thursdayTotalFat"></span>g | Carbs: <span id="thursdayTotalCarbs"></span>g | Fibers: <span id="thursdayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2328,7 +2409,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="fridayNoonFood"></p>
-          <p><code>Calories: <span id="fridayNoonCalories"></span> kcal | Proteins: <span id="fridayNoonProteins"></span>g | Fat: <span id="fridayNoonFat"></span>g | Carbs: <span id="fridayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="fridayNoonCalories"></span> kcal | Proteins: <span id="fridayNoonProteins"></span>g | Fat: <span id="fridayNoonFat"></span>g | Carbs: <span id="fridayNoonCarbs"></span>g | Fibers: <span id="fridayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2336,11 +2417,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="fridayNightFood"></p>
-          <p><code>Calories: <span id="fridayNightCalories"></span> kcal | Proteins: <span id="fridayNightProteins"></span>g | Fat: <span id="fridayNightFat"></span>g | Carbs: <span id="fridayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="fridayNightCalories"></span> kcal | Proteins: <span id="fridayNightProteins"></span>g | Fat: <span id="fridayNightFat"></span>g | Carbs: <span id="fridayNightCarbs"></span>g | Fibers: <span id="fridayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="fridayTotalCalories"></span> kcal | Proteins: <span id="fridayTotalProteins"></span>g | Fat: <span id="fridayTotalFat"></span>g | Carbs: <span id="fridayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="fridayTotalCalories"></span> kcal | Proteins: <span id="fridayTotalProteins"></span>g | Fat: <span id="fridayTotalFat"></span>g | Carbs: <span id="fridayTotalCarbs"></span>g | Fibers: <span id="fridayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2352,7 +2433,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="saturdayNoonFood"></p>
-          <p><code>Calories: <span id="saturdayNoonCalories"></span> kcal | Proteins: <span id="saturdayNoonProteins"></span>g | Fat: <span id="saturdayNoonFat"></span>g | Carbs: <span id="saturdayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="saturdayNoonCalories"></span> kcal | Proteins: <span id="saturdayNoonProteins"></span>g | Fat: <span id="saturdayNoonFat"></span>g | Carbs: <span id="saturdayNoonCarbs"></span>g | Fibers: <span id="saturdayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2360,11 +2441,11 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="saturdayNightFood"></p>
-          <p><code>Calories: <span id="saturdayNightCalories"></span> kcal | Proteins: <span id="saturdayNightProteins"></span>g | Fat: <span id="saturdayNightFat"></span>g | Carbs: <span id="saturdayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="saturdayNightCalories"></span> kcal | Proteins: <span id="saturdayNightProteins"></span>g | Fat: <span id="saturdayNightFat"></span>g | Carbs: <span id="saturdayNightCarbs"></span>g | Fibers: <span id="saturdayNightFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
-          <p><code><font color="#008000">Calories: <span id="saturdayTotalCalories"></span> kcal | Proteins: <span id="saturdayTotalProteins"></span>g | Fat: <span id="saturdayTotalFat"></span>g | Carbs: <span id="saturdayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="saturdayTotalCalories"></span> kcal | Proteins: <span id="saturdayTotalProteins"></span>g | Fat: <span id="saturdayTotalFat"></span>g | Carbs: <span id="saturdayTotalCarbs"></span>g | Fibers: <span id="saturdayTotalFibers"></span>g </font></code></p>
           <p></p>
           </div>
           <p></p>
@@ -2376,7 +2457,7 @@ export default function Home() {
           <p></p>
           <i>noon: </i>
           <p id="sundayNoonFood"></p>
-          <p><code>Calories: <span id="sundayNoonCalories"></span> kcal | Proteins: <span id="sundayNoonProteins"></span>g | Fat: <span id="sundayNoonFat"></span>g | Carbs: <span id="sundayNoonCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="sundayNoonCalories"></span> kcal | Proteins: <span id="sundayNoonProteins"></span>g | Fat: <span id="sundayNoonFat"></span>g | Carbs: <span id="sundayNoonCarbs"></span>g | Fibers: <span id="sundayNoonFibers"></span>g </code></p>
           <p></p>
           </div>
           <p></p>
@@ -2384,10 +2465,10 @@ export default function Home() {
           <p></p>
           <i>night: </i>
           <p id="sundayNightFood"></p>
-          <p><code>Calories: <span id="sundayNightCalories"></span> kcal | Proteins: <span id="sundayNightProteins"></span>g | Fat: <span id="sundayNightFat"></span>g | Carbs: <span id="sundayNightCarbs"></span>g </code></p>
+          <p><code>Calories: <span id="sundayNightCalories"></span> kcal | Proteins: <span id="sundayNightProteins"></span>g | Fat: <span id="sundayNightFat"></span>g | Carbs: <span id="sundayNightCarbs"></span>g | Fibers: <span id="sundayNightFibers"></span>g </code></p>
           <p></p>
           </div>
-          <p><code><font color="#008000">Calories: <span id="sundayTotalCalories"></span> kcal | Proteins: <span id="sundayTotalProteins"></span>g | Fat: <span id="sundayTotalFat"></span>g | Carbs: <span id="sundayTotalCarbs"></span>g </font></code></p>
+          <p><code><font color="#008000">Calories: <span id="sundayTotalCalories"></span> kcal | Proteins: <span id="sundayTotalProteins"></span>g | Fat: <span id="sundayTotalFat"></span>g | Carbs: <span id="sundayTotalCarbs"></span>g | Fibers: <span id="sundayTotalFibers"></span>g </font></code></p>
           <p></p>
           <p></p>
           </div>

@@ -28,12 +28,14 @@ function showMacros() {
             document.getElementById('proteinsGoal').value = noon.proteins;
             document.getElementById('fatGoal').value = noon.fat;
             document.getElementById('carbsGoal').value = noon.carbs;
+            document.getElementById('fibersGoal').value = noon.fibers;
           } 
         else {
             document.getElementById('caloriesGoal').value = 0;
             document.getElementById('proteinsGoal').value = 0;
             document.getElementById('fatGoal').value = 0;
             document.getElementById('carbsGoal').value = 0;
+            document.getElementById('fibersGoal').value = 0;
         }
     }
     else if (document.getElementById('nightRadio').checked) {
@@ -47,12 +49,14 @@ function showMacros() {
               document.getElementById('proteinsGoal').value = night.proteins;
               document.getElementById('fatGoal').value = night.fat;
               document.getElementById('carbsGoal').value = night.carbs;
+              document.getElementById('fibersGoal').value = night.fibers;
         }
         else {
             document.getElementById('caloriesGoal').value = 0;
             document.getElementById('proteinsGoal').value = 0;
             document.getElementById('fatGoal').value = 0;
             document.getElementById('carbsGoal').value = 0;
+            document.getElementById('fibersGoal').value = 0;
         }
     }
 }
@@ -81,6 +85,7 @@ function updateMacros() {
         noon.proteins = parseFloat(document.getElementById('proteinsGoal').value);
         noon.fat = parseFloat(document.getElementById('fatGoal').value);
         noon.carbs = parseFloat(document.getElementById('carbsGoal').value);
+        noon.fibers = parseFloat(document.getElementById('fibersGoal').value);
         
         localStorage.setItem('noon', JSON.stringify(noon));
     }
@@ -90,6 +95,7 @@ function updateMacros() {
         night.proteins = parseFloat(document.getElementById('proteinsGoal').value);
         night.fat = parseFloat(document.getElementById('fatGoal').value);
         night.carbs = parseFloat(document.getElementById('carbsGoal').value);
+        night.fibers = parseFloat(document.getElementById('fibersGoal').value);
         
         localStorage.setItem('night', JSON.stringify(night));
     }
@@ -726,106 +732,127 @@ function macrosUpdate() {
     var proteins1 = 0;
     var fat1 = 0;
     var carbs1 = 0;
+    var fibers1 = 0;
     var qt2 = 0;
     var calories2 = 0;
     var proteins2 = 0;
     var fat2 = 0;
     var carbs2 = 0;
+    var fibers2 = 0;
     var qt3 = 0;
     var calories3 = 0;
     var proteins3 = 0;
     var fat3 = 0;
     var carbs3 = 0;
+    var fibers3 = 0;
     var qt4 = 0;
     var calories4 = 0;
     var proteins4 = 0;
     var fat4 = 0;
     var carbs4 = 0;
+    var fibers4 = 0;
     var qt5 = 0;
     var calories5 = 0;
     var proteins5 = 0;
     var fat5 = 0;
     var carbs5 = 0;
+    var fibers5 = 0;
     var qt6 = 0;
     var calories6 = 0;
     var proteins6 = 0;
     var fat6 = 0;
     var carbs6 = 0;
+    var fibers6 = 0;
     var qt7 = 0;
     var calories7 = 0;
     var proteins7 = 0;
     var fat7 = 0;
     var carbs7 = 0;
+    var fibers7 = 0;
     var qt8 = 0;
     var calories8 = 0;
     var proteins8 = 0;
     var fat8 = 0;
     var carbs8 = 0;
+    var fibers8 = 0;
     var qt9 = 0;
     var calories9 = 0;
     var proteins9 = 0;
     var fat9 = 0;
     var carbs9 = 0;
+    var fibers9 = 0;
     var qt10 = 0;
     var calories10 = 0;
     var proteins10 = 0;
     var fat10 = 0;
     var carbs10 = 0;
+    var fibers10 = 0;
     var qt11 = 0;
     var calories11 = 0;
     var proteins11 = 0;
     var fat11 = 0;
     var carbs11 = 0;
+    var fibers11 = 0;
     var qt12 = 0;
     var calories12 = 0;
     var proteins12 = 0;
     var fat12 = 0;
     var carbs12 = 0;
+    var fibers12 = 0;
     var qt13 = 0;
     var calories13 = 0;
     var proteins13 = 0;
     var fat13 = 0;
     var carbs13 = 0;
+    var fibers13 = 0;
     var qt14 = 0;
     var calories14 = 0;
     var proteins14 = 0;
     var fat14 = 0;
     var carbs14 = 0;
+    var fibers14 = 0;
     var qt15 = 0;
     var calories15 = 0;
     var proteins15 = 0;
     var fat15 = 0;
     var carbs15 = 0;
+    var fibers15 = 0;
     var qt16 = 0;
     var calories16 = 0;
     var proteins16 = 0;
     var fat16 = 0;
     var carbs16 = 0;
+    var fibers16 = 0;
     var qt17 = 0;
     var calories17 = 0;
     var proteins17 = 0;
     var fat17 = 0;
     var carbs17 = 0;
+    var fibers17 = 0;
     var qt18 = 0;
     var calories18 = 0;
     var proteins18 = 0;
     var fat18 = 0;
     var carbs18 = 0;
+    var fibers18 = 0;
     var qt19 = 0;
     var calories19 = 0;
     var proteins19 = 0;
     var fat19 = 0;
     var carbs19 = 0;
+    var fibers19 = 0;
     var qt20 = 0;
     var calories20 = 0;
     var proteins20 = 0;
     var fat20 = 0;
     var carbs20 = 0;
+    var fibers20 = 0;
     
     var caloriesTotal = document.getElementById("caloriesTotal");
     var proteinsTotal = document.getElementById("proteinsTotal");
     var fatTotal = document.getElementById("fatTotal");
     var carbsTotal = document.getElementById("carbsTotal");
+    var fibersTotal = document.getElementById("fibersTotal");
     
     for (var i = 0; i < foods.length; i++) {
         for (var j = 0; j < macros.length; j++) {
@@ -839,6 +866,7 @@ function macrosUpdate() {
                 proteins1 = parseFloat(macros[j].proteins)
                 fat1 = parseFloat(macros[j].fat)
                 carbs1 = parseFloat(macros[j].carbs)
+                fibers1 = parseFloat(macros[j].fibers)
             }
             if (foods2 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -850,6 +878,7 @@ function macrosUpdate() {
                 proteins2 = parseFloat(macros[j].proteins)
                 fat2 = parseFloat(macros[j].fat)
                 carbs2 = parseFloat(macros[j].carbs)
+                fibers2 = parseFloat(macros[j].fibers)
             }
             if (foods3 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -861,6 +890,7 @@ function macrosUpdate() {
                 proteins3 = parseFloat(macros[j].proteins)
                 fat3 = parseFloat(macros[j].fat)
                 carbs3 = parseFloat(macros[j].carbs)
+                fibers3 = parseFloat(macros[j].fibers)
             }
             if (foods4 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -872,6 +902,7 @@ function macrosUpdate() {
                 proteins4 = parseFloat(macros[j].proteins)
                 fat4 = parseFloat(macros[j].fat)
                 carbs4 = parseFloat(macros[j].carbs)
+                fibers4 = parseFloat(macros[j].fibers)
             }
             if (foods5 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -883,6 +914,7 @@ function macrosUpdate() {
                 proteins5 = parseFloat(macros[j].proteins)
                 fat5 = parseFloat(macros[j].fat)
                 carbs5 = parseFloat(macros[j].carbs)
+                fibers5 = parseFloat(macros[j].fibers)
             }
             if (foods6 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -894,6 +926,7 @@ function macrosUpdate() {
                 proteins6 = parseFloat(macros[j].proteins)
                 fat6 = parseFloat(macros[j].fat)
                 carbs6 = parseFloat(macros[j].carbs)
+                fibers6 = parseFloat(macros[j].fibers)
             }
             if (foods7 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -905,6 +938,7 @@ function macrosUpdate() {
                 proteins7 = parseFloat(macros[j].proteins)
                 fat7 = parseFloat(macros[j].fat)
                 carbs7 = parseFloat(macros[j].carbs)
+                fibers7 = parseFloat(macros[j].fibers)
             }
             if (foods8 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -916,6 +950,7 @@ function macrosUpdate() {
                 proteins8 = parseFloat(macros[j].proteins)
                 fat8 = parseFloat(macros[j].fat)
                 carbs8 = parseFloat(macros[j].carbs)
+                fibers8 = parseFloat(macros[j].fibers)
             }
             if (foods9 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -927,6 +962,7 @@ function macrosUpdate() {
                 proteins9 = parseFloat(macros[j].proteins)
                 fat9 = parseFloat(macros[j].fat)
                 carbs9 = parseFloat(macros[j].carbs)
+                fibers9 = parseFloat(macros[j].fibers)
             }
             if (foods10 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -938,6 +974,7 @@ function macrosUpdate() {
                 proteins10 = parseFloat(macros[j].proteins)
                 fat10 = parseFloat(macros[j].fat)
                 carbs10 = parseFloat(macros[j].carbs)
+                fibers10 = parseFloat(macros[j].fibers)
             }
             if (foods11 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -949,6 +986,7 @@ function macrosUpdate() {
                 proteins11 = parseFloat(macros[j].proteins)
                 fat11 = parseFloat(macros[j].fat)
                 carbs11 = parseFloat(macros[j].carbs)
+                fibers11 = parseFloat(macros[j].fibers)
             }
             if (foods12 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -960,6 +998,7 @@ function macrosUpdate() {
                 proteins12 = parseFloat(macros[j].proteins)
                 fat12 = parseFloat(macros[j].fat)
                 carbs12 = parseFloat(macros[j].carbs)
+                fibers12 = parseFloat(macros[j].fibers)
             }
             if (foods13 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -971,6 +1010,7 @@ function macrosUpdate() {
                 proteins13 = parseFloat(macros[j].proteins)
                 fat13 = parseFloat(macros[j].fat)
                 carbs13 = parseFloat(macros[j].carbs)
+                fibers13 = parseFloat(macros[j].fibers)
             }
             if (foods14 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -982,6 +1022,7 @@ function macrosUpdate() {
                 proteins14 = parseFloat(macros[j].proteins)
                 fat14 = parseFloat(macros[j].fat)
                 carbs14 = parseFloat(macros[j].carbs)
+                fibers14 = parseFloat(macros[j].fibers)
             }
             if (foods15 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -993,6 +1034,7 @@ function macrosUpdate() {
                 proteins15 = parseFloat(macros[j].proteins)
                 fat15 = parseFloat(macros[j].fat)
                 carbs15 = parseFloat(macros[j].carbs)
+                fibers15 = parseFloat(macros[j].fibers)
             }
             if (foods16 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1004,6 +1046,7 @@ function macrosUpdate() {
                 proteins16 = parseFloat(macros[j].proteins)
                 fat16 = parseFloat(macros[j].fat)
                 carbs16 = parseFloat(macros[j].carbs)
+                fibers16 = parseFloat(macros[j].fibers)
             }
             if (foods17 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1015,6 +1058,7 @@ function macrosUpdate() {
                 proteins17 = parseFloat(macros[j].proteins)
                 fat17 = parseFloat(macros[j].fat)
                 carbs17 = parseFloat(macros[j].carbs)
+                fibers17 = parseFloat(macros[j].fibers)
             }
             if (foods18 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1026,6 +1070,7 @@ function macrosUpdate() {
                 proteins18 = parseFloat(macros[j].proteins)
                 fat18 = parseFloat(macros[j].fat)
                 carbs18 = parseFloat(macros[j].carbs)
+                fibers18 = parseFloat(macros[j].fibers)
             }
             if (foods19 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1037,6 +1082,7 @@ function macrosUpdate() {
                 proteins19 = parseFloat(macros[j].proteins)
                 fat19 = parseFloat(macros[j].fat)
                 carbs19 = parseFloat(macros[j].carbs)
+                fibers19 = parseFloat(macros[j].fibers)
             }
             if (foods20 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1048,6 +1094,7 @@ function macrosUpdate() {
                 proteins20 = parseFloat(macros[j].proteins)
                 fat20 = parseFloat(macros[j].fat)
                 carbs20 = parseFloat(macros[j].carbs)
+                fibers20 = parseFloat(macros[j].fibers)
             }
         }
     }
@@ -1108,10 +1155,15 @@ function macrosUpdate() {
     
     carbsTotal.value += qt1*carbs1 + qt2*carbs2 + qt3*carbs3 + qt4*carbs4 + qt5*carbs5 + qt6*carbs6 + qt7*carbs7 + qt8*carbs8 + qt9*carbs9 + qt10*carbs10 + qt11*carbs11 + qt12*carbs12 + qt13*carbs13 + qt14*carbs14 + qt15*carbs15 + qt16*carbs16 + qt17*carbs17 + qt18*carbs18 + qt19*carbs19 + qt20*carbs20;
 
+    fibersTotal.value = "";
+    
+    fibersTotal.value += qt1*fibers1 + qt2*fibers2 + qt3*fibers3 + qt4*fibers4 + qt5*fibers5 + qt6*fibers6 + qt7*fibers7 + qt8*fibers8 + qt9*fibers9 + qt10*fibers10 + qt11*fibers11 + qt12*fibers12 + qt13*fibers13 + qt14*fibers14 + qt15*fibers15 + qt16*fibers16 + qt17*fibers17 + qt18*fibers18 + qt19*fibers19 + qt20*fibers20;
+
     parseFloat(caloriesTotal.value);
     parseFloat(proteinsTotal.value);
     parseFloat(fatTotal.value);
     parseFloat(carbsTotal.value);
+    parseFloat(fibersTotal.value);
 }
     
 function save() {
@@ -1239,6 +1291,7 @@ function save() {
     meal.proteins = parseFloat(document.getElementById("proteinsTotal").value);
     meal.fat = parseFloat(document.getElementById("fatTotal").value);
     meal.carbs = parseFloat(document.getElementById("carbsTotal").value);
+    meal.fibers = parseFloat(document.getElementById("fibersTotal").value);
 
     meals.push(meal);
 
@@ -1702,7 +1755,9 @@ export default function Home() {
                         | Fat:
                         <input class="col-sm-1" type="text" id="fatTotal"></input>
                         | Carbs:
-                        <input class="col-sm-1" type="text" id="carbsTotal"></input></font></code>
+                        <input class="col-sm-1" type="text" id="carbsTotal"></input>
+                        | Fibers:
+                        <input class="col-sm-1" type="text" id="fibersTotal"></input></font></code>
                     </div>
                     
                     <p></p>
@@ -1717,7 +1772,9 @@ export default function Home() {
                         | Fat:
                         <input class="col-sm-1" type="text" id="fatGoal"></input>
                         | Carbs:
-                        <input class="col-sm-1" type="text" id="carbsGoal"></input></code>
+                        <input class="col-sm-1" type="text" id="carbsGoal"></input>
+                        | Fibers:
+                        <input class="col-sm-1" type="text" id="fibersGoal"></input></code>
                     </div>
                 
                 </div>

@@ -10,33 +10,37 @@ function noonNightInputsAndToken () {
   if (localStorage.getItem('noon') != null) {
     noon = JSON.parse(localStorage.getItem('noon'));
 
-    if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null) {
-      noon.calories = 380;
-      noon.proteins = 50;
-      noon.fat = 4;
-      noon.carbs = 45;
+    if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
+      noon.calories = 363;
+      noon.proteins = 29;
+      noon.fat = 1;
+      noon.carbs = 60;
+      noon.fibers = 10;
     }
     
     document.getElementById('caloriesNoon').value = noon.calories;
     document.getElementById('proteinsNoon').value = noon.proteins;
     document.getElementById('fatNoon').value = noon.fat;
     document.getElementById('carbsNoon').value = noon.carbs;
+    document.getElementById('fibersNoon').value = noon.fibers;
   }
   
   if (localStorage.getItem('night') != null) {
     night = JSON.parse(localStorage.getItem('night'));
 
-    if (night.calories == null && night.proteins == null && night.fat == null && night.carbs == null) {
-      night.calories = 1820;
-      night.proteins = 115;
-      night.fat = 57;
-      night.carbs = 230;
+    if (night.calories == null && night.proteins == null && night.fat == null && night.carbs == null && night.fibers == null) {
+      night.calories = 1837;
+      night.proteins = 106;
+      night.fat = 60;
+      night.carbs = 215;
+      night.fibers = 40;
     }
     
     document.getElementById('caloriesNight').value = night.calories;
     document.getElementById('proteinsNight').value = night.proteins;
     document.getElementById('fatNight').value = night.fat;
     document.getElementById('carbsNight').value = night.carbs;
+    document.getElementById('fibersNight').value = night.fibers;
   }
 
 }
@@ -52,11 +56,13 @@ export default function Home() {
       noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
       noon.fat = parseFloat(document.getElementById('fatNoon').value);
       noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
+      noon.fibers = parseFloat(document.getElementById('fibersNoon').value);
     
       night.calories = parseFloat(document.getElementById('caloriesNight').value);
       night.proteins = parseFloat(document.getElementById('proteinsNight').value);
       night.fat = parseFloat(document.getElementById('fatNight').value);
       night.carbs = parseFloat(document.getElementById('carbsNight').value);
+      night.fibers = parseFloat(document.getElementById('fibersNight').value);
       
       localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night));
@@ -107,7 +113,9 @@ export default function Home() {
             | Fat:
             <input class="col-sm-1" type="text" id="fatNoon"></input>
             | Carbs:
-            <input class="col-sm-1" type="text" id="carbsNoon"></input></code>
+            <input class="col-sm-1" type="text" id="carbsNoon"></input>
+            | Fibers:
+            <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
           </div>
 
           <div class="container-fluid py-2">
@@ -119,7 +127,9 @@ export default function Home() {
             | Fat:
             <input class="col-sm-1" type="text" id="fatNight"></input>
             | Carbs:
-            <input class="col-sm-1" type="text" id="carbsNight"></input></code>
+            <input class="col-sm-1" type="text" id="carbsNight"></input>
+            | Fibers:
+            <input class="col-sm-1" type="text" id="fibersNight"></input></code>
           </div>
         </center>
 

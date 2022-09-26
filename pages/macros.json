@@ -6,6 +6,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -15,6 +16,7 @@
       "proteins": 12,
       "fat": 1.7,
       "carbs": 71,
+      "fibers": 0,
       "category": "pasta",
       "unit": "100g"
     },
@@ -24,6 +26,7 @@
       "proteins": 13,
       "fat": 2.5,
       "carbs": 64,
+      "fibers": 0,
       "category": "pasta",
       "unit": "100g"
     },
@@ -33,6 +36,7 @@
       "proteins": 12,
       "fat": 2,
       "carbs": 72,
+      "fibers": 0,
       "category": "pasta",
       "unit": "100g"
     },
@@ -42,6 +46,7 @@
       "proteins": 12,
       "fat": 2,
       "carbs": 72,
+      "fibers": 0,
       "category": "pasta",
       "unit": "100g"
     },
@@ -51,6 +56,7 @@
       "proteins": 5,
       "fat": 1,
       "carbs": 1,
+      "fibers": 0,
       "category": "pasta",
       "unit": "100g"
     },
@@ -60,6 +66,27 @@
       "proteins": 13,
       "fat": 2.5,
       "carbs": 64,
+      "fibers": 0,
+      "category": "pasta",
+      "unit": "100g"
+    },
+    {
+      "name": "Tagliatelles fraîches",
+      "calories": 286,
+      "proteins": 11,
+      "fat": 2.7,
+      "carbs": 53,
+      "fibers": 2.6,
+      "category": "pasta",
+      "unit": "100g"
+    },
+    {
+      "name": "Tagliatelles",
+      "calories": 358,
+      "proteins": 12,
+      "fat": 2,
+      "carbs": 72,
+      "fibers": 2,
       "category": "pasta",
       "unit": "100g"
     },
@@ -69,6 +96,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -78,6 +106,7 @@
       "proteins": 3.3,
       "fat": 0.5,
       "carbs": 34,
+      "fibers": 0,
       "category": "rice",
       "unit": "100g"
     },
@@ -87,6 +116,7 @@
       "proteins": 4.8,
       "fat": 1,
       "carbs": 1,
+      "fibers": 0,
       "category": "rice",
       "unit": "100g"
     },
@@ -96,6 +126,7 @@
       "proteins": 7.4,
       "fat": 1,
       "carbs": 79,
+      "fibers": 0,
       "category": "rice",
       "unit": "100g"
     },
@@ -105,6 +136,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -114,6 +146,7 @@
       "proteins": 23,
       "fat": 2.3,
       "carbs": 0.6,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
@@ -123,15 +156,17 @@
       "proteins": 18,
       "fat": 15,
       "carbs": 0,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
     {
       "name": "Steak charal - 5% M.G",
-      "calories": 0,
-      "proteins": 0,
-      "fat": 0,
+      "calories": 129,
+      "proteins": 21,
+      "fat": 5,
       "carbs": 0,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
@@ -141,6 +176,7 @@
       "proteins": 21,
       "fat": 1.3,
       "carbs": 0.9,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
@@ -150,6 +186,7 @@
       "proteins": 17,
       "fat": 19,
       "carbs": 0.25,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
@@ -159,6 +196,7 @@
       "proteins": 21,
       "fat": 2.6,
       "carbs": 0.6,
+      "fibers": 0,
       "category": "meat",
       "unit": "100g"
     },
@@ -168,6 +206,7 @@
       "proteins": 8,
       "fat": 1,
       "carbs": 0.2,
+      "fibers": 0,
       "category": "meat",
       "unit": "1"
     },
@@ -177,6 +216,7 @@
       "proteins": 5.5,
       "fat": 5.5,
       "carbs": 0.75,
+      "fibers": 0,
       "category": "meat",
       "unit": "1"
     },
@@ -186,6 +226,7 @@
       "proteins": 8,
       "fat": 1,
       "carbs": 1,
+      "fibers": 0,
       "category": "meat",
       "unit": "1"
     },
@@ -195,8 +236,39 @@
       "proteins": 4.6,
       "fat": 1.7,
       "carbs": 0.1,
+      "fibers": 0,
       "category": "meat",
       "unit": "1"
+    },
+    {
+      "name": "Copa",
+      "calories": 352,
+      "proteins": 25,
+      "fat": 28,
+      "carbs": 0,
+      "fibers": 0,
+      "category": "meat",
+      "unit": "100g"
+    },
+    {
+      "name": "Pancetta",
+      "calories": 385,
+      "proteins": 22,
+      "fat": 33,
+      "carbs": 0,
+      "fibers": 0,
+      "category": "meat",
+      "unit": "100g"
+    },
+    {
+      "name": "Steak haché - 5% M.G",
+      "calories": 129,
+      "proteins": 21,
+      "fat": 5,
+      "carbs": 0,
+      "fibers": 0,
+      "category": "meat",
+      "unit": "100g"
     },
     {
       "name": "** Poisson **",
@@ -204,6 +276,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -213,6 +286,7 @@
       "proteins": 25,
       "fat": 8,
       "carbs": 3,
+      "fibers": 0,
       "category": "fish",
       "unit": "100g"
     },
@@ -222,6 +296,7 @@
       "proteins": 25,
       "fat": 2.2,
       "carbs": 1,
+      "fibers": 0,
       "category": "fish",
       "unit": "1"
     },
@@ -231,6 +306,7 @@
       "proteins": 2.5,
       "fat": 0.8,
       "carbs": 8,
+      "fibers": 0,
       "category": "fish",
       "unit": "1"
     },
@@ -240,6 +316,7 @@
       "proteins": 15,
       "fat": 1.1,
       "carbs": 0,
+      "fibers": 0,
       "category": "fish",
       "unit": "100g"
     },
@@ -249,6 +326,7 @@
       "proteins": 17,
       "fat": 0.9,
       "carbs": 1,
+      "fibers": 0,
       "category": "fish",
       "unit": "100g"
     },
@@ -258,6 +336,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -267,6 +346,7 @@
       "proteins": 27,
       "fat": 27.5,
       "carbs": 0.05,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -274,8 +354,9 @@
       "name": "Parmesan",
       "calories": 402,
       "proteins": 32,
-      "fat": 0,
+      "fat": 30,
       "carbs": 0,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -285,6 +366,7 @@
       "proteins": 12,
       "fat": 13.8,
       "carbs": 1.56,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "1"
     },
@@ -294,6 +376,7 @@
       "proteins": 21,
       "fat": 21.25,
       "carbs": 2.9,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "1"
     },
@@ -303,6 +386,7 @@
       "proteins": 16.4,
       "fat": 23,
       "carbs": 0.4,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -312,6 +396,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -321,6 +406,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -330,6 +416,37 @@
       "proteins": 26,
       "fat": 33,
       "carbs": 0,
+      "fibers": 0,
+      "category": "cheese & milk",
+      "unit": "100g"
+    },
+    {
+      "name": "Fromage raclette (burger)",
+      "calories": 326,
+      "proteins": 23,
+      "fat": 26,
+      "carbs": 0,
+      "fibers": 0,
+      "category": "cheese & milk",
+      "unit": "100g"
+    },
+    {
+      "name": "Cheddar (burger)",
+      "calories": 416,
+      "proteins": 25,
+      "fat": 35,
+      "carbs": 0,
+      "fibers": 0,
+      "category": "cheese & milk",
+      "unit": "100g"
+    },
+    {
+      "name": "Emmental râpé",
+      "calories": 373,
+      "proteins": 27,
+      "fat": 29,
+      "carbs": 1,
+      "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
     },
@@ -339,6 +456,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -348,6 +466,7 @@
       "proteins": 26,
       "fat": 50,
       "carbs": 10,
+      "fibers": 0,
       "category": "groundnut",
       "unit": "100g"
     },
@@ -357,6 +476,7 @@
       "proteins": 19,
       "fat": 49,
       "carbs": 21,
+      "fibers": 0,
       "category": "groundnut",
       "unit": "100g"
     },
@@ -366,6 +486,7 @@
       "proteins": 16,
       "fat": 31,
       "carbs": 42,
+      "fibers": 0,
       "category": "groundnut",
       "unit": "100g"
     },
@@ -375,6 +496,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -384,6 +506,7 @@
       "proteins": 2.2,
       "fat": 0.3,
       "carbs": 64,
+      "fibers": 0,
       "category": "fruit",
       "unit": "100g"
     },
@@ -393,6 +516,7 @@
       "proteins": 0.36,
       "fat": 0.23,
       "carbs": 19.06,
+      "fibers": 0,
       "category": "fruit",
       "unit": "1"
     },
@@ -402,6 +526,7 @@
       "proteins": 1.29,
       "fat": 0.39,
       "carbs": 26.95,
+      "fibers": 0,
       "category": "fruit",
       "unit": "1"
     },
@@ -411,6 +536,7 @@
       "proteins": 0.58,
       "fat": 0.13,
       "carbs": 5.63,
+      "fibers": 0,
       "category": "fruit",
       "unit": "1"
     },
@@ -420,6 +546,7 @@
       "proteins": 0.93,
       "fat": 0.23,
       "carbs": 11.48,
+      "fibers": 0,
       "category": "fruit",
       "unit": "1"
     },
@@ -429,6 +556,7 @@
       "proteins": 0.89,
       "fat": 0.24,
       "carbs": 9.35,
+      "fibers": 0,
       "category": "fruit",
       "unit": "1"
     },
@@ -438,6 +566,7 @@
       "proteins": 1.1,
       "fat": 0.5,
       "carbs": 7.9,
+      "fibers": 0,
       "category": "fruit",
       "unit": "100g"
     },
@@ -447,6 +576,17 @@
       "proteins": 1.4,
       "fat": 0,
       "carbs": 4.3,
+      "fibers": 0,
+      "category": "fruit",
+      "unit": "100g"
+    },
+    {
+      "name": "Myrtilles congelées",
+      "calories": 52,
+      "proteins": 0.7,
+      "fat": 0,
+      "carbs": 11,
+      "fibers": 2.4,
       "category": "fruit",
       "unit": "100g"
     },
@@ -456,6 +596,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -465,6 +606,7 @@
       "proteins": 1.08,
       "fat": 0.25,
       "carbs": 4.82,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -474,6 +616,7 @@
       "proteins": 1.96,
       "fat": 0.33,
       "carbs": 10.93,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -483,6 +626,7 @@
       "proteins": 1.52,
       "fat": 0.24,
       "carbs": 3.2,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -492,6 +636,7 @@
       "proteins": 2,
       "fat": 24,
       "carbs": 2,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -501,6 +646,7 @@
       "proteins": 6,
       "fat": 0,
       "carbs": 9.8,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -510,6 +656,7 @@
       "proteins": 1.7,
       "fat": 0,
       "carbs": 1,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -519,6 +666,7 @@
       "proteins": 8.4,
       "fat": 0.7,
       "carbs": 12,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -528,6 +676,7 @@
       "proteins": 5.7,
       "fat": 0.7,
       "carbs": 12,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -537,6 +686,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -546,6 +696,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 1,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -555,6 +706,7 @@
       "proteins": 1.66,
       "fat": 2.4,
       "carbs": 19.36,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -564,6 +716,7 @@
       "proteins": 2.4,
       "fat": 0.6,
       "carbs": 6,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -573,6 +726,7 @@
       "proteins": 3.5,
       "fat": 16,
       "carbs": 26,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -582,6 +736,7 @@
       "proteins": 2.5,
       "fat": 7.5,
       "carbs": 25,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -591,15 +746,17 @@
       "proteins": 1,
       "fat": 0.3,
       "carbs": 3,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
     {
       "name": "200g légumes mélangés",
-      "calories": 123,
-      "proteins": 6,
-      "fat": 1.8,
-      "carbs": 23,
+      "calories": 160,
+      "proteins": 5,
+      "fat": 10,
+      "carbs": 9,
+      "fibers": 5,
       "category": "vegetable",
       "unit": "1"
     },
@@ -609,6 +766,7 @@
       "proteins": 2,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -618,6 +776,7 @@
       "proteins": 0.3,
       "fat": 0,
       "carbs": 0.6,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -627,6 +786,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "1"
     },
@@ -636,6 +796,7 @@
       "proteins": 0.6,
       "fat": 0.1,
       "carbs": 2.1,
+      "fibers": 0,
       "category": "vegetable",
       "unit": "100g"
     },
@@ -645,6 +806,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -654,6 +816,7 @@
       "proteins": 7,
       "fat": 5.5,
       "carbs": 0.7,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -663,6 +826,7 @@
       "proteins": 7.64,
       "fat": 3.29,
       "carbs": 50.61,
+      "fibers": 0,
       "category": "other",
       "unit": "100g"
     },
@@ -672,6 +836,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "other",
       "unit": "100g"
     },
@@ -681,6 +846,7 @@
       "proteins": 7.5,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "other",
       "unit": "100g"
     },
@@ -690,6 +856,7 @@
       "proteins": 4.5,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -699,6 +866,7 @@
       "proteins": 11,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -708,6 +876,7 @@
       "proteins": 20,
       "fat": 11,
       "carbs": 32,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -717,6 +886,7 @@
       "proteins": 42,
       "fat": 3.8,
       "carbs": 2,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -726,6 +896,7 @@
       "proteins": 2.68,
       "fat": 5,
       "carbs": 0.3,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -735,6 +906,7 @@
       "proteins": 1.9,
       "fat": 0.1,
       "carbs": 14.3,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -744,6 +916,37 @@
       "proteins": 26,
       "fat": 0,
       "carbs": 1.2,
+      "fibers": 0,
+      "category": "other",
+      "unit": "1"
+    },
+    {
+      "name": "Pain burger carré (82.5g)",
+      "calories": 222,
+      "proteins": 6.3,
+      "fat": 3.3,
+      "carbs": 40.4,
+      "fibers": 0,
+      "category": "other",
+      "unit": "1"
+    },
+    {
+      "name": "Pain burger géant (jacquet)",
+      "calories": 240,
+      "proteins": 8.5,
+      "fat": 3.9,
+      "carbs": 41,
+      "fibers": 3.3,
+      "category": "other",
+      "unit": "1"
+    },
+    {
+      "name": "Moutarde à l'ancienne (1 c. à soupe)",
+      "calories": 33,
+      "proteins": 1.6,
+      "fat": 2.2,
+      "carbs": 0.7,
+      "fibers": 0,
       "category": "other",
       "unit": "1"
     },
@@ -753,6 +956,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -762,6 +966,7 @@
       "proteins": 4.1,
       "fat": 26.8,
       "carbs": 6.8,
+      "fibers": 0,
       "category": "salsa",
       "unit": "100g"
     },
@@ -771,6 +976,7 @@
       "proteins": 1.5,
       "fat": 1,
       "carbs": 1,
+      "fibers": 0,
       "category": "salsa",
       "unit": "100g"
     },
@@ -780,6 +986,7 @@
       "proteins": 2.8,
       "fat": 7,
       "carbs": 3.6,
+      "fibers": 0,
       "category": "salsa",
       "unit": "100g"
     },
@@ -789,6 +996,7 @@
       "proteins": 3.1,
       "fat": 7,
       "carbs": 6.4,
+      "fibers": 0,
       "category": "salsa",
       "unit": "100g"
     },
@@ -798,6 +1006,7 @@
       "proteins": 0.4,
       "fat": 0,
       "carbs": 0.3,
+      "fibers": 0,
       "category": "salsa",
       "unit": "1"
     },
@@ -807,6 +1016,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -816,6 +1026,7 @@
       "proteins": 0,
       "fat": 12,
       "carbs": 0,
+      "fibers": 0,
       "category": "fat",
       "unit": "1"
     },
@@ -825,6 +1036,7 @@
       "proteins": 0,
       "fat": 14,
       "carbs": 0,
+      "fibers": 0,
       "category": "fat",
       "unit": "1"
     },
@@ -834,6 +1046,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -843,6 +1056,7 @@
       "proteins": 7,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "yogurt",
       "unit": "1"
     },
@@ -852,6 +1066,7 @@
       "proteins": 4.3,
       "fat": 3,
       "carbs": 16.1,
+      "fibers": 0,
       "category": "yogurt",
       "unit": "1"
     },
@@ -861,6 +1076,7 @@
       "proteins": 4.37,
       "fat": 4,
       "carbs": 5.75,
+      "fibers": 0,
       "category": "yogurt",
       "unit": "1"
     },
@@ -870,6 +1086,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -879,6 +1096,7 @@
       "proteins": 4.9,
       "fat": 17.45,
       "carbs": 43.3,
+      "fibers": 0,
       "category": "pastry",
       "unit": "1"
     },
@@ -888,6 +1106,7 @@
       "proteins": 8,
       "fat": 17,
       "carbs": 33,
+      "fibers": 0,
       "category": "pastry",
       "unit": "1"
     },
@@ -897,6 +1116,7 @@
       "proteins": 6,
       "fat": 19,
       "carbs": 31,
+      "fibers": 0,
       "category": "pastry",
       "unit": "1"
     },
@@ -906,6 +1126,7 @@
       "proteins": 5.4,
       "fat": 20,
       "carbs": 25,
+      "fibers": 0,
       "category": "pastry",
       "unit": "1"
     },
@@ -915,6 +1136,7 @@
       "proteins": 3,
       "fat": 9.73,
       "carbs": 34.7,
+      "fibers": 0,
       "category": "pastry",
       "unit": "1"
     },
@@ -924,6 +1146,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -933,6 +1156,7 @@
       "proteins": 0.5,
       "fat": 0,
       "carbs": 40,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -942,6 +1166,7 @@
       "proteins": 8,
       "fat": 41.8,
       "carbs": 76.3,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -951,6 +1176,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 11,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -960,6 +1186,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 4.5,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -969,6 +1196,7 @@
       "proteins": 1,
       "fat": 2.6,
       "carbs": 10.9,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -978,6 +1206,7 @@
       "proteins": 3.9,
       "fat": 17,
       "carbs": 25,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -987,6 +1216,7 @@
       "proteins": 2.4,
       "fat": 8.8,
       "carbs": 29,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -996,6 +1226,7 @@
       "proteins": 25,
       "fat": 85,
       "carbs": 100,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1005,6 +1236,7 @@
       "proteins": 4.4,
       "fat": 12,
       "carbs": 27,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1014,6 +1246,7 @@
       "proteins": 3.2,
       "fat": 11.1,
       "carbs": 24.5,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1023,6 +1256,7 @@
       "proteins": 0.6,
       "fat": 2.2,
       "carbs": 7.5,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1032,6 +1266,7 @@
       "proteins": 0.4,
       "fat": 2.08,
       "carbs": 5.8,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1041,6 +1276,7 @@
       "proteins": 0.4,
       "fat": 2.09,
       "carbs": 6.18,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1050,6 +1286,7 @@
       "proteins": 2.3,
       "fat": 14,
       "carbs": 26,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1059,6 +1296,7 @@
       "proteins": 7,
       "fat": 39.7,
       "carbs": 37.2,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
@@ -1068,15 +1306,17 @@
       "proteins": 9.9,
       "fat": 54,
       "carbs": 78,
+      "fibers": 0,
       "category": "sweet",
       "unit": "1"
     },
     {
       "name": "Cracotte",
-      "calories": 29.2,
-      "proteins": 0.82,
+      "calories": 28.6,
+      "proteins": 0.86,
       "fat": 0.2,
-      "carbs": 6,
+      "carbs": 5.8,
+      "fibers": 0.2,
       "category": "sweet",
       "unit": "1"
     },
@@ -1086,6 +1326,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 8.4,
+      "fibers": 0.2,
       "category": "sweet",
       "unit": "1"
     },
@@ -1095,6 +1336,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1104,6 +1346,7 @@
       "proteins": 60,
       "fat": 76,
       "carbs": 116,
+      "fibers": 0,
       "category": "pizza",
       "unit": "1"
     },
@@ -1113,6 +1356,7 @@
       "proteins": 76,
       "fat": 40,
       "carbs": 172,
+      "fibers": 0,
       "category": "pizza",
       "unit": "1"
     },
@@ -1122,6 +1366,7 @@
       "proteins": 52,
       "fat": 80.5,
       "carbs": 115,
+      "fibers": 0,
       "category": "pizza",
       "unit": "1"
     },
@@ -1131,6 +1376,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1140,6 +1386,7 @@
       "proteins": 27,
       "fat": 26,
       "carbs": 69,
+      "fibers": 0,
       "category": "sandwich",
       "unit": "1"
     },
@@ -1149,6 +1396,7 @@
       "proteins": 40,
       "fat": 64,
       "carbs": 104,
+      "fibers": 0,
       "category": "sandwich",
       "unit": "1"
     },
@@ -1158,6 +1406,7 @@
       "proteins": 28,
       "fat": 25,
       "carbs": 40,
+      "fibers": 0,
       "category": "sandwich",
       "unit": "1"
     },
@@ -1167,6 +1416,7 @@
       "proteins": 30,
       "fat": 25,
       "carbs": 62,
+      "fibers": 0,
       "category": "sandwich",
       "unit": "1"
     },
@@ -1176,6 +1426,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1185,6 +1436,7 @@
       "proteins": 16,
       "fat": 14,
       "carbs": 26.5,
+      "fibers": 0,
       "category": "burger",
       "unit": "1"
     },
@@ -1194,6 +1446,7 @@
       "proteins": 42,
       "fat": 38,
       "carbs": 25,
+      "fibers": 0,
       "category": "burger",
       "unit": "1"
     },
@@ -1203,6 +1456,7 @@
       "proteins": 14.5,
       "fat": 11,
       "carbs": 27,
+      "fibers": 0,
       "category": "burger",
       "unit": "1"
     },
@@ -1212,6 +1466,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1221,6 +1476,7 @@
       "proteins": 8,
       "fat": 8,
       "carbs": 12,
+      "fibers": 0,
       "category": "salad",
       "unit": "1"
     },
@@ -1230,6 +1486,7 @@
       "proteins": 21,
       "fat": 20,
       "carbs": 23,
+      "fibers": 0,
       "category": "salad",
       "unit": "1"
     },
@@ -1239,6 +1496,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1248,6 +1506,7 @@
       "proteins": 38,
       "fat": 17,
       "carbs": 77,
+      "fibers": 0,
       "category": "kebab",
       "unit": "1"
     },
@@ -1257,6 +1516,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1266,6 +1526,7 @@
       "proteins": 25,
       "fat": 30,
       "carbs": 45,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1275,6 +1536,7 @@
       "proteins": 22,
       "fat": 20,
       "carbs": 33,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1284,6 +1546,7 @@
       "proteins": 3,
       "fat": 10,
       "carbs": 29,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1293,6 +1556,7 @@
       "proteins": 10,
       "fat": 11,
       "carbs": 11,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1302,6 +1566,7 @@
       "proteins": 7,
       "fat": 8,
       "carbs": 60,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1311,6 +1576,7 @@
       "proteins": 6,
       "fat": 6,
       "carbs": 40,
+      "fibers": 0,
       "category": "mcdonald",
       "unit": "1"
     },
@@ -1320,6 +1586,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1329,6 +1596,7 @@
       "proteins": 35,
       "fat": 51,
       "carbs": 50,
+      "fibers": 0,
       "category": "burger king",
       "unit": "1"
     },
@@ -1338,6 +1606,7 @@
       "proteins": 43,
       "fat": 54,
       "carbs": 49,
+      "fibers": 0,
       "category": "burger king",
       "unit": "1"
     },
@@ -1347,6 +1616,7 @@
       "proteins": 61,
       "fat": 68,
       "carbs": 49,
+      "fibers": 0,
       "category": "burger king",
       "unit": "1"
     },
@@ -1356,6 +1626,7 @@
       "proteins": 5,
       "fat": 17,
       "carbs": 53,
+      "fibers": 0,
       "category": "burger king",
       "unit": "1"
     },
@@ -1365,6 +1636,7 @@
       "proteins": 5,
       "fat": 6,
       "carbs": 52,
+      "fibers": 0,
       "category": "burger king",
       "unit": "1"
     },
@@ -1374,6 +1646,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1383,6 +1656,7 @@
       "proteins": 1.41,
       "fat": 0,
       "carbs": 10.8,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1392,6 +1666,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 3.5,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1401,6 +1676,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 3.5,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1410,6 +1686,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 2.8,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1419,6 +1696,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0.1,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1428,6 +1706,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1437,6 +1716,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1446,6 +1726,7 @@
       "proteins": 0.4,
       "fat": 0,
       "carbs": 4.27,
+      "fibers": 0,
       "category": "alcohol",
       "unit": "1"
     },
@@ -1455,6 +1736,7 @@
       "proteins": "-",
       "fat": "-",
       "carbs": "-",
+      "fibers": "-",
       "category": "-",
       "unit": "-"
     },
@@ -1464,6 +1746,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 6.19,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1473,6 +1756,7 @@
       "proteins": 0.75,
       "fat": 0.1,
       "carbs": 4.88,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1482,6 +1766,7 @@
       "proteins": 0.1,
       "fat": 0.16,
       "carbs": 15.4,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1491,6 +1776,7 @@
       "proteins": 0.12,
       "fat": 0,
       "carbs": 9.87,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1500,6 +1786,7 @@
       "proteins": 0,
       "fat": 0.14,
       "carbs": 29.76,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1509,6 +1796,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 2.07,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1518,6 +1806,7 @@
       "proteins": 0,
       "fat": 0.1,
       "carbs": 10.67,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1527,6 +1816,7 @@
       "proteins": 0,
       "fat": 0,
       "carbs": 0.4,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1536,6 +1826,7 @@
       "proteins": 0.14,
       "fat": 0,
       "carbs": 24.94,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1545,6 +1836,7 @@
       "proteins": 0.58,
       "fat": 2.54,
       "carbs": 29.65,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1554,6 +1846,7 @@
       "proteins": 0.46,
       "fat": 0.29,
       "carbs": 29.19,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1563,6 +1856,7 @@
       "proteins": 0.58,
       "fat": 0.17,
       "carbs": 14.77,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1572,6 +1866,7 @@
       "proteins": 0.13,
       "fat": 0.13,
       "carbs": 12.93,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     },
@@ -1581,6 +1876,7 @@
       "proteins": 0,
       "fat": 4,
       "carbs": 24,
+      "fibers": 0,
       "category": "cocktail",
       "unit": "1"
     }

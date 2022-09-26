@@ -39,7 +39,8 @@
         "calories": 1835.9250000000002,
         "proteins": 121.28750000000001,
         "fat": 88.49,
-        "carbs": 159.41500000000002
+        "carbs": 159.41500000000002,
+        "fibers": 0
       },
       {
         "name": "Tuesday night",
@@ -71,7 +72,8 @@
         "calories": 1841.95,
         "proteins": 146.65,
         "fat": 107.48,
-        "carbs": 97.6775
+        "carbs": 97.6775,
+        "fibers": 0
       },
       {
         "name": "Wednesday night",
@@ -103,7 +105,8 @@
         "calories": 1829.7,
         "proteins": 122.78,
         "fat": 64.95,
-        "carbs": 187.45
+        "carbs": 187.45,
+        "fibers": 0
       },
       {
         "name": "Thursday night",
@@ -141,7 +144,8 @@
         "calories": 1831.5500000000002,
         "proteins": 121.53500000000001,
         "fat": 84.16499999999999,
-        "carbs": 156.215
+        "carbs": 156.215,
+        "fibers": 0
       },
       {
         "name": "Friday night",
@@ -173,7 +177,8 @@
         "calories": 1838.5,
         "proteins": 144.89999999999998,
         "fat": 85.15,
-        "carbs": 110.25
+        "carbs": 110.25,
+        "fibers": 0
       },
       {
         "name": "Saturday night",
@@ -203,7 +208,8 @@
         "calories": 1829.5,
         "proteins": 116.19999999999999,
         "fat": 63.455,
-        "carbs": 158.75
+        "carbs": 158.75,
+        "fibers": 0
       },
       {
         "name": "Sunday night / Monday night",
@@ -233,7 +239,8 @@
         "calories": 1835.3,
         "proteins": 148.57999999999998,
         "fat": 44.46,
-        "carbs": 95.505
+        "carbs": 95.505,
+        "fibers": 0
       },
       {
         "name": "Optimized meal",
@@ -271,7 +278,8 @@
         "calories": 1833.4999999999998,
         "proteins": 134.20000000000002,
         "fat": 74.02499999999999,
-        "carbs": 146.23000000000002
+        "carbs": 146.23000000000002,
+        "fibers": 0
       },
       {
         "name": "Weekly noon",
@@ -289,7 +297,8 @@
         "calories": 363.16,
         "proteins": 29.28,
         "fat": 0.8,
-        "carbs": 58.8
+        "carbs": 58.8,
+        "fibers": 0
       },
       {
         "name": "Week-end noon #1",
@@ -311,7 +320,8 @@
         "calories": 363.5,
         "proteins": 27.9,
         "fat": 32.15,
-        "carbs": 7.5
+        "carbs": 7.5,
+        "fibers": 0
       },
       {
         "name": "Week-end noon #2",
@@ -333,7 +343,8 @@
         "calories": 362,
         "proteins": 28.159999999999997,
         "fat": 22.765,
-        "carbs": 15.385000000000002
+        "carbs": 15.385000000000002,
+        "fibers": 0
       },
       {
         "name": "Salade Farfalle 1 | Magnum",
@@ -367,7 +378,8 @@
         "calories": 1818.7199999999998,
         "proteins": 103.89,
         "fat": 79.725,
-        "carbs": 154.096
+        "carbs": 154.096,
+        "fibers": 0
       },
       {
         "name": "Salade Farfalle 2 | Activia",
@@ -401,7 +413,8 @@
         "calories": 1820.39,
         "proteins": 104.96,
         "fat": 69.595,
-        "carbs": 195.297
+        "carbs": 195.297,
+        "fibers": 0
       },
       {
         "name": "Salade Fusilli 1 | Activia",
@@ -435,7 +448,8 @@
         "calories": 1820.91,
         "proteins": 103.96,
         "fat": 74.58,
-        "carbs": 193.2305
+        "carbs": 193.2305,
+        "fibers": 0
       },
       {
         "name": "Salade Fusili 2 | Magnum",
@@ -467,7 +481,8 @@
         "calories": 1818.6,
         "proteins": 95.6,
         "fat": 88,
-        "carbs": 153.6325
+        "carbs": 153.6325,
+        "fibers": 0
       },
       {
         "name": "Salade de riz | Activia | 1940kcal",
@@ -501,7 +516,8 @@
         "calories": 1939.9499999999998,
         "proteins": 113.995,
         "fat": 101.705,
-        "carbs": 167.16
+        "carbs": 167.16,
+        "fibers": 0
       },
       {
         "name": "Salade composée",
@@ -529,7 +545,8 @@
         "calories": 1091.25,
         "proteins": 74.15,
         "fat": 70.69,
-        "carbs": 39.85
+        "carbs": 39.85,
+        "fibers": 0
       },
       {
         "name": "Riz - Parmesan",
@@ -547,7 +564,8 @@
         "calories": 436.55,
         "proteins": 8.925,
         "fat": 28.625,
-        "carbs": 42.5
+        "carbs": 42.5,
+        "fibers": 0
       },
       {
         "name": "Cacahuètes | Dates | Sucette",
@@ -565,7 +583,8 @@
         "calories": 668.6,
         "proteins": 16.5,
         "fat": 27.8,
-        "carbs": 80.5
+        "carbs": 80.5,
+        "fibers": 0
       }
     ]
   ]

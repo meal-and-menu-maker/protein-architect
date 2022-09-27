@@ -54,7 +54,7 @@ async function _localStorage() {
         .then(() => res = "Worked!")
         .catch((err) => res = "It failed!");
 
-    document.getElementById("res").value = res;
+    document.getElementById("res").innerHTML = res;
 }
 
 function table() {
@@ -179,7 +179,9 @@ function addElement() {
 
     get('macros').then((val) => macro_testing = val);
 
-    document.getElementById("macro_testing_print").value = macro_testing[8]['name'];
+    document.getElementById("macro_testing_print").innerHTML = macro_testing[8]['name'];
+
+    document.getElementById("macro_testing_print2").innerHTML = "ok!";
 }
 
 function okAddElement() {
@@ -878,6 +880,8 @@ export default function Home() {
                     <p id="res"></p>
 
                     <p id="macro_testing_print"></p>
+
+                    <p id="macro_testing_print2"></p>
 
                 </div>
 

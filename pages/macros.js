@@ -48,7 +48,7 @@ async function _localStorage() {
 
     set('macros', all_macros.macros)
 
-    table();
+    table2();
 }
 
 function table() {

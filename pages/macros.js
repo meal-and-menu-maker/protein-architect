@@ -50,13 +50,13 @@ async function _localStorage() {
 
     document.getElementById("macro_testing_print2").innerHTML = "ok!";
 
-    table();
-
     set('macros', all_macros.macros)
         .then(() => res = "Worked!")
         .catch((err) => res = "It failed!");
 
     document.getElementById("res").innerHTML = res;
+
+    table();
 }
 
 function table() {
@@ -173,15 +173,15 @@ function addElement() {
 
     document.getElementById("okAddSelect").style.display = "block";
 
+    get('macros').then((val) => macro_testing = val);
+
+    document.getElementById("macro_testing_print").innerHTML = macro_testing[8]['name'];
+
     if (add_container.style.display === "none") {
         add_container.style.display = "block";
     } else {
         add_container.style.display = "none";
     }
-
-    get('macros').then((val) => macro_testing = val);
-
-    document.getElementById("macro_testing_print").innerHTML = macro_testing[8]['name'];
 }
 
 function okAddElement() {

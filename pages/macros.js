@@ -2,13 +2,16 @@ import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 import { useEffect } from 'react'
+import { get, set } from 'idb-keyval';
 
 let all_macros = require('./macros.json');
 
-const cache = await caches.open('macros-cache');
-
 var macros = {};
 var macros_ = {};
+
+var macro_testing = {};
+
+var res = "";
 
 var macroPosition = -1;
 
@@ -45,9 +48,13 @@ async function _localStorage() {
         localStorage.setItem('macros', JSON.stringify(all_macros.macros));
     }
 
-    cache.put('./macros.json');
-
     table();
+
+    set('macros', all_macros.macros)
+        .then(() => res = "Worked!")
+        .catch((err) => res = "It failed!");
+
+    document.getElementById("res").value = res;
 }
 
 function table() {
@@ -169,6 +176,10 @@ function addElement() {
     } else {
         add_container.style.display = "none";
     }
+
+    get('macros').then((val) => macro_testing = val);
+
+    document.getElementById("macro_testing_print").value = macro_testing[8]['name'];
 }
 
 function okAddElement() {
@@ -578,6 +589,7 @@ export default function Home() {
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
             <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
+            <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
             <main class="container-fluid">
         
@@ -862,6 +874,10 @@ export default function Home() {
                                         value="OK" />
                         
                     </div>
+
+                    <p id="res"></p>
+
+                    <p id="macro_testing_print"></p>
 
                 </div>
 

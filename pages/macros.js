@@ -46,7 +46,9 @@ async function _localStorage() {
         localStorage.setItem('macros', JSON.stringify(all_macros.macros));
     }
 
-    set('macros', all_macros.macros)
+    set('macros', all_macros.macros);
+
+    get('macros').then((val) => macro_testing = val);
 
     table2();
 }

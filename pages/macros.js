@@ -48,6 +48,8 @@ async function _localStorage() {
         localStorage.setItem('macros', JSON.stringify(all_macros.macros));
     }
 
+    document.getElementById("macro_testing_print2").innerHTML = "ok!";
+
     table();
 
     set('macros', all_macros.macros)
@@ -180,8 +182,6 @@ function addElement() {
     get('macros').then((val) => macro_testing = val);
 
     document.getElementById("macro_testing_print").innerHTML = macro_testing[8]['name'];
-
-    document.getElementById("macro_testing_print2").innerHTML = "ok!";
 }
 
 function okAddElement() {

@@ -5,6 +5,8 @@ import { useEffect } from 'react'
 
 let all_macros = require('./macros.json');
 
+const cache = await caches.open('macros-cache');
+
 var macros = {};
 var macros_ = {};
 
@@ -34,30 +36,23 @@ var burgerkingPosition = -1;
 var alcoholPosition = -1;
 var cocktailPosition = -1;
 
-function _localStorage() {
-    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
-        macros = all_macros.macros;
+async function _localStorage() {
+    
+    if (localStorage.getItem('macros') != null) {
+        macros = JSON.parse(localStorage.getItem('macros'));
     }
     else {
-        if (localStorage.getItem('macros') != null) {
-            macros = JSON.parse(localStorage.getItem('macros'));
-        }
-        else {
-            localStorage.setItem('macros', JSON.stringify(all_macros.macros));
-        }
+        localStorage.setItem('macros', JSON.stringify(all_macros.macros));
     }
+
+    cache.put('./macros.json');
 
     table();
 }
 
 function table() {
 
-    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
-        macros = all_macros.macros;
-    }
-    else {
-        macros = JSON.parse(localStorage.getItem('macros'));
-    }
+    macros = JSON.parse(localStorage.getItem('macros'));
 
     $(document).ready(function () {
         var html = '<table class="table table-striped">';

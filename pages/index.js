@@ -13,11 +13,11 @@ function noonNightInputsAndToken () {
     get('noon').then((val) => noon = val);
 
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
-      noon.calories = 363;
+      noon.calories = 361;
       noon.proteins = 29;
       noon.fat = 1;
-      noon.carbs = 60;
-      noon.fibers = 10;
+      noon.carbs = 58;
+      noon.fibers = 2;
 
       set('noon', noon);
     }
@@ -33,11 +33,11 @@ function noonNightInputsAndToken () {
     get('night').then((val) => night = val);
 
     if (night.calories == null && night.proteins == null && night.fat == null && night.carbs == null && night.fibers == null) {
-      night.calories = 363;
-      night.proteins = 29;
-      night.fat = 1;
-      night.carbs = 60;
-      night.fibers = 10;
+      night.calories = 1839;
+      night.proteins = 106;
+      night.fat = 60;
+      night.carbs = 217;
+      night.fibers = 38;
 
       set('night', night);
     }
@@ -122,13 +122,13 @@ export default function Home() {
       </Head>
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
+      <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
       <main class="container-fluid">
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
 
-        <div class="container-fluid py-2">
           <div className="grid">
             <a href="/create" className="card">
               <h3>Create a meal &rarr;</h3>
@@ -146,7 +146,6 @@ export default function Home() {
               <h3>Macros &rarr;</h3>
             </a>
           </div>
-        </div>
 
         <center>
           <div class="container-fluid py-2 .bg-gray-200.bg-gradient">

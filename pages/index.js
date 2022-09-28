@@ -2,11 +2,54 @@ import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 import { useEffect } from 'react'
+import { get, set } from 'idb-keyval';
 
 var noon = {};
 var night = {};
 
 function noonNightInputsAndToken () {
+  
+  if (get('noon') != "undefined") {
+    get('noon').then((val) => noon = val);
+
+    if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
+      noon.calories = 363;
+      noon.proteins = 29;
+      noon.fat = 1;
+      noon.carbs = 60;
+      noon.fibers = 10;
+
+      set('noon', noon);
+    }
+    
+    document.getElementById('caloriesNoon').value = noon.calories;
+    document.getElementById('proteinsNoon').value = noon.proteins;
+    document.getElementById('fatNoon').value = noon.fat;
+    document.getElementById('carbsNoon').value = noon.carbs;
+    document.getElementById('fibersNoon').value = noon.fibers;
+  }
+
+  if (get('night') != "undefined") {
+    get('night').then((val) => night = val);
+
+    if (night.calories == null && night.proteins == null && night.fat == null && night.carbs == null && night.fibers == null) {
+      night.calories = 363;
+      night.proteins = 29;
+      night.fat = 1;
+      night.carbs = 60;
+      night.fibers = 10;
+
+      set('night', night);
+    }
+    
+    document.getElementById('caloriesNight').value = night.calories;
+    document.getElementById('proteinsNight').value = night.proteins;
+    document.getElementById('fatNight').value = night.fat;
+    document.getElementById('carbsNight').value = night.carbs;
+    document.getElementById('fibersNight').value = night.fibers;
+  }
+  
+  /* 
   if (localStorage.getItem('noon') != null) {
     noon = JSON.parse(localStorage.getItem('noon'));
 
@@ -42,7 +85,7 @@ function noonNightInputsAndToken () {
     document.getElementById('carbsNight').value = night.carbs;
     document.getElementById('fibersNight').value = night.fibers;
   }
-
+ */
 }
 
 export default function Home() {
@@ -80,31 +123,33 @@ export default function Home() {
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
 
-      <main>
+      <main class="container-fluid">
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
 
-        <div className="grid">
-          <a href="/create" className="card">
-            <h3>Create a meal &rarr;</h3>
-          </a>
+        <div class="container-fluid py-2">
+          <div className="grid">
+            <a href="/create" className="card">
+              <h3>Create a meal &rarr;</h3>
+            </a>
 
-          <a href="/meals" className="card">
-            <h3>Meals & Menus &rarr;</h3>
-          </a>
+            <a href="/meals" className="card">
+              <h3>Meals & Menus &rarr;</h3>
+            </a>
 
-          <a href="/modify" className="card">
-            <h3>Modify a meal &rarr;</h3>
-          </a>
+            <a href="/modify" className="card">
+              <h3>Modify a meal &rarr;</h3>
+            </a>
 
-          <a href="/macros" className="card">
-            <h3>Macros &rarr;</h3>
-          </a>
+            <a href="/macros" className="card">
+              <h3>Macros &rarr;</h3>
+            </a>
+          </div>
         </div>
 
         <center>
-          <div class="container-fluid py-2">
+          <div class="container-fluid py-2 .bg-gray-200.bg-gradient">
             <mark>NOON</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNoon"></input>
@@ -118,7 +163,7 @@ export default function Home() {
             <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
           </div>
 
-          <div class="container-fluid py-2">
+          <div class="container-fluid py-2 .bg-gray-400.bg-gradient">
             <mark>NIGHT</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNight"></input>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 import { useEffect } from 'react'
-import { get, set } from 'idb-keyval';
+import { get, set, update } from 'idb-keyval';
 
 var noon = {};
 var night = {};
@@ -95,7 +95,7 @@ export default function Home() {
 
     window.onbeforeunload = (e) => {
 
-      noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
+      /* noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
       noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
       noon.fat = parseFloat(document.getElementById('fatNoon').value);
       noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
@@ -106,9 +106,45 @@ export default function Home() {
       night.fat = parseFloat(document.getElementById('fatNight').value);
       night.carbs = parseFloat(document.getElementById('carbsNight').value);
       night.fibers = parseFloat(document.getElementById('fibersNight').value);
-      
+
       localStorage.setItem('noon', JSON.stringify(noon));
-      localStorage.setItem('night', JSON.stringify(night));
+      localStorage.setItem('night', JSON.stringify(night)); */
+
+      noon = {};
+      night = {};
+
+      get('noon').then((val) => noon = val);
+      get('night').then((val) => night = val);
+
+      if (noon.calories != parseFloat(document.getElementById('caloriesNoon').value) || 
+        noon.proteins != parseFloat(document.getElementById('proteinsNoon').value) ||
+        noon.fat != parseFloat(document.getElementById('fatNoon').value) ||
+        noon.carbs != parseFloat(document.getElementById('carbsNoon').value) ||
+        noon.fibers != parseFloat(document.getElementById('fibersNoon').value))
+        {
+          noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
+          noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
+          noon.fat = parseFloat(document.getElementById('fatNoon').value);
+          noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
+          noon.fibers = parseFloat(document.getElementById('fibersNoon').value);
+
+          update('noon', noon);
+        }
+
+      if (night.calories != parseFloat(document.getElementById('caloriesNight').value) || 
+      night.proteins != parseFloat(document.getElementById('proteinsNight').value) ||
+      night.fat != parseFloat(document.getElementById('fatNight').value) ||
+      night.carbs != parseFloat(document.getElementById('carbsNight').value) ||
+      night.fibers != parseFloat(document.getElementById('fibersNight').value))
+      {
+        night.calories = parseFloat(document.getElementById('caloriesNight').value);
+        night.proteins = parseFloat(document.getElementById('proteinsNight').value);
+        night.fat = parseFloat(document.getElementById('fatNight').value);
+        night.carbs = parseFloat(document.getElementById('carbsNight').value);
+        night.fibers = parseFloat(document.getElementById('fibersNight').value);
+
+        update('night', night);
+      }
     };
   })
 
@@ -124,11 +160,12 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
-      <main class="container-fluid">
+      <main>
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
 
+        <div class="container-fluid py-2">
           <div className="grid">
             <a href="/create" className="card">
               <h3>Create a meal &rarr;</h3>
@@ -146,9 +183,10 @@ export default function Home() {
               <h3>Macros &rarr;</h3>
             </a>
           </div>
+        </div>
 
         <center>
-          <div class="container-fluid py-2 .bg-gray-200.bg-gradient">
+          <div class="container-fluid py-2 .bg-light.bg-gradient">
             <mark>NOON</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNoon"></input>

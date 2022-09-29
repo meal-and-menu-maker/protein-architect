@@ -39,14 +39,20 @@ var cocktailPosition = -1;
 
 async function _localStorage() {
     
-    if (localStorage.getItem('macros') != null) {
+    /* if (localStorage.getItem('macros') != null) {
         macros = JSON.parse(localStorage.getItem('macros'));
     }
     else {
         localStorage.setItem('macros', JSON.stringify(all_macros.macros));
-    }
+    } */
 
-    set('macros', all_macros.macros);
+    if (get('macros') != "undefined")
+    {
+        get('macros').then((val) => macros = val);
+    }
+    else {
+        set('macros', all_macros.macros);
+    }
 
     //get('macros').then((val) => macro_testing = val);
 
@@ -55,7 +61,9 @@ async function _localStorage() {
 
 function table() {
 
-    macros = JSON.parse(localStorage.getItem('macros'));
+    //macros = JSON.parse(localStorage.getItem('macros'));
+
+    get('macros').then((val) => macros = val);
 
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
@@ -153,104 +161,6 @@ function table() {
 
 }
 
-function table2() {
-
-    $(document).ready(function () {
-        var html = '<table class="table table-striped">';
-        html += '<tr>';
-        debugger;
-        //creating table header
-        $.each(macro_testing[0], function (index, item) {
-            html += '<th>' + index + '</th>';
-        });
-        html += '</tr>';
-        //creating table row and appending it in the table
-        $.each(macro_testing, function (index, item) {
-            html += '<tr>';
-            $.each(item, function (secondindex, seconditem) {
-                html += '<td>' + seconditem + '</td>';
-            });
-            html += '<tr>';
-        });
-        html += '</table>';
-        //append html in html body
-        $('res2').html(html);
-    });
-
-    for (var i = 0; i < macro_testing.length; i++) {
-        if (macro_testing[i].name == "** Pâtes **") {
-            pastaPosition = i;
-        }
-        if (macro_testing[i].name == "** Riz **") {
-            ricePosition = i;
-        }
-        if (macro_testing[i].name == "** Viandes **") {
-            meatPosition = i;
-        }
-        if (macro_testing[i].name == "** Poisson **") {
-            fishPosition = i;
-        }
-        if (macro_testing[i].name == "** Fromages & Laits **") {
-            cheesePosition = i;
-        }
-        if (macro_testing[i].name == "** Arachides **") {
-            groundnutPosition = i;
-        }
-        if (macro_testing[i].name == "** Fruits **") {
-            fruitPosition = i;
-        }
-        if (macro_testing[i].name == "** Légumes **") {
-            vegetablePosition = i;
-        }
-        if (macro_testing[i].name == "** Autres **") {
-            otherPosition = i;
-        }
-        if (macro_testing[i].name == "** Sauces **") {
-            salsaPosition = i;
-        }
-        if (macro_testing[i].name == "** Gras **") {
-            fatPosition = i;
-        }
-        if (macro_testing[i].name == "** Yahourts **") {
-            yogurtPosition = i;
-        }
-        if (macro_testing[i].name == "** Pâtisseries **") {
-            pastryPosition = i;
-        }
-        if (macro_testing[i].name == "** Sucré **") {
-            sweetPosition = i;
-        }
-        if (macro_testing[i].name == "** Pizzas **") {
-            pizzaPosition = i;
-        }
-        if (macro_testing[i].name == "** Sandwichs **") {
-            sandwichPosition = i;
-        }
-        if (macro_testing[i].name == "** Burger **") {
-            burgerPosition = i;
-        }
-        if (macro_testing[i].name == "** Salades **") {
-            saladPosition = i;
-        }
-        if (macro_testing[i].name == "** Kebab **") {
-            kebabPosition = i;
-        }
-        if (macro_testing[i].name == "** McDo **") {
-            mcdonaldPosition = i;
-        }
-        if (macro_testing[i].name == "** Burger King **") {
-            burgerkingPosition = i;
-        }
-        if (macro_testing[i].name == "** Alcool **") {
-            alcoholPosition = i;
-        }
-        if (macro_testing[i].name == "** Cocktails **") {
-            cocktailPosition = i;
-        }
-    }
-
-}
-
 function addElement() {
     var add_container = document.getElementById("add_container"); 
 
@@ -265,11 +175,9 @@ function addElement() {
 
     document.getElementById("okAddSelect").style.display = "block";
 
-    get('macros').then((val) => macro_testing = val);
+    //get('macros').then((val) => macro_testing = val);
 
-    document.getElementById("macro_testing_print").innerHTML = macro_testing[15]['name'];
-
-    table2();
+    document.getElementById("macro_testing_print").innerHTML = macros[15]['name'];
 
     if (add_container.style.display === "none") {
         add_container.style.display = "block";

@@ -577,11 +577,7 @@ function okDeleteElement() {
 
 export default function Home() {
     useEffect(() => {
-        //window.onload = table;
-
-        window.addEventListener('load', function (){
-            table();
-        });
+        window.onload = table;
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";

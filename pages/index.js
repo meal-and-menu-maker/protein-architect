@@ -10,9 +10,9 @@ var night = {};
 function noonNightInput () {
   
   if (get('noon') != "undefined") {
-    get('noon').then((val) => noon = val);
+    //get('noon').then((val) => noon = val);
 
-    //get('noon').then(noon = val)
+    noon = get('noon').then(val => val);
     
     alert(JSON.stringify(noon));
 

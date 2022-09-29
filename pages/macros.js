@@ -75,8 +75,6 @@ function table() {
         set('macros', all_macros.macros);
     }
 
-    alert('here');
-
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
         html += '<tr>';
@@ -98,8 +96,6 @@ function table() {
         //append html in html body
         $('res').html(html);
     });
-
-    alert('there');
 
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
@@ -172,8 +168,6 @@ function table() {
             cocktailPosition = i;
         }
     }
-
-    alert('or here');
 
 }
 
@@ -896,18 +890,6 @@ export default function Home() {
                     </div>
 
                     <p id="macro_testing_print"></p>
-
-                    <p></p>
-
-                    <res2>
-                        <div class="container-fluid p-2 my-3">
-                            <div id="divresult"></div>
-                        </div>
-                    </res2>
-
-                <p></p>
-
-                <p></p>
 
                 </div>
 

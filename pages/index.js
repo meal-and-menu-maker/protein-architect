@@ -95,7 +95,7 @@ export default function Home() {
 
     window.onbeforeunload = (e) => {
 
-      noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
+      /* noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
       noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
       noon.fat = parseFloat(document.getElementById('fatNoon').value);
       noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
@@ -105,7 +105,7 @@ export default function Home() {
       night.proteins = parseFloat(document.getElementById('proteinsNight').value);
       night.fat = parseFloat(document.getElementById('fatNight').value);
       night.carbs = parseFloat(document.getElementById('carbsNight').value);
-      night.fibers = parseFloat(document.getElementById('fibersNight').value);
+      night.fibers = parseFloat(document.getElementById('fibersNight').value); */
 
       /* localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night)); */

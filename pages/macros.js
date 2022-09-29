@@ -75,6 +75,8 @@ function table() {
         set('macros', all_macros.macros);
     }
 
+    alert('ok');
+
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
         html += '<tr>';

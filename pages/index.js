@@ -14,7 +14,7 @@ async function noonNightInput () {
 
     //noon = JSON.parse(get('noon').then((val)));
     
-    alert(await get('noon').json());
+    alert(await keyval.get('noon'));
 
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
       noon.calories = 361;

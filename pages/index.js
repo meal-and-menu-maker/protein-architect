@@ -10,11 +10,11 @@ var night = {};
 async function noonNightInput () {
   
   if (get('noon') != "undefined") {
-    //get('noon').then((val) => noon = val);
+    noon = get('noon').then((val) => { return val });
 
     //noon = JSON.parse(get('noon').then((val)));
     
-    alert(await JSON.stringify(get('noon')));
+    alert(JSON.stringify(noon));
 
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
       noon.calories = 361;

@@ -110,7 +110,8 @@ export default function Home() {
       /* localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night)); */
 
-      update('noon', noon);
+      del('noon');
+      set('noon', noon);
     };
   })
 

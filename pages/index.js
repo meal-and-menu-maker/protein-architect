@@ -7,14 +7,14 @@ import { get, set, update, del } from 'idb-keyval';
 var noon = {};
 var night = {};
 
-function noonNightInput () {
+async function noonNightInput () {
   
   if (get('noon') != "undefined") {
     //get('noon').then((val) => noon = val);
 
-    noon = JSON.parse(get('noon').then((val)));
+    //noon = JSON.parse(get('noon').then((val)));
     
-    alert(JSON.stringify(noon));
+    alert(await get('noon'));
 
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
       noon.calories = 361;

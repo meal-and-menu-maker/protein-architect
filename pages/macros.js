@@ -37,7 +37,7 @@ var burgerkingPosition = -1;
 var alcoholPosition = -1;
 var cocktailPosition = -1;
 
-async function _localStorage() {
+function _localStorage() {
     
     /* if (localStorage.getItem('macros') != null) {
         macros = JSON.parse(localStorage.getItem('macros'));

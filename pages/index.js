@@ -165,28 +165,26 @@ export default function Home() {
           Protein <font color="#008000"> Architect </font>
         </h1>
 
-        <div class="container-fluid py-2">
-          <div className="grid">
-            <a href="/create" className="card">
-              <h3>Create a meal &rarr;</h3>
-            </a>
+        <div className="grid">
+          <a href="/create" className="card">
+            <h3>Create a meal &rarr;</h3>
+          </a>
 
-            <a href="/meals" className="card">
-              <h3>Meals & Menus &rarr;</h3>
-            </a>
+          <a href="/meals" className="card">
+            <h3>Meals & Menus &rarr;</h3>
+          </a>
 
-            <a href="/modify" className="card">
-              <h3>Modify a meal &rarr;</h3>
-            </a>
+          <a href="/modify" className="card">
+            <h3>Modify a meal &rarr;</h3>
+          </a>
 
-            <a href="/macros" className="card">
-              <h3>Macros &rarr;</h3>
-            </a>
-          </div>
+          <a href="/macros" className="card">
+            <h3>Macros &rarr;</h3>
+          </a>
         </div>
 
-        <center>
-          <div class="container-fluid py-2 .bg-light.bg-gradient">
+        <center class="container-fluid py-2 .bg-info.bg-gradient">
+          <div>
             <mark>NOON</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNoon"></input>
@@ -200,7 +198,7 @@ export default function Home() {
             <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
           </div>
 
-          <div class="container-fluid py-2 .bg-gray-400.bg-gradient">
+          <div>
             <mark>NIGHT</mark>&ensp;
             <code>Calories:
             <input class="col-sm-1" type="text" id="caloriesNight"></input>

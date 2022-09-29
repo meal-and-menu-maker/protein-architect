@@ -14,7 +14,7 @@ function noonNightInput () {
 
     //noon = 
     
-    alert(JSON.stringify(get('noon').then((val) => val)));
+    get('noon').then((val) => alert(JSON.stringify(val)));
     
     //alert(JSON.stringify(noon));
 

@@ -50,20 +50,30 @@ function _localStorage() {
     {
         get('macros').then((val) => macros = val);
     }
-    else {
+    else if (get('macros') == "undefined") {
         set('macros', all_macros.macros);
     }
 
+    table();
+
     //get('macros').then((val) => macro_testing = val);
 
-    table();
+    
 }
 
 function table() {
 
     //macros = JSON.parse(localStorage.getItem('macros'));
 
-    get('macros').then((val) => macros = val);
+    //get('macros').then((val) => macros = val);
+
+    if (get('macros') != "undefined")
+    {
+        get('macros').then((val) => macros = val);
+    }
+    else if (get('macros') == "undefined") {
+        set('macros', all_macros.macros);
+    }
 
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
@@ -177,7 +187,7 @@ function addElement() {
 
     //get('macros').then((val) => macro_testing = val);
 
-    document.getElementById("macro_testing_print").innerHTML = macros[15]['name'];
+    document.getElementById("macro_testing_print").innerHTML = macros[32]['name'];
 
     if (add_container.style.display === "none") {
         add_container.style.display = "block";
@@ -565,7 +575,7 @@ function okDeleteElement() {
 
 export default function Home() {
     useEffect(() => {
-        window.onload = _localStorage;
+        window.onload = table;
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";

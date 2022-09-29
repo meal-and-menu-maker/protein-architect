@@ -183,7 +183,8 @@ export default function Home() {
           </a>
         </div>
 
-        <center class="container-fluid py-2 .bg-info.bg-gradient">
+        <div class="container-fluid py-2 .bg-info">
+        <center>
           <div>
             <mark>NOON</mark>&ensp;
             <code>Calories:
@@ -212,6 +213,7 @@ export default function Home() {
             <input class="col-sm-1" type="text" id="fibersNight"></input></code>
           </div>
         </center>
+        </div>
 
       </main>
 

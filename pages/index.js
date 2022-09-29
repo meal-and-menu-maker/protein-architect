@@ -12,9 +12,9 @@ function noonNightInput () {
   if (get('noon') != "undefined") {
     //get('noon').then((val) => noon = val);
 
-    alert(get('noon'));
+    alert(get('noon').val);
 
-    noon = get('noon');
+    noon = get('noon').val;
     
     alert(JSON.stringify(noon.calories));
 

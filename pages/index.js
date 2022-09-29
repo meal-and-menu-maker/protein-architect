@@ -110,43 +110,7 @@ export default function Home() {
       /* localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night)); */
 
-      noon = {};
-      night = {};
-
-      get('noon').then((val) => noon = val);
-      get('night').then((val) => night = val);
-
-      if (noon.calories != document.getElementById('caloriesNoon').value || 
-        noon.proteins != document.getElementById('proteinsNoon').value ||
-        noon.fat != document.getElementById('fatNoon').value ||
-        noon.carbs != document.getElementById('carbsNoon').value ||
-        noon.fibers != document.getElementById('fibersNoon').value)
-        {
-          noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
-          noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
-          noon.fat = parseFloat(document.getElementById('fatNoon').value);
-          noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
-          noon.fibers = parseFloat(document.getElementById('fibersNoon').value);
-
-          del('noon');
-          set('noon', noon);
-        }
-
-      if (night.calories != document.getElementById('caloriesNight').value || 
-      night.proteins != document.getElementById('proteinsNight').value ||
-      night.fat != document.getElementById('fatNight').value ||
-      night.carbs != document.getElementById('carbsNight').value ||
-      night.fibers != document.getElementById('fibersNight').value)
-      {
-        night.calories = parseFloat(document.getElementById('caloriesNight').value);
-        night.proteins = parseFloat(document.getElementById('proteinsNight').value);
-        night.fat = parseFloat(document.getElementById('fatNight').value);
-        night.carbs = parseFloat(document.getElementById('carbsNight').value);
-        night.fibers = parseFloat(document.getElementById('fibersNight').value);
-
-        del('night');
-        set('night', night);
-      } 
+      del('noon');
     };
   })
 

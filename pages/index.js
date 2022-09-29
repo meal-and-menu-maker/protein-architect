@@ -7,7 +7,7 @@ import { get, set, update } from 'idb-keyval';
 var noon = {};
 var night = {};
 
-function noonNightInputsAndToken () {
+function noonNightInput () {
   
   if (get('noon') != "undefined") {
     get('noon').then((val) => noon = val);
@@ -91,11 +91,11 @@ function noonNightInputsAndToken () {
 export default function Home() {
   useEffect(() => {
 
-    window.onload = noonNightInputsAndToken;
+    window.onload = noonNightInput;
 
     window.onbeforeunload = (e) => {
 
-      /* noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
+      noon.calories = parseFloat(document.getElementById('caloriesNoon').value);
       noon.proteins = parseFloat(document.getElementById('proteinsNoon').value);
       noon.fat = parseFloat(document.getElementById('fatNoon').value);
       noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
@@ -107,10 +107,13 @@ export default function Home() {
       night.carbs = parseFloat(document.getElementById('carbsNight').value);
       night.fibers = parseFloat(document.getElementById('fibersNight').value);
 
-      localStorage.setItem('noon', JSON.stringify(noon));
+      /* localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night)); */
 
-      noon = {};
+      update('noon', noon);
+      update('night', night);
+
+      /* noon = {};
       night = {};
 
       get('noon').then((val) => noon = val);
@@ -144,7 +147,7 @@ export default function Home() {
         night.fibers = parseFloat(document.getElementById('fibersNight').value);
 
         update('night', night);
-      }
+      } */
     };
   })
 

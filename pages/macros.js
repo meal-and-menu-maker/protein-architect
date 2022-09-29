@@ -576,6 +576,8 @@ function okDeleteElement() {
 export default function Home() {
     useEffect(() => {
         window.onload = function(){
+            alert("let's go!");
+            
             table();
         }
 

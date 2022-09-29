@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 import { useEffect } from 'react'
-import { get, set, update } from 'idb-keyval';
+import { get, set, del } from 'idb-keyval';
 
 var noon = {};
 var night = {};
@@ -110,10 +110,7 @@ export default function Home() {
       /* localStorage.setItem('noon', JSON.stringify(noon));
       localStorage.setItem('night', JSON.stringify(night)); */
 
-      update('noon', noon);
-      update('night', night);
-
-      /* noon = {};
+      noon = {};
       night = {};
 
       get('noon').then((val) => noon = val);
@@ -131,7 +128,8 @@ export default function Home() {
           noon.carbs = parseFloat(document.getElementById('carbsNoon').value);
           noon.fibers = parseFloat(document.getElementById('fibersNoon').value);
 
-          update('noon', noon);
+          del('noon');
+          set('noon', noon);
         }
 
       if (night.calories != parseFloat(document.getElementById('caloriesNight').value) || 
@@ -146,8 +144,9 @@ export default function Home() {
         night.carbs = parseFloat(document.getElementById('carbsNight').value);
         night.fibers = parseFloat(document.getElementById('fibersNight').value);
 
-        update('night', night);
-      } */
+        del('night');
+        set('night', night);
+      } 
     };
   })
 

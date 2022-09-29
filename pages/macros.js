@@ -75,6 +75,8 @@ function table() {
         set('macros', all_macros.macros);
     }
 
+    alert('here');
+
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
         html += '<tr>';
@@ -96,6 +98,8 @@ function table() {
         //append html in html body
         $('res').html(html);
     });
+
+    alert('there');
 
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
@@ -168,6 +172,8 @@ function table() {
             cocktailPosition = i;
         }
     }
+
+    alert('or here');
 
 }
 
@@ -575,11 +581,7 @@ function okDeleteElement() {
 
 export default function Home() {
     useEffect(() => {
-        window.onload = function(){
-            alert("let's go!");
-            
-            table();
-        }
+        window.onload = table;
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";

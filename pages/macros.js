@@ -191,8 +191,10 @@ function addElement() {
 
     var test = "";
 
-    get('noon').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
+    get('noon').then((val) => test = JSON.stringify(val));
 
+    document.getElementById("macro_testing_print").innerHTML = test;
+    
     //document.getElementById("macro_testing_print").innerHTML = macros[32]['name'];
 
     if (add_container.style.display === "none") {

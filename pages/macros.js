@@ -75,7 +75,7 @@ function table() {
         set('macros', all_macros.macros);
     }
 
-    alert('ok');
+    //alert('ok');
 
     $(document).ready(function () {
         var html = '<table class="table table-striped">';
@@ -189,7 +189,11 @@ function addElement() {
 
     //get('macros').then((val) => macro_testing = val);
 
-    document.getElementById("macro_testing_print").innerHTML = macros[32]['name'];
+    var test = "";
+
+    get('noon').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
+
+    //document.getElementById("macro_testing_print").innerHTML = macros[32]['name'];
 
     if (add_container.style.display === "none") {
         add_container.style.display = "block";

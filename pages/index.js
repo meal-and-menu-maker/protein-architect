@@ -93,6 +93,8 @@ function noonNightInput () {
 }
 
 function test() {
+  document.getElementById("noon_test_print").style.display = "none";
+  
   get('noon').then((val) => document.getElementById("noon_test_print").innerHTML = JSON.stringify(val));
 
   noon = JSON.parse(document.getElementById("noon_test_print").innerHTML);

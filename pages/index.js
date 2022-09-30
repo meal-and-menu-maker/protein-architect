@@ -12,6 +12,8 @@ function noonNightInput () {
   if (get('noon') != "undefined") {
     noon = get('noon').then((val) => document.getElementById("noon_test_print").innerHTML = JSON.stringify(val));
 
+    noon = get('noon').then((val) => alert(JSON.stringify(val)));
+
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
       noon.calories = 361;
       noon.proteins = 29;

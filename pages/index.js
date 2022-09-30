@@ -8,6 +8,8 @@ var noon = {};
 var night = {};
 
 function noonNightInput () {
+
+  document.getElementById("noon_test_print").style.display = "none";
   
   if (get('noon') != "undefined") {
     //get('noon').then((val) => document.getElementById("noon_test_print").innerHTML = JSON.stringify(val));
@@ -88,6 +90,14 @@ function noonNightInput () {
     document.getElementById('fibersNight').value = night.fibers;
   }
  */
+}
+
+function test() {
+  get('noon').then((val) => document.getElementById("noon_test_print").innerHTML = JSON.stringify(val));
+
+  noon = JSON.parse(document.getElementById("noon_test_print").innerHTML);
+
+  document.getElementById("noon_var_test_print").innerHTML = noon.calories;
 }
 
 export default function Home() {
@@ -184,7 +194,14 @@ export default function Home() {
         </center>
         </div>
 
+        <input type="button" 
+                            class="btn btn-outline-success" 
+                                onClick={() => {test()} }
+                                    value="Test" />
+
         <p id="noon_test_print"></p>
+
+        <p id="noon_var_test_print"></p>
 
       </main>
 

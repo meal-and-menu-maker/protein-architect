@@ -63,7 +63,7 @@ function _localStorage() {
 
 function table() {
 
-    get('night').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
+    //get('night').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
 
     //macros = JSON.parse(localStorage.getItem('macros'));
 
@@ -587,7 +587,7 @@ function okDeleteElement() {
 
 export default function Home() {
     useEffect(() => {
-        window.onload = table;
+        //window.onload = table;
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";

@@ -63,6 +63,8 @@ function _localStorage() {
 
 function table() {
 
+    get('night').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
+
     //macros = JSON.parse(localStorage.getItem('macros'));
 
     //get('macros').then((val) => macros = val);
@@ -189,11 +191,13 @@ function addElement() {
 
     //get('macros').then((val) => macro_testing = val);
 
-    var test = "";
+    //var test = "";
 
-    get('noon').then((val) => test = JSON.stringify(val));
+    get('noon').then((val) => document.getElementById("macro1_testing_print").innerHTML = JSON.stringify(val));
 
-    document.getElementById("macro_testing_print").innerHTML = test;
+    get('night').then((val) => document.getElementById("macro2_testing_print").innerHTML = JSON.stringify(val));
+
+    //document.getElementById("macro_testing_print").innerHTML = test;
     
     //document.getElementById("macro_testing_print").innerHTML = macros[32]['name'];
 
@@ -898,6 +902,14 @@ export default function Home() {
                     </div>
 
                     <p id="macro_testing_print"></p>
+
+                    <p></p>
+
+                    <p id="macro1_testing_print"></p>
+
+                    <p></p>
+
+                    <p id="macro2_testing_print"></p>
 
                 </div>
 

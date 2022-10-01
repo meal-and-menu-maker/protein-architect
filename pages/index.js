@@ -147,7 +147,7 @@ export default function Home() {
             <ul>
               <li class="logo"><img src="/logo.png"/></li>
               <li class="active"><a href="/"><span>Home</span></a></li>
-              <li>Calculator</li>
+              <li><a href="/calculator"><span>Calculator</span></a></li>
               <li><a href="/create"><span>Create</span></a></li>
               <li><a href="/modify"><span>Modify</span></a></li>
               <li><a href="/macros"><span>Macros</span></a></li>
@@ -165,24 +165,6 @@ export default function Home() {
               <img src="/home_photo.png"></img>
             </div>
           </div>
-        </div>
-
-        <div className="grid">
-          <a href="/create" className="card">
-            <h3>Create a meal &rarr;</h3>
-          </a>
-
-          <a href="/meals" className="card">
-            <h3>Meals & Menus &rarr;</h3>
-          </a>
-
-          <a href="/modify" className="card">
-            <h3>Modify a meal &rarr;</h3>
-          </a>
-
-          <a href="/macros" className="card">
-            <h3>Macros &rarr;</h3>
-          </a>
         </div>
 
         <div class="container-fluid py-2">
@@ -288,7 +270,7 @@ export default function Home() {
         }
 
         .app-picture img {
-          width: 100%;
+          width: 10%;
           margin-top: -20px;
           padding-left: 50px;
         }
@@ -324,47 +306,6 @@ export default function Home() {
         a {
           color: inherit;
           text-decoration: none;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-          padding-bottom: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
         }
 
         .logo {

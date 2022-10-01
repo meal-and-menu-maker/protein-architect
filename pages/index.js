@@ -145,7 +145,7 @@ export default function Home() {
         <div class="container">
           <div class="menu">
             <ul>
-              <li class="logo"><img src="/logo.png"/></li>
+              {/* <li class="logo"><img src="/logo.png"/></li> */}
               <li class="active"><a href="/"><span>Home</span></a></li>
               <li><a href="/calculator"><span>Calculator</span></a></li>
               <li><a href="/create"><span>Create</span></a></li>
@@ -161,9 +161,9 @@ export default function Home() {
               <p>Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more</p>
             </div>
 
-            <div class="app-picture">
+            {/* <div class="app-picture">
               <img src="/home_photo.png"></img>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -226,7 +226,7 @@ export default function Home() {
         }
 
         .logo img {
-          width: 1px;
+          width: 30px;
           margin-top: -7px;
           margin-right: 48px;
         }
@@ -265,7 +265,7 @@ export default function Home() {
         }
 
         .app-picture {
-          width: 10%;
+          width: 50%;
           float: right;
         }
 

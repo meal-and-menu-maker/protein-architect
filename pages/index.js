@@ -131,10 +131,10 @@ export default function Home() {
 
   
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Protein Architect</title>
-        <link rel="icon" href="/logo_meal.ico" />
+        <link rel="icon" href="/logo.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
       </Head>
 
@@ -142,29 +142,32 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
       <main>
-        <h1 className="title">
-          Protein <font color="#008000"> Architect </font>
-        </h1>
+        <div class="container">
+          <div class="menu">
+            <ul>
+              <li class="logo"><img src="/logo.png"/></li>
+              <li class="active"><a href="/"><span>Home</span></a></li>
+              <li><a href="/calculator"><span>Calculator</span></a></li>
+              <li><a href="/create"><span>Create</span></a></li>
+              <li><a href="/modify"><span>Modify</span></a></li>
+              <li><a href="/macros"><span>Macros</span></a></li>
+              <li><a href="/meals"><span>Meals & Menus</span></a></li>
+            </ul>
+          </div>
 
-        <div className="grid">
-          <a href="/create" className="card">
-            <h3>Create a meal &rarr;</h3>
-          </a>
+          <div class="banner">
+            <div class="app-text">
+              <h1>Protein Architect</h1>
+              <p>Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more</p>
+            </div>
 
-          <a href="/meals" className="card">
-            <h3>Meals & Menus &rarr;</h3>
-          </a>
-
-          <a href="/modify" className="card">
-            <h3>Modify a meal &rarr;</h3>
-          </a>
-
-          <a href="/macros" className="card">
-            <h3>Macros &rarr;</h3>
-          </a>
+            <div class="app-picture">
+              <img src="/home_photo.png"></img>
+            </div>
+          </div>
         </div>
 
-        <div class="container-fluid py-2 .bg-info">
+        <div class="container-fluid py-2">
         <center>
           <div>
             <mark>NOON</mark>&ensp;
@@ -196,15 +199,6 @@ export default function Home() {
         </center>
         </div>
 
-        <input type="button" 
-                            class="btn btn-outline-success" 
-                                onClick={() => {test()} }
-                                    value="Test" />
-
-        <p id="noon_test_print"></p>
-
-        <p id="noon_var_test_print"></p>
-
       </main>
 
       <footer>
@@ -212,13 +206,73 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+
         .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          width: 100%;
+          height: 100%;
+          background: #f3f7fd;
+        }
+
+        .menu ul {
+          display: inline-flex;
+          margin: 50px;
+        }
+
+        .menu ul li {
+          list-style: none;
+          margin: 0 20px;
+          color: #e6effe;
+          cursor: pointer;
+        }
+
+        .logo img {
+          width: 30px;
+          margin-top: -7px;
+          margin-right: 48px;
+        }
+
+        .active {
+          color: #98bdff;
+        }
+
+        .banner {
+          width: 80%;
+          height: 70%;
+          top: 25%;
+          left: 130px;
+          position: absolute;
+          color: #000000;
+        }
+
+        .app-text {
+          width: 50%;
+          float: left;
+        }
+
+        .app-text h1 {
+          font-size: 43px;
+          width: 640px;
+          position: relative;
+          margin-left: 40px;
+        }
+
+        .app-text p {
+          font-size: 15px;
+          width: 650px;
+          margin: 30px 0 30px 40px;
+          line-height: 25px;
+          color: #000000;
+        }
+
+        .app-picture {
+          width: 50%;
+          float: right;
+        }
+
+        .app-picture img {
+          width: 100%;
+          margin-top: -20px;
+          padding-left: 50px;
         }
 
         main {
@@ -254,83 +308,6 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-          padding-bottom: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
         .logo {
           height: 1em;
         }
@@ -354,7 +331,9 @@ export default function Home() {
         }
 
         * {
-          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
         }
       `}</style>
     </div>

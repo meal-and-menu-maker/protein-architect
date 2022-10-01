@@ -39,20 +39,20 @@ var cocktailPosition = -1;
 
 function _localStorage() {
     
-    /* if (localStorage.getItem('macros') != null) {
+    if (localStorage.getItem('macros') != null) {
         macros = JSON.parse(localStorage.getItem('macros'));
     }
     else {
         localStorage.setItem('macros', JSON.stringify(all_macros.macros));
-    } */
+    }
 
-    if (get('macros') != "undefined")
+    /* if (get('macros') != "undefined")
     {
         get('macros').then((val) => macros = val);
     }
     else if (get('macros') == "undefined") {
         set('macros', all_macros.macros);
-    }
+    } */
 
     table();
 
@@ -65,17 +65,17 @@ function table() {
 
     //get('night').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
 
-    //macros = JSON.parse(localStorage.getItem('macros'));
+    macros = JSON.parse(localStorage.getItem('macros'));
 
     //get('macros').then((val) => macros = val);
 
-    if (get('macros') != "undefined")
+    /* if (get('macros') != "undefined")
     {
         get('macros').then((val) => macros = val);
     }
     else if (get('macros') == "undefined") {
         set('macros', all_macros.macros);
-    }
+    } */
 
     //alert('ok');
 
@@ -587,7 +587,7 @@ function okDeleteElement() {
 
 export default function Home() {
     useEffect(() => {
-        //window.onload = table;
+        window.onload = _localStorage;
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";
@@ -610,7 +610,7 @@ export default function Home() {
             <Head>
                 <title>Macros</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
-                <link rel="icon" href="/logo_meal.ico" />
+                <link rel="icon" href="/logo.png" />
             </Head>
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>

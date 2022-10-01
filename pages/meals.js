@@ -1730,7 +1730,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Meals & Menus</title>
-        <link rel="icon" href="/logo_meal.ico" />
+        <link rel="icon" href="/logo.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
       </Head>
 

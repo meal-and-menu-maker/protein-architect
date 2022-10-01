@@ -391,6 +391,26 @@
       "unit": "100g"
     },
     {
+      "name": "Lait d amande",
+      "calories": 24,
+      "proteins": 0.5,
+      "fat": 1.1,
+      "carbs": 3,
+      "fibers": 0.2,
+      "category": "cheese & milk",
+      "unit": "100g"
+    },
+    {
+      "name": "Lait de noisette'",
+      "calories": 29,
+      "proteins": 0.4,
+      "fat": 1.6,
+      "carbs": 3.2,
+      "fibers": 0.3,
+      "category": "cheese & milk",
+      "unit": "100g"
+    },
+    {
       "name": "Lait de vache",
       "calories": 0,
       "proteins": 0,
@@ -409,6 +429,16 @@
       "fibers": 0,
       "category": "cheese & milk",
       "unit": "100g"
+    },
+    {
+      "name": "Lait concentré non sucré",
+      "calories": 8.25,
+      "proteins": 0.5,
+      "fat": 0.3,
+      "carbs": 0.9,
+      "fibers": 0,
+      "category": "cheese & milk",
+      "unit": "1"
     },
     {
       "name": "Pecorino Romano",
@@ -526,7 +556,7 @@
       "proteins": 1.29,
       "fat": 0.39,
       "carbs": 26.95,
-      "fibers": 0,
+      "fibers": 3.1,
       "category": "fruit",
       "unit": "1"
     },
@@ -1321,7 +1351,7 @@
       "unit": "1"
     },
     {
-      "name": "Cuillère de confiture (14g)",
+      "name": "Confiture (1 c. de 14g)",
       "calories": 34.59,
       "proteins": 0,
       "fat": 0,
@@ -1329,6 +1359,36 @@
       "fibers": 0.2,
       "category": "sweet",
       "unit": "1"
+    },
+    {
+      "name": "Flocons d'avoine",
+      "calories": 375,
+      "proteins": 14,
+      "fat": 7,
+      "carbs": 59,
+      "fibers": 10,
+      "category": "sweet",
+      "unit": "100g"
+    },
+    {
+      "name": "Nesquik (1 c. de 7g)",
+      "calories": 22.9,
+      "proteins": 0.6,
+      "fat": 0.4,
+      "carbs": 3.2,
+      "fibers": 2,
+      "category": "sweet",
+      "unit": "1"
+    },
+    {
+      "name": "Pépites de chocolat au lait",
+      "calories": 532,
+      "proteins": 6.4,
+      "fat": 29,
+      "carbs": 59.6,
+      "fibers": 2.4,
+      "category": "sweet",
+      "unit": "100g"
     },
     {
       "name": "** Pizzas **",

@@ -226,7 +226,7 @@ export default function Home() {
         }
 
         .logo img {
-          width: 30px;
+          width: 10%;
           margin-top: -7px;
           margin-right: 48px;
         }

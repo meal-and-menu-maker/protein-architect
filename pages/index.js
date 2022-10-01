@@ -226,7 +226,7 @@ export default function Home() {
         }
 
         .logo img {
-          width: 10%;
+          width: 1px;
           margin-top: -7px;
           margin-right: 48px;
         }
@@ -265,7 +265,7 @@ export default function Home() {
         }
 
         .app-picture {
-          width: 50%;
+          width: 10%;
           float: right;
         }
 

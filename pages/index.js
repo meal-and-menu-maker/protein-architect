@@ -3,19 +3,21 @@ import Script from 'next/script'
 import React from 'react'
 import Image from 'next/image';
 import { useEffect } from 'react'
-import { get, set, update, del } from 'idb-keyval';
+import { get, set, del } from 'idb-keyval';
 
 var noon = {};
 var night = {};
 
 function noonNightInput () {
 
-  document.getElementById("noon_test_print").style.display = "none";
+  //document.getElementById("noon_test_print").style.display = "none";
   
   if (get('noon') != "undefined") {
     //get('noon').then((val) => document.getElementById("noon_test_print").innerHTML = JSON.stringify(val));
 
     //get('noon').then((val) => alert(JSON.stringify(val)));
+
+    get('noon').then((val) => noon = val);
 
     if (noon.calories == null && noon.proteins == null && noon.fat == null && noon.carbs == null && noon.fibers == null) {
       noon.calories = 361;
@@ -179,6 +181,7 @@ export default function Home() {
           alt="Meal photo"
         />
 
+        <p></p>
         <p></p>
         <p></p>
 

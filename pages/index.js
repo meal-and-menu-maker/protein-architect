@@ -135,176 +135,95 @@ export default function Home() {
       <Head>
         <title>Protein Architect</title>
         <link rel="icon" href="/logo.png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
       </Head>
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
-      <body>
-        <section id="nav-bar">
-          <Navbar class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Calculator</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Create</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Modify</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Macros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Meals & Menus</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Navbar>
-        </section>
-        <div class="container">
-          {/* <div class="menu">
-            <ul>
-              {/* <li class="logo"><img src="/logo.png"/></li>
-              <li class="active"><a href="/"><span>Home</span></a></li>
-              <li><a href="/calculator"><span>Calculator</span></a></li>
-              <li><a href="/create"><span>Create</span></a></li>
-              <li><a href="/modify"><span>Modify</span></a></li>
-              <li><a href="/macros"><span>Macros</span></a></li>
-              <li><a href="/meals"><span>Meals & Menus</span></a></li>
-            </ul>
-          </div> */}
+      <main>
+        <h1 className="title">
+          Protein <font color="#008000"> Architect </font>
+        </h1>
+        <h2 className="title">
+          Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
+        </h2>
 
-          <div class="banner">
-            <div class="app-text">
-              <h1>Protein Architect</h1>
-              <p>Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more</p>
-            </div>
+        <div className="grid">
+          <a href="/create" className="card">
+            <h3>Create a meal &rarr;</h3>
+          </a>
 
-            {/* <div class="app-picture">
-              <img src="/home_photo.png"></img>
-            </div> */}
-          </div>
+          <a href="/meals" className="card">
+            <h3>Meals & Menus &rarr;</h3>
+          </a>
+
+          <a href="/modify" className="card">
+            <h3>Modify a meal &rarr;</h3>
+          </a>
+
+          <a href="/macros" className="card">
+            <h3>Macros table &rarr;</h3>
+          </a>
+
+          <a href="/macros" className="card">
+            <h3>Macros calculator &rarr;</h3>
+          </a>
+        </div>
+        
+        <div>
+        <Image src="/home_photo.png" alt="" width="150" height="120"></Image>
         </div>
 
-        <div class="container-fluid py-2">
-        <center>
-          <div>
-            <mark>NOON</mark>&ensp;
-            <code>Calories:
-            <input class="col-sm-1" type="text" id="caloriesNoon"></input>
-            &nbsp;| Proteins:
-            <input class="col-sm-1" type="text" id="proteinsNoon"></input>
-            &nbsp;| Fat:
-            <input class="col-sm-1" type="text" id="fatNoon"></input>
-            &nbsp;| Carbs:
-            <input class="col-sm-1" type="text" id="carbsNoon"></input>
-            &nbsp;| Fibers:
-            <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
-          </div>
-
-          <div>
-            <mark>NIGHT</mark>&ensp;
-            <code>Calories:
-            <input class="col-sm-1" type="text" id="caloriesNight"></input>
-            &nbsp;| Proteins:
-            <input class="col-sm-1" type="text" id="proteinsNight"></input>
-            &nbsp;| Fat:
-            <input class="col-sm-1" type="text" id="fatNight"></input>
-            &nbsp;| Carbs:
-            <input class="col-sm-1" type="text" id="carbsNight"></input>
-            &nbsp;| Fibers:
-            <input class="col-sm-1" type="text" id="fibersNight"></input></code>
-          </div>
-        </center>
-        </div>
-
-      </body>
+      </main>
 
       <footer>
-      <span>&#127789; &emsp; &#127790; &emsp; &#127791;</span>
+        <div class="container-fluid py-2">
+          <center>
+            <div>
+              <mark>NOON</mark>&ensp;
+              <code>Calories:
+              <input class="col-sm-1" type="text" id="caloriesNoon"></input>
+              &nbsp;| Proteins:
+              <input class="col-sm-1" type="text" id="proteinsNoon"></input>
+              &nbsp;| Fat:
+              <input class="col-sm-1" type="text" id="fatNoon"></input>
+              &nbsp;| Carbs:
+              <input class="col-sm-1" type="text" id="carbsNoon"></input>
+              &nbsp;| Fibers:
+              <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
+            </div>
+
+            <div>
+              <mark>NIGHT</mark>&ensp;
+              <code>Calories:
+              <input class="col-sm-1" type="text" id="caloriesNight"></input>
+              &nbsp;| Proteins:
+              <input class="col-sm-1" type="text" id="proteinsNight"></input>
+              &nbsp;| Fat:
+              <input class="col-sm-1" type="text" id="fatNight"></input>
+              &nbsp;| Carbs:
+              <input class="col-sm-1" type="text" id="carbsNight"></input>
+              &nbsp;| Fibers:
+              <input class="col-sm-1" type="text" id="fibersNight"></input></code>
+            </div>
+          </center>
+        </div>
+
+        <p></p>
+        <p></p>
+
+        <span>&#127789; &emsp; &#127790; &emsp; &#127791;</span>
       </footer>
 
       <style jsx>{`
-
         .container {
-          width: 100%;
-          height: 100%;
-          background: #f3f7fd;
-        }
-
-        .menu ul {
-          display: inline-flex;
-          margin: 50px;
-        }
-
-        .menu ul li {
-          list-style: none;
-          margin: 0 20px;
-          color: #e6effe;
-          cursor: pointer;
-        }
-
-        .logo img {
-          width: 30px;
-          margin-top: -7px;
-          margin-right: 48px;
-        }
-
-        .active {
-          color: #98bdff;
-        }
-
-        .banner {
-          width: 80%;
-          height: 70%;
-          top: 25%;
-          left: 130px;
-          position: absolute;
-          color: #000000;
-        }
-
-        .app-text {
-          width: 50%;
-          float: left;
-        }
-
-        .app-text h1 {
-          font-size: 43px;
-          width: 640px;
-          position: relative;
-          margin-left: 40px;
-        }
-
-        .app-text p {
-          font-size: 15px;
-          width: 650px;
-          margin: 30px 0 30px 40px;
-          line-height: 25px;
-          color: #000000;
-        }
-
-        .app-picture {
-          width: 50%;
-          float: right;
-        }
-
-        .app-picture img {
-          width: 10%;
-          margin-top: -20px;
-          padding-left: 50px;
+          min-height: 100vh;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         main {
@@ -340,6 +259,83 @@ export default function Home() {
           text-decoration: none;
         }
 
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+
+        .title a:hover,
+        .title a:focus,
+        .title a:active {
+          text-decoration: underline;
+        }
+
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
+
+        code {
+          background: #fafafa;
+          border-radius: 5px;
+          padding: 0.75rem;
+          font-size: 1.1rem;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+
+        .grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          max-width: 800px;
+          margin-top: 3rem;
+          padding-bottom: 3rem;
+        }
+
+        .card {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover,
+        .card:focus,
+        .card:active {
+          color: #0070f3;
+          border-color: #0070f3;
+        }
+
+        .card h3 {
+          margin: 0 0 1rem 0;
+          font-size: 1.5rem;
+        }
+
+        .card p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
+
         .logo {
           height: 1em;
         }
@@ -363,9 +359,7 @@ export default function Home() {
         }
 
         * {
-          margin: 0;
-          padding: 0;
-          font-family: sans-serif;
+          box-sizing: border-box;
         }
       `}</style>
     </div>

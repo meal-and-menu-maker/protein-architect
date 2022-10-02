@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
+import Image from 'next/image';
 import { useEffect } from 'react'
 import { get, set, update, del } from 'idb-keyval';
 
@@ -166,14 +167,17 @@ export default function Home() {
             <h3>Macros table &rarr;</h3>
           </a>
 
-          <a href="/macros" className="card">
+          <a href="/calculator" className="card">
             <h3>Macros calculator &rarr;</h3>
           </a>
         </div>
-        
-        <div>
-        <Image src="/home_photo.png" alt="" width="150" height="120"></Image>
-        </div>
+
+        <Image
+          src="/home_photo.png"
+          height={120}
+          width={150}
+          alt="Meal photo"
+        />
 
       </main>
 

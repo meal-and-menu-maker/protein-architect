@@ -146,9 +146,9 @@ export default function Home() {
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
-        <h2 className="title">
+        <big className="title">
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
-        </h2>
+        </big>
 
         <div className="grid">
           <a href="/create" className="card">
@@ -174,14 +174,11 @@ export default function Home() {
 
         <Image
           src="/home_photo.png"
-          height={120}
-          width={150}
+          height={240}
+          width={300}
           alt="Meal photo"
         />
 
-      </main>
-
-      <footer>
         <div class="container-fluid py-2">
           <center>
             <div>
@@ -214,9 +211,9 @@ export default function Home() {
           </center>
         </div>
 
-        <p></p>
-        <p></p>
+      </main>
 
+      <footer>
         <span>&#127789; &emsp; &#127790; &emsp; &#127791;</span>
       </footer>
 

@@ -980,7 +980,7 @@ function macrosUpdate() {
                 proteins1 = parseFloat(macros[j].proteins)
                 fat1 = parseFloat(macros[j].fat)
                 carbs1 = parseFloat(macros[j].carbs)
-                fibers1 = parseFloat(macros[j].fibers)
+                fibers1 = parseFloat(macros[j].fibers);
             }
             if (foods2 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -992,7 +992,7 @@ function macrosUpdate() {
                 proteins2 = parseFloat(macros[j].proteins)
                 fat2 = parseFloat(macros[j].fat)
                 carbs2 = parseFloat(macros[j].carbs)
-                fibers2 = parseFloat(macros[j].fibers)
+                fibers2 = parseFloat(macros[j].fibers);
             }
             if (foods3 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1004,7 +1004,7 @@ function macrosUpdate() {
                 proteins3 = parseFloat(macros[j].proteins)
                 fat3 = parseFloat(macros[j].fat)
                 carbs3 = parseFloat(macros[j].carbs)
-                fibers3 = parseFloat(macros[j].fibers)
+                fibers3 = parseFloat(macros[j].fibers);
             }
             if (foods4 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1016,7 +1016,7 @@ function macrosUpdate() {
                 proteins4 = parseFloat(macros[j].proteins)
                 fat4 = parseFloat(macros[j].fat)
                 carbs4 = parseFloat(macros[j].carbs)
-                fibers4 = parseFloat(macros[j].fibers)
+                fibers4 = parseFloat(macros[j].fibers);
             }
             if (foods5 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1028,7 +1028,7 @@ function macrosUpdate() {
                 proteins5 = parseFloat(macros[j].proteins)
                 fat5 = parseFloat(macros[j].fat)
                 carbs5 = parseFloat(macros[j].carbs)
-                fibers5 = parseFloat(macros[j].fibers)
+                fibers5 = parseFloat(macros[j].fibers);
             }
             if (foods6 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1040,7 +1040,7 @@ function macrosUpdate() {
                 proteins6 = parseFloat(macros[j].proteins)
                 fat6 = parseFloat(macros[j].fat)
                 carbs6 = parseFloat(macros[j].carbs)
-                fibers6 = parseFloat(macros[j].fibers)
+                fibers6 = parseFloat(macros[j].fibers);
             }
             if (foods7 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1052,7 +1052,7 @@ function macrosUpdate() {
                 proteins7 = parseFloat(macros[j].proteins)
                 fat7 = parseFloat(macros[j].fat)
                 carbs7 = parseFloat(macros[j].carbs)
-                fibers7 = parseFloat(macros[j].fibers)
+                fibers7 = parseFloat(macros[j].fibers);
             }
             if (foods8 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1064,7 +1064,7 @@ function macrosUpdate() {
                 proteins8 = parseFloat(macros[j].proteins)
                 fat8 = parseFloat(macros[j].fat)
                 carbs8 = parseFloat(macros[j].carbs)
-                fibers8 = parseFloat(macros[j].fibers)
+                fibers8 = parseFloat(macros[j].fibers);
             }
             if (foods9 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1076,7 +1076,7 @@ function macrosUpdate() {
                 proteins9 = parseFloat(macros[j].proteins)
                 fat9 = parseFloat(macros[j].fat)
                 carbs9 = parseFloat(macros[j].carbs)
-                fibers9 = parseFloat(macros[j].fibers)
+                fibers9 = parseFloat(macros[j].fibers);
             }
             if (foods10 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1088,7 +1088,7 @@ function macrosUpdate() {
                 proteins10 = parseFloat(macros[j].proteins)
                 fat10 = parseFloat(macros[j].fat)
                 carbs10 = parseFloat(macros[j].carbs)
-                fibers10 = parseFloat(macros[j].fibers)
+                fibers10 = parseFloat(macros[j].fibers);
             }
             if (foods11 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1100,7 +1100,7 @@ function macrosUpdate() {
                 proteins11 = parseFloat(macros[j].proteins)
                 fat11 = parseFloat(macros[j].fat)
                 carbs11 = parseFloat(macros[j].carbs)
-                fibers11 = parseFloat(macros[j].fibers)
+                fibers11 = parseFloat(macros[j].fibers);
             }
             if (foods12 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1112,7 +1112,7 @@ function macrosUpdate() {
                 proteins12 = parseFloat(macros[j].proteins)
                 fat12 = parseFloat(macros[j].fat)
                 carbs12 = parseFloat(macros[j].carbs)
-                fibers12 = parseFloat(macros[j].fibers)
+                fibers12 = parseFloat(macros[j].fibers);
             }
             if (foods13 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1124,7 +1124,7 @@ function macrosUpdate() {
                 proteins13 = parseFloat(macros[j].proteins)
                 fat13 = parseFloat(macros[j].fat)
                 carbs13 = parseFloat(macros[j].carbs)
-                fibers13 = parseFloat(macros[j].fibers)
+                fibers13 = parseFloat(macros[j].fibers);
             }
             if (foods14 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1136,7 +1136,7 @@ function macrosUpdate() {
                 proteins14 = parseFloat(macros[j].proteins)
                 fat14 = parseFloat(macros[j].fat)
                 carbs14 = parseFloat(macros[j].carbs)
-                fibers14 = parseFloat(macros[j].fibers)
+                fibers14 = parseFloat(macros[j].fibers);
             }
             if (foods15 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1148,7 +1148,7 @@ function macrosUpdate() {
                 proteins15 = parseFloat(macros[j].proteins)
                 fat15 = parseFloat(macros[j].fat)
                 carbs15 = parseFloat(macros[j].carbs)
-                fibers15 = parseFloat(macros[j].fibers)
+                fibers15 = parseFloat(macros[j].fibers);
             }
             if (foods16 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1160,7 +1160,7 @@ function macrosUpdate() {
                 proteins16 = parseFloat(macros[j].proteins)
                 fat16 = parseFloat(macros[j].fat)
                 carbs16 = parseFloat(macros[j].carbs)
-                fibers16 = parseFloat(macros[j].fibers)
+                fibers16 = parseFloat(macros[j].fibers);
             }
             if (foods17 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1172,7 +1172,7 @@ function macrosUpdate() {
                 proteins17 = parseFloat(macros[j].proteins)
                 fat17 = parseFloat(macros[j].fat)
                 carbs17 = parseFloat(macros[j].carbs)
-                fibers17 = parseFloat(macros[j].fibers)
+                fibers17 = parseFloat(macros[j].fibers);
             }
             if (foods18 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1184,7 +1184,7 @@ function macrosUpdate() {
                 proteins18 = parseFloat(macros[j].proteins)
                 fat18 = parseFloat(macros[j].fat)
                 carbs18 = parseFloat(macros[j].carbs)
-                fibers18 = parseFloat(macros[j].fibers)
+                fibers18 = parseFloat(macros[j].fibers);
             }
             if (foods19 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1196,7 +1196,7 @@ function macrosUpdate() {
                 proteins19 = parseFloat(macros[j].proteins)
                 fat19 = parseFloat(macros[j].fat)
                 carbs19 = parseFloat(macros[j].carbs)
-                fibers19 = parseFloat(macros[j].fibers)
+                fibers19 = parseFloat(macros[j].fibers);
             }
             if (foods20 == macros[j].name) {
                 if (macros[j].unit == "100g") {
@@ -1208,7 +1208,7 @@ function macrosUpdate() {
                 proteins20 = parseFloat(macros[j].proteins)
                 fat20 = parseFloat(macros[j].fat)
                 carbs20 = parseFloat(macros[j].carbs)
-                fibers20 = parseFloat(macros[j].fibers)
+                fibers20 = parseFloat(macros[j].fibers);
             }
             if (addFoods == macros[j].name) {
                 if (macros[j].unit == "100g") {

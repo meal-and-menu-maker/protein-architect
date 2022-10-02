@@ -146,9 +146,9 @@ export default function Home() {
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
-        <big className="title">
+        <p className="title">
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
-        </big>
+        </p>
 
         <div className="grid">
           <a href="/create" className="card">
@@ -179,6 +179,9 @@ export default function Home() {
           alt="Meal photo"
         />
 
+        <p></p>
+        <p></p>
+
         <div class="container-fluid py-2">
           <center>
             <div>
@@ -194,6 +197,8 @@ export default function Home() {
               &nbsp;| Fibers:
               <input class="col-sm-1" type="text" id="fibersNoon"></input></code>
             </div>
+
+            <p></p>
 
             <div>
               <mark>NIGHT</mark>&ensp;

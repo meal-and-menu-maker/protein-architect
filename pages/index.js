@@ -141,11 +141,43 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
-      <main>
+      <body>
+        <section id="nav-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calculator</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Create</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Modify</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Macros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Meals & Menus</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
         <div class="container">
-          <div class="menu">
+          {/* <div class="menu">
             <ul>
-              {/* <li class="logo"><img src="/logo.png"/></li> */}
+              {/* <li class="logo"><img src="/logo.png"/></li>
               <li class="active"><a href="/"><span>Home</span></a></li>
               <li><a href="/calculator"><span>Calculator</span></a></li>
               <li><a href="/create"><span>Create</span></a></li>
@@ -153,7 +185,7 @@ export default function Home() {
               <li><a href="/macros"><span>Macros</span></a></li>
               <li><a href="/meals"><span>Meals & Menus</span></a></li>
             </ul>
-          </div>
+          </div> */}
 
           <div class="banner">
             <div class="app-text">
@@ -199,7 +231,7 @@ export default function Home() {
         </center>
         </div>
 
-      </main>
+      </body>
 
       <footer>
       <span>&#127789; &emsp; &#127790; &emsp; &#127791;</span>

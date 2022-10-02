@@ -148,9 +148,9 @@ export default function Home() {
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
-        <p className="title">
+        <h4>
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
-        </p>
+        </h4>
 
         <div className="grid">
           <a href="/create" className="card">

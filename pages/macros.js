@@ -101,7 +101,17 @@ function table() {
         $('res').html(html);
     });
 
-    $('#macros_table').ZTable();
+    var table = $('#macros_table').ZTable({
+        pagination: true,
+        wrap: false,
+        pageSize: 20,
+        controls:{
+          paginate: true,
+          status: true,
+          copy: true,
+          colVis: true
+        }
+    });
 
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
@@ -612,14 +622,16 @@ export default function Home() {
             <Head>
                 <title>Macros</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
-                <link href="jquery-ztables.css" rel="stylesheet" />
+                <link href="jquery-ztables-1.2.css" rel="stylesheet" />
                 <link rel="icon" href="/logo.png" />
             </Head>
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
             <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
             <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
-            <Script src="jquery-ztables.js"></Script>
+            <Script src="jquery-ztables-1.2.js"></Script>
+
+            <Script src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
 
             <main class="container-fluid">
         
@@ -631,11 +643,13 @@ export default function Home() {
                     </div>
                 </div>
                 
-                <res>
-                <div id="macros_table" class="container-fluid p-2 my-3">
-                    <div id="divresult"></div>
-                </div>
-                </res>
+                <table class="table table-bordered table-striped" id="macros_table">
+                    <res>
+                        <div class="container-fluid p-2 my-3">
+                            <div id="divresult"></div>
+                        </div>
+                    </res>
+                </table>
 
                 <p></p>
 

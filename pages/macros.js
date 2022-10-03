@@ -101,18 +101,6 @@ function table() {
         $('res').html(html);
     });
 
-    var table = $('#macros_table').ZTable({
-        pagination: true,
-        wrap: false,
-        pageSize: 20,
-        controls:{
-          paginate: true,
-          status: true,
-          copy: true,
-          colVis: true
-        }
-    });
-
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
             pastaPosition = i;
@@ -184,7 +172,28 @@ function table() {
             cocktailPosition = i;
         }
     }
+}
 
+function tableSearch() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("macros_input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("macros_table");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }
 
 function addElement() {
@@ -642,29 +651,14 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                <input type="text" id="macros_input" onkeyup="myFunction()" placeholder="Search"/>
                 
-                <table class="table table-bordered table-striped" id="macros_table">
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>calories</th>
-                            <th>proteins</th>
-                            <th>fat</th>
-                            <th>carbs</th>
-                            <th>fibers</th>
-                            <th>category</th>
-                            <th>unit</th>
-                            <th>proteins</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <res>
-                            <div class="container-fluid p-2 my-3">
-                                <div id="divresult"></div>
-                            </div>
-                        </res>
-                    </tbody>
-                </table>
+                <res id="macros_table">
+                    <div class="container-fluid p-2 my-3">
+                        <div id="divresult"></div>
+                    </div>
+                </res>
 
                 <p></p>
 
@@ -1210,6 +1204,39 @@ export default function Home() {
             .title,
             .description {
                 text-align: center;
+            }
+
+            #macros_input {
+                background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+                background-position: 10px 12px; /* Position the search icon */
+                background-repeat: no-repeat; /* Do not repeat the icon image */
+                width: 100%; /* Full-width */
+                font-size: 16px; /* Increase font-size */
+                padding: 12px 20px 12px 40px; /* Add some padding */
+                border: 1px solid #ddd; /* Add a grey border */
+                margin-bottom: 12px; /* Add some space below the input */
+              }
+              
+            #macros_table {
+            border-collapse: collapse; /* Collapse borders */
+            width: 100%; /* Full-width */
+            border: 1px solid #ddd; /* Add a grey border */
+            font-size: 18px; /* Increase font-size */
+            }
+            
+            #macros_table th, #macros_table td {
+            text-align: left; /* Left-align text */
+            padding: 12px; /* Add padding */
+            }
+            
+            #macros_table tr {
+            /* Add a bottom border to all table rows */
+            border-bottom: 1px solid #ddd;
+            }
+            
+            #macros_table tr.header, #macros_table tr:hover {
+            /* Add a grey background color to the table header and on hover */
+            background-color: #f1f1f1;
             }
             
             .vertical-center {

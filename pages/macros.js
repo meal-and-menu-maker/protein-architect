@@ -652,7 +652,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <input type="text" id="macros_input" onkeyup="myFunction()" placeholder="Search"/>
+                <input type="text" id="macros_input" onkeyup="tableSearch()" placeholder="Search"/>
                 
                 <res id="macros_table">
                     <div class="container-fluid p-2 my-3">

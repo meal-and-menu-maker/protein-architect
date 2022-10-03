@@ -79,7 +79,7 @@ function table() {
 
     //alert('ok');
 
-    /* $(document).ready(function () {
+    $(document).ready(function () {
         var html = '<table class="table table-striped">';
         html += '<tr>';
         debugger;
@@ -99,15 +99,9 @@ function table() {
         html += '</table>';
         //append html in html body
         $('res').html(html);
-    }); */
+    });
 
-    $.ajax({
-        dataType: "json",
-        url: "./test.json",
-        success: function(data){
-          table.buildFromJSON(data);
-        }
-      });
+    $('#macros_table').ZTable();
 
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
@@ -638,7 +632,7 @@ export default function Home() {
                 </div>
                 
                 <res>
-                <div class="container-fluid p-2 my-3">
+                <div id="macros_table" class="container-fluid p-2 my-3">
                     <div id="divresult"></div>
                 </div>
                 </res>

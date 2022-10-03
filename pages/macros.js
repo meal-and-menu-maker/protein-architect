@@ -80,7 +80,7 @@ function table() {
     //alert('ok');
 
     $(document).ready(function () {
-        var html = '<table id="macros_table">';
+        var html = '<table id="macros_table" class="table table-striped">';
         html += '<tr>';
         debugger;
         //creating table header
@@ -631,16 +631,12 @@ export default function Home() {
             <Head>
                 <title>Macros</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
-                <link href="jquery-ztables-1.2.css" rel="stylesheet" />
                 <link rel="icon" href="/logo.png" />
             </Head>
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
             <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
             <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
-            <Script src="jquery-ztables-1.2.js"></Script>
-
-            <Script src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
 
             <main class="container-fluid">
         

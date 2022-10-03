@@ -80,7 +80,7 @@ function table() {
     //alert('ok');
 
     $(document).ready(function () {
-        var html = '<table id="macros_table" class="macros_table">';
+        var html = '<table id="macros_table">';
         html += '<tr>';
         debugger;
         //creating table header
@@ -652,7 +652,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <input type="text" id="macros_input" class="macros_input" onkeyup="tableSearch()" placeholder="Search"/>
+                <input type="text" id="macros_input" onkeyup="tableSearch()" placeholder="Search"/>
                 
                 <res>
                     
@@ -1204,7 +1204,7 @@ export default function Home() {
                 text-align: center;
             }
 
-            .macros_input {
+            #macros_input {
                 width: 30%;
                 font-size: 16px; /* Increase font-size */
                 padding: 12px 20px 12px 40px; /* Add some padding */
@@ -1212,24 +1212,24 @@ export default function Home() {
                 margin-bottom: 12px; /* Add some space below the input */
               }
               
-            .macros_table {
+            #macros_table {
             border-collapse: collapse; /* Collapse borders */
             width: 100%; /* Full-width */
             border: 1px solid #ddd; /* Add a grey border */
             font-size: 18px; /* Increase font-size */
             }
             
-            .macros_table th, #macros_table td {
+            #macros_table th, #macros_table td {
             text-align: left; /* Left-align text */
             padding: 12px; /* Add padding */
             }
             
-            .macros_table tr {
+            #macros_table tr {
             /* Add a bottom border to all table rows */
             border-bottom: 1px solid #ddd;
             }
             
-            .macros_table tr.header, #macros_table tr:hover {
+            #macros_table tr.header, #macros_table tr:hover {
             /* Add a grey background color to the table header and on hover */
             background-color: #f1f1f1;
             }

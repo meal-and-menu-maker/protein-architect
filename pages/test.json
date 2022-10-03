@@ -1,5 +1,31 @@
 {
-    "macros" : [
+    "columns" : [
+        {
+            "name":"Name"
+        },
+        {
+            "calories":"Calories"
+        },
+        {
+            "proteins":"Proteins"
+        },
+        {
+            "fat":"Fat"
+        },
+        {
+            "carbs":"Carbs"
+        },
+        {
+            "fibers":"Fibers"
+        },
+        {
+            "category":"Category"
+        },
+        {
+            "unit":"Unit"
+        }
+    ],
+    "data" : [
         {
             "name": "** Pâtes **",
             "calories": "-",

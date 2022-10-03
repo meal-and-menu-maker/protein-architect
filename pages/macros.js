@@ -79,7 +79,7 @@ function table() {
 
     //alert('ok');
 
-    $(document).ready(function () {
+    /* $(document).ready(function () {
         var html = '<table class="table table-striped">';
         html += '<tr>';
         debugger;
@@ -99,7 +99,15 @@ function table() {
         html += '</table>';
         //append html in html body
         $('res').html(html);
-    });
+    }); */
+
+    $.ajax({
+        dataType: "json",
+        url: "./test.json",
+        success: function(data){
+          table.buildFromJSON(data);
+        }
+      });
 
     for (var i = 0; i < macros.length; i++) {
         if (macros[i].name == "** Pâtes **") {
@@ -610,12 +618,14 @@ export default function Home() {
             <Head>
                 <title>Macros</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+                <link href="./jquery-ztables.css" rel="stylesheet" />
                 <link rel="icon" href="/logo.png" />
             </Head>
              
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
             <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
             <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
+            <Script src="./jquery-ztables.js"></Script>
 
             <main class="container-fluid">
         

@@ -80,7 +80,7 @@ function table() {
     //alert('ok');
 
     $(document).ready(function () {
-        var html = '<table class="table table-striped">';
+        var html = '<table id="macros_table" class="table table-striped">';
         html += '<tr>';
         debugger;
         //creating table header
@@ -654,7 +654,7 @@ export default function Home() {
 
                 <input type="text" id="macros_input" onkeyup="tableSearch()" placeholder="Search"/>
                 
-                <res id="macros_table">
+                <res>
                     
                 </res>
 
@@ -1205,10 +1205,7 @@ export default function Home() {
             }
 
             #macros_input {
-                background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-                background-position: 10px 12px; /* Position the search icon */
-                background-repeat: no-repeat; /* Do not repeat the icon image */
-                width: 100%; /* Full-width */
+                width: 30%;
                 font-size: 16px; /* Increase font-size */
                 padding: 12px 20px 12px 40px; /* Add some padding */
                 border: 1px solid #ddd; /* Add a grey border */

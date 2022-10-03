@@ -644,11 +644,26 @@ export default function Home() {
                 </div>
                 
                 <table class="table table-bordered table-striped" id="macros_table">
-                    <res>
-                        <div class="container-fluid p-2 my-3">
-                            <div id="divresult"></div>
-                        </div>
-                    </res>
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>calories</th>
+                            <th>proteins</th>
+                            <th>fat</th>
+                            <th>carbs</th>
+                            <th>fibers</th>
+                            <th>category</th>
+                            <th>unit</th>
+                            <th>proteins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <res>
+                            <div class="container-fluid p-2 my-3">
+                                <div id="divresult"></div>
+                            </div>
+                        </res>
+                    </tbody>
                 </table>
 
                 <p></p>

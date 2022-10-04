@@ -158,12 +158,12 @@ export default function Home() {
         </div>
 
         <div class="container-fluid p-5 my-5">
-          <h1>
+          <h1 className="title">
             Protein <font color="#008000"> Architect </font>
           </h1>
         </div>
 
-        <div class="container-fluid p-5 my-5">
+        <div class="container-fluid">
           <h4>
             Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
           </h4>

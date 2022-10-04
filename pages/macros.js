@@ -1264,7 +1264,7 @@ export default function Home() {
 
             /* Page content */
             .content {
-                padding: 100px;
+                padding: 5vh;
             }
             
             .vertical-center {

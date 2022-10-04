@@ -1352,7 +1352,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <div class="container-fluid py-2 my-5">
+            <div class="container-fluid p-3 my-5"></div>
+
+            <div class="container-fluid py-2">
                 <label for="mealName">Meal name:&ensp;</label>
                 <input type="text" id="mealName" name="mealName"></input>
             </div>

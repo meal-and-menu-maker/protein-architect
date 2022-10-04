@@ -162,27 +162,21 @@ export default function Home() {
         <p></p>
         <p></p>
 
-        <h1 className="title">
+        <h1 className="title_home">
           Protein <font color="#008000"> Architect </font>
         </h1>
-        <h4>
+        <p></p>
+        <h4 className="title_home">
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
         </h4>
-
-        <p></p>
-        <p></p>
-        <p></p>
 
         <Image
           src="/home_photo.png"
           height={240}
           width={300}
           alt="Meal photo"
+          className="photo_home"
         />
-
-        <p></p>
-        <p></p>
-        <p></p>
 
         <div class="container-fluid py-2">
           <center>
@@ -219,6 +213,8 @@ export default function Home() {
         </div>
 
       </main>
+
+      <p></p>
 
       <footer>
         <span>&#127789; &emsp; &#127790; &emsp; &#127791;</span>
@@ -286,7 +282,15 @@ export default function Home() {
 
         .title,
         .description {
-          text-align: center;
+          text-align: left;
+        }
+
+        .title_home {
+          float: left;
+        }
+
+        .photo_home {
+          float: right;
         }
 
         .description {
@@ -349,34 +353,34 @@ export default function Home() {
         }
 
         /* Style the navbar */
-            #navbar {
-                float: left;
-                width: 47%;
-                overflow: hidden;
-                background-color: #f1f1f1;
-            }
+        #navbar {
+            float: left;
+            width: 47%;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
 
-            /* Navbar links */
-            #navbar a {
-                float: left;
-                display: block;
-                color: #000000;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-            }
+        /* Navbar links */
+        #navbar a {
+            float: left;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
 
-            #navbar a:hover,
-            #navbar a:focus,
-            #navbar a:active {
-                text-decoration: none;
-                font-weight: 500;
-            }
+        #navbar a:hover,
+        #navbar a:focus,
+        #navbar a:active {
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-            /* Page content */
-            .content {
-                padding: 5vh;
-            }
+        /* Page content */
+        .content {
+            padding: 5vh;
+        }
 
         @media (max-width: 600px) {
           .grid {

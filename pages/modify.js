@@ -1547,8 +1547,10 @@ return (
                 <a href="/meals">Meals & Menus</a>
             </div>
         </div>
+
+        <div class="container-fluid p-3 my-5"></div>
         
-        <div class="container-fluid py-2 my-5">
+        <div class="container-fluid py-2">
           <label class="form-label">Meal to modify: </label>
           <div class="col-sm-5">
             <select class="form-select" id="mealName">

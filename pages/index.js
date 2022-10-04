@@ -162,7 +162,7 @@ export default function Home() {
           Protein <font color="#008000"> Architect </font>
         </h1>
         <p></p>
-        <h4 className="title_home">
+        <h4>
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
         </h4>
         </div>
@@ -284,10 +284,6 @@ export default function Home() {
 
         .title,
         .description {
-          float: left;
-        }
-
-        .title_home {
           float: left;
         }
 

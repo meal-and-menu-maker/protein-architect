@@ -648,7 +648,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <input type="text" id="macros_input" onkeyup={() => {tableSearch()} } placeholder="Search"/>
+                <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 
                 <res>
                     

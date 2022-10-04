@@ -1548,7 +1548,7 @@ return (
             </div>
         </div>
         
-        <div class="container-fluid py-2">
+        <div class="container-fluid py-2 my-5">
           <label class="form-label">Meal to modify: </label>
           <div class="col-sm-5">
             <select class="form-select" id="mealName">
@@ -2227,7 +2227,7 @@ return (
           /* Style the navbar */
             #navbar {
                 float: left;
-                width: 43%;
+                width: 47%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

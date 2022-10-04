@@ -1351,8 +1351,8 @@ export default function Home() {
                     <a href="/meals">Meals & Menus</a>
                 </div>
             </div>
-            
-            <div class="container-fluid py-2">
+
+            <div class="container-fluid py-2 my-5">
                 <label for="mealName">Meal name:&ensp;</label>
                 <input type="text" id="mealName" name="mealName"></input>
             </div>
@@ -1940,7 +1940,7 @@ export default function Home() {
             /* Style the navbar */
             #navbar {
                 float: left;
-                width: 43%;
+                width: 47%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

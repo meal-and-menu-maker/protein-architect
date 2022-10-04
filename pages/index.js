@@ -157,6 +157,8 @@ export default function Home() {
             </div>
         </div>
 
+        <div class="container-fluid p-3 my-5"></div>
+
         <p></p>
         <p></p>
 
@@ -349,7 +351,7 @@ export default function Home() {
         /* Style the navbar */
             #navbar {
                 float: left;
-                width: 43%;
+                width: 47%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

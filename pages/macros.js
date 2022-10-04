@@ -651,11 +651,11 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="container-fluid p-3 my-5">
+                <div class="container-fluid p-3 my-2">
                     <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 </div>
 
-                <div class="container-fluid p-3 my-2">
+                <div class="container-fluid p-3 my-5">
                     <div id="scrollable_container">
                     
                         <res>

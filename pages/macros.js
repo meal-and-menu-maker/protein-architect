@@ -640,7 +640,7 @@ export default function Home() {
 
             <main class="container-fluid">
         
-                <div class="container-fluid p-2 my-3">
+                <div class="container-fluid">
                     <div id="navbar">
                         <a href="/">Home</a>
                         <a href="/calculator">Calculator</a>
@@ -651,11 +651,11 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="container-fluid py-2">
+                <div class="container-fluid">
                     <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 </div>
 
-                <div class="container-fluid py-2">
+                <div class="container-fluid">
                     <div id="scrollable_container">
                     
                         <res>
@@ -1252,7 +1252,7 @@ export default function Home() {
             /* Style the navbar */
             #navbar {
                 float: left;
-                width: 45%;
+                width: 40%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

@@ -649,10 +649,14 @@ export default function Home() {
                 </div>
 
                 <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
+
+                <div class="scrollable_container">
                 
-                <res>
-                    
-                </res>
+                    <res>
+                        
+                    </res>
+
+                </div>
 
                 <p></p>
 
@@ -1201,12 +1205,13 @@ export default function Home() {
             }
 
             #macros_input {
-                width: 30%;
+                width: 20%;
                 font-size: 16px; /* Increase font-size */
-                padding: 0px 20px 12px 40px; /* Add some padding */
+                padding: 12px 20px 12px 2px; /* Add some padding */
                 border: 1px solid #ddd; /* Add a grey border */
                 margin-bottom: 12px; /* Add some space below the input */
-              }
+                float: right
+            }
               
             #macros_table {
             border-collapse: collapse; /* Collapse borders */
@@ -1228,6 +1233,11 @@ export default function Home() {
             #macros_table tr.header, #macros_table tr:hover {
             /* Add a grey background color to the table header and on hover */
             background-color: #f1f1f1;
+            }
+
+            .scrollable_container {
+                height: 70px;
+                overflow-y: scroll;
             }
             
             .vertical-center {

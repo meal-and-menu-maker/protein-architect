@@ -1738,11 +1738,14 @@ export default function Home() {
 
       <div class="container-fluid">
 
-          <div class="container-fluid p-2 my-3">
-              <div className="home_container">
-                  <div className="card">
-                      <h5>Meals & Menus</h5>
-                  </div>
+          <div class="container-fluid">
+              <div id="navbar">
+                  <a href="/">Home</a>
+                  <a href="/calculator">Calculator</a>
+                  <a href="/create">Create</a>
+                  <a href="/modify">Modify</a>
+                  <a href="/macros">Macros</a>
+                  <a href="/meals">Meals & Menus</a>
               </div>
           </div>
 
@@ -2493,12 +2496,7 @@ export default function Home() {
 
       </center>
 
-          <div className="home_container">
-              <a className="card_home" href="/">
-              <h3>Home</h3>
-              </a>
-          </div>
-        </div>
+      </div>
 
         <style jsx>{`
             .card_home {
@@ -2574,6 +2572,36 @@ export default function Home() {
               align-items: center;
               justify-content: center;
               flex-wrap: wrap;
+            }
+
+            /* Style the navbar */
+            #navbar {
+                float: left;
+                width: 43%;
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+
+            /* Navbar links */
+            #navbar a {
+                float: left;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+
+            #navbar a:hover,
+            #navbar a:focus,
+            #navbar a:active {
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            /* Page content */
+            .content {
+                padding: 5vh;
             }
 
             main {

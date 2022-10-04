@@ -145,6 +145,18 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
       <main>
+
+      <div class="container-fluid">
+          <div id="navbar">
+              <a href="/">Home</a>
+              <a href="/calculator">Calculator</a>
+              <a href="/create">Create</a>
+              <a href="/modify">Modify</a>
+              <a href="/macros">Macros</a>
+              <a href="/meals">Meals & Menus</a>
+          </div>
+      </div>
+
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
@@ -152,27 +164,9 @@ export default function Home() {
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
         </h4>
 
-        <div className="grid">
-          <a href="/create" className="card">
-            <h3>Create a meal &rarr;</h3>
-          </a>
-
-          <a href="/meals" className="card">
-            <h3>Meals & Menus &rarr;</h3>
-          </a>
-
-          <a href="/modify" className="card">
-            <h3>Modify a meal &rarr;</h3>
-          </a>
-
-          <a href="/macros" className="card">
-            <h3>Macros table &rarr;</h3>
-          </a>
-
-          <a href="/calculator" className="card">
-            <h3>Macros calculator &rarr;</h3>
-          </a>
-        </div>
+        <p></p>
+        <p></p>
+        <p></p>
 
         <Image
           src="/home_photo.png"
@@ -348,6 +342,36 @@ export default function Home() {
         .logo {
           height: 1em;
         }
+
+        /* Style the navbar */
+            #navbar {
+                float: left;
+                width: 43%;
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+
+            /* Navbar links */
+            #navbar a {
+                float: left;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+
+            #navbar a:hover,
+            #navbar a:focus,
+            #navbar a:active {
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            /* Page content */
+            .content {
+                padding: 5vh;
+            }
 
         @media (max-width: 600px) {
           .grid {

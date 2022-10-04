@@ -651,11 +651,11 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="container-fluid p-3 my-2">
+                <div class="container-fluid p-3 my-5">
                     <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 </div>
 
-                <div class="container-fluid p-3 my-5">
+                <div class="container-fluid p-2 my-5">
                     <div id="scrollable_container">
                     
                         <res>
@@ -1237,7 +1237,7 @@ export default function Home() {
             }
 
             #scrollable_container {
-                height: 80vh;
+                height: 75vh;
                 scroll-snap-type: y mandatory;
                 scroll-padding: 10px;
                 overflow-y: scroll;
@@ -1245,7 +1245,7 @@ export default function Home() {
 
             /* Style the navbar */
             #navbar {
-                float: right;
+                float: left;
                 width: 43%;
                 overflow: hidden;
                 background-color: #f1f1f1;
@@ -1253,7 +1253,7 @@ export default function Home() {
 
             /* Navbar links */
             #navbar a {
-                float: right;
+                float: left;
                 display: block;
                 color: #000000;
                 text-align: center;

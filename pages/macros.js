@@ -1207,7 +1207,7 @@ export default function Home() {
             #macros_input {
                 width: 20%;
                 font-size: 16px; /* Increase font-size */
-                padding: 12px 20px 12px 2px; /* Add some padding */
+                padding: 12px 20px 12px 10px; /* Add some padding */
                 border: 1px solid #ddd; /* Add a grey border */
                 margin-bottom: 12px; /* Add some space below the input */
                 float: right
@@ -1236,8 +1236,7 @@ export default function Home() {
             }
 
             .scrollable_container {
-                height: 70px;
-                overflow-y: scroll;
+                overflow-y: auto;
             }
             
             .vertical-center {

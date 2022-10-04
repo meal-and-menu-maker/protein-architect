@@ -61,23 +61,6 @@ function _localStorage() {
     
 }
 
-function stickyNavbar() {
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-    
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-
 function table() {
 
     //get('night').then((val) => document.getElementById("macro_testing_print").innerHTML = JSON.stringify(val));
@@ -626,8 +609,6 @@ function okDeleteElement() {
 export default function Home() {
     useEffect(() => {
         window.onload = _localStorage;
-
-        window.onscroll = function() {stickyNavbar()}; // When the user scrolls the page, execute myFunction
 
         document.getElementById("add_container").style.display = "none";
         document.getElementById("modify_container").style.display = "none";
@@ -1258,7 +1239,7 @@ export default function Home() {
             }
 
             #scrollable_container {
-                height: 100vh;
+                height: 80vh;
                 scroll-snap-type: y mandatory;
                 scroll-padding: 10px;
                 overflow-y: scroll;
@@ -1266,15 +1247,16 @@ export default function Home() {
 
             /* Style the navbar */
             #navbar {
+                width: 60%;
                 overflow: hidden;
-                background-color: #e3e3e3;
+                background-color: #f1f1f1;
             }
 
             /* Navbar links */
             #navbar a {
                 float: left;
                 display: block;
-                color: #025d01;
+                color: #003500;
                 text-align: center;
                 padding: 14px;
                 text-decoration: none;
@@ -1283,18 +1265,6 @@ export default function Home() {
             /* Page content */
             .content {
                 padding: 100px;
-            }
-
-            /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-            .sticky {
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-
-            /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-            .sticky + .content {
-                padding-top: 60px;
             }
             
             .vertical-center {

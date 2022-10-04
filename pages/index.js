@@ -158,22 +158,22 @@ export default function Home() {
         </div>
 
         <div class="container-fluid p-5 my-5"></div>
-        
+
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
-        <h4>
-          Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
-        </h4>
 
-        <p></p>
+        <div class="container-fluid p-5 my-5">
+          <h4>
+            Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
+          </h4>
+        </div>
 
         <Image
           src="/home_photo.png"
           height={240}
           width={300}
           alt="Meal photo"
-          className="photo_home"
         />
 
         <p></p>

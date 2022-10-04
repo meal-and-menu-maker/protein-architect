@@ -134,7 +134,7 @@ export default function Home() {
 
   
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>Protein Architect</title>
         <link rel="icon" href="/logo.png" />
@@ -144,18 +144,21 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
       <Script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></Script>
 
-      <main>
+      <main class="container-fluid">
 
-      <div class="container-fluid">
-          <div id="navbar">
-              <a href="/">Home</a>
-              <a href="/calculator">Calculator</a>
-              <a href="/create">Create</a>
-              <a href="/modify">Modify</a>
-              <a href="/macros">Macros</a>
-              <a href="/meals">Meals & Menus</a>
-          </div>
-      </div>
+        <div class="container-fluid">
+            <div id="navbar">
+                <a href="/">Home</a>
+                <a href="/calculator">Calculator</a>
+                <a href="/create">Create</a>
+                <a href="/modify">Modify</a>
+                <a href="/macros">Macros</a>
+                <a href="/meals">Meals & Menus</a>
+            </div>
+        </div>
+
+        <p></p>
+        <p></p>
 
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>

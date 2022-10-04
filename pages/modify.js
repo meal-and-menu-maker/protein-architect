@@ -1535,7 +1535,7 @@ return (
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
 
-      <div class="container-fluid">
+      <main class="container-fluid">
 
         <div class="container-fluid">
             <div id="navbar">
@@ -1999,7 +1999,7 @@ return (
                             value="Save" />
         </div>
             
-      </div>
+      </main>
 
       <style jsx>{`
 
@@ -2138,12 +2138,12 @@ return (
           }
           
           .container {
-          min-height: 100vh;
-          padding: 0 0rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+            min-height: 100vh;
+            padding: 0 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
 
           .home {

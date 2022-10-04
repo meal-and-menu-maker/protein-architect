@@ -640,7 +640,7 @@ export default function Home() {
 
             <main class="container-fluid">
         
-                <div class="container-fluid p-3">
+                <div class="container-fluid">
                     <div id="navbar">
                         <a href="/">Home</a>
                         <a href="/calculator">Calculator</a>
@@ -655,7 +655,7 @@ export default function Home() {
                     <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 </div>
 
-                <div class="container-fluid p-3 my-3">
+                <div class="container-fluid p-3 my-2">
                     <div id="scrollable_container">
                     
                         <res>
@@ -1245,7 +1245,7 @@ export default function Home() {
 
             /* Style the navbar */
             #navbar {
-                float: left;
+                float: right;
                 width: 43%;
                 overflow: hidden;
                 background-color: #f1f1f1;
@@ -1253,12 +1253,19 @@ export default function Home() {
 
             /* Navbar links */
             #navbar a {
-                float: left;
+                float: right;
                 display: block;
                 color: #000000;
                 text-align: center;
                 padding: 14px;
                 text-decoration: none;
+            }
+
+            #navbar a:hover,
+            #navbar a:focus,
+            #navbar a:active {
+                text-decoration: none;
+                font-weight: 500;
             }
 
             /* Page content */

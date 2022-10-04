@@ -651,14 +651,18 @@ export default function Home() {
                     </div>
                 </div>
 
-                <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
+                <div class="container-fluid py-2">
+                    <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
+                </div>
 
-                <div id="scrollable_container">
-                
-                    <res>
-                        
-                    </res>
+                <div class="container-fluid py-2">
+                    <div id="scrollable_container">
+                    
+                        <res>
+                            
+                        </res>
 
+                    </div>
                 </div>
 
                 <p></p>
@@ -1239,7 +1243,7 @@ export default function Home() {
             }
 
             #scrollable_container {
-                height: 80vh;
+                height: 85vh;
                 scroll-snap-type: y mandatory;
                 scroll-padding: 10px;
                 overflow-y: scroll;
@@ -1247,7 +1251,8 @@ export default function Home() {
 
             /* Style the navbar */
             #navbar {
-                width: 60%;
+                float: left;
+                width: 45%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

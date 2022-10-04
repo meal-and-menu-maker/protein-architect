@@ -640,7 +640,7 @@ export default function Home() {
 
             <main class="container-fluid">
         
-                <div class="container-fluid">
+                <div class="container-fluid p-3">
                     <div id="navbar">
                         <a href="/">Home</a>
                         <a href="/calculator">Calculator</a>
@@ -655,7 +655,7 @@ export default function Home() {
                     <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
                 </div>
 
-                <div class="container-fluid p-3 my-5">
+                <div class="container-fluid p-3 my-3">
                     <div id="scrollable_container">
                     
                         <res>
@@ -947,12 +947,6 @@ export default function Home() {
 
                 </center>
 
-                <div className="home_container">
-                    <a className="card_home" href="/">
-                    <h3>Home</h3>
-                    </a>
-                </div>
-
             </main>
 
         <style jsx>{`
@@ -1243,7 +1237,7 @@ export default function Home() {
             }
 
             #scrollable_container {
-                height: 85vh;
+                height: 80vh;
                 scroll-snap-type: y mandatory;
                 scroll-padding: 10px;
                 overflow-y: scroll;

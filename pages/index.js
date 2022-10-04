@@ -157,11 +157,11 @@ export default function Home() {
             </div>
         </div>
 
-        <div class="container-fluid p-5 my-5"></div>
-
-        <h1 className="title">
-          Protein <font color="#008000"> Architect </font>
-        </h1>
+        <div class="container-fluid p-2 my-5">
+          <h1 className="title">
+            Protein <font color="#008000"> Architect </font>
+          </h1>
+        </div>
 
         <div class="container-fluid p-5 my-5">
           <h4>
@@ -169,12 +169,16 @@ export default function Home() {
           </h4>
         </div>
 
-        <Image
-          src="/home_photo.png"
-          height={240}
-          width={300}
-          alt="Meal photo"
-        />
+        <right>
+
+          <Image
+            src="/home_photo.png"
+            height={240}
+            width={300}
+            alt="Meal photo"
+          />
+
+        </right>
 
         <p></p>
 

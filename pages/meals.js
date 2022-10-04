@@ -2579,7 +2579,7 @@ export default function Home() {
             /* Style the navbar */
             #navbar {
                 float: left;
-                width: 47%;
+                width: 45%;
                 overflow: hidden;
                 background-color: #f1f1f1;
             }

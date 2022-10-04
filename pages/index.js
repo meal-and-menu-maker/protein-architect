@@ -157,11 +157,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div class="container-fluid p-3 my-5"></div>
-
-        <p></p>
-        <p></p>
-
+        <div class="container-fluid p-5 my-5">
         <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
@@ -169,6 +165,7 @@ export default function Home() {
         <h4 className="title_home">
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
         </h4>
+        </div>
 
         <p></p>
 
@@ -360,7 +357,7 @@ export default function Home() {
         /* Style the navbar */
         #navbar {
             float: left;
-            width: 47%;
+            width: 45%;
             overflow: hidden;
             background-color: #f1f1f1;
         }

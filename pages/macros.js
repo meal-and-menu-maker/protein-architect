@@ -659,13 +659,15 @@ export default function Home() {
 
             <main class="container-fluid">
         
-                <div id="navbar">
-                    <a href="/">Home</a>
-                    <a href="/calculator">Calculator</a>
-                    <a href="/create">Create</a>
-                    <a href="/modify">Modify</a>
-                    <a href="/macros">Macros</a>
-                    <a href="/meals">Meals & Menus</a>
+                <div class="container-fluid p-2 my-3">
+                    <div id="navbar">
+                        <a href="/">Home</a>
+                        <a href="/calculator">Calculator</a>
+                        <a href="/create">Create</a>
+                        <a href="/modify">Modify</a>
+                        <a href="/macros">Macros</a>
+                        <a href="/meals">Meals & Menus</a>
+                    </div>
                 </div>
 
                 <input type="text" id="macros_input" onChange={() => {tableSearch()} } placeholder="Search"/>
@@ -1256,20 +1258,23 @@ export default function Home() {
             }
 
             #scrollable_container {
-                overflow-y: auto;
+                height: 100vh;
+                scroll-snap-type: y mandatory;
+                scroll-padding: 10px;
+                overflow-y: scroll;
             }
 
             /* Style the navbar */
             #navbar {
                 overflow: hidden;
-                background-color: #f5f5dc;
+                background-color: #e3e3e3;
             }
 
             /* Navbar links */
             #navbar a {
                 float: left;
                 display: block;
-                color: #90ee90;
+                color: #025d01;
                 text-align: center;
                 padding: 14px;
                 text-decoration: none;
@@ -1277,7 +1282,7 @@ export default function Home() {
 
             /* Page content */
             .content {
-                padding: 1.5rem;
+                padding: 100px;
             }
 
             /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -1289,7 +1294,7 @@ export default function Home() {
 
             /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
             .sticky + .content {
-                padding-top: 10px;
+                padding-top: 60px;
             }
             
             .vertical-center {

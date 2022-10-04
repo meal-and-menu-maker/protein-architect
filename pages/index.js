@@ -162,13 +162,15 @@ export default function Home() {
         <p></p>
         <p></p>
 
-        <h1 className="title_home">
+        <h1 className="title">
           Protein <font color="#008000"> Architect </font>
         </h1>
         <p></p>
         <h4 className="title_home">
           Like <font color="#00a3ff"> yourfitnesspal </font> but you get to work a bit more
         </h4>
+
+        <p></p>
 
         <Image
           src="/home_photo.png"
@@ -177,6 +179,8 @@ export default function Home() {
           alt="Meal photo"
           className="photo_home"
         />
+
+        <p></p>
 
         <div class="container-fluid py-2">
           <center>
@@ -214,6 +218,7 @@ export default function Home() {
 
       </main>
 
+      <p></p>
       <p></p>
 
       <footer>
@@ -282,7 +287,7 @@ export default function Home() {
 
         .title,
         .description {
-          text-align: left;
+          float: left;
         }
 
         .title_home {

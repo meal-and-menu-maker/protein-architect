@@ -157,7 +157,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div class="container-fluid p-2 my-5">
+        <div class="container-fluid p-5 my-5">
           <h1 className="title">
             Protein <font color="#008000"> Architect </font>
           </h1>
@@ -169,16 +169,12 @@ export default function Home() {
           </h4>
         </div>
 
-        <right>
-
           <Image
             src="/home_photo.png"
             height={240}
             width={300}
             alt="Meal photo"
           />
-
-        </right>
 
         <p></p>
 
@@ -287,11 +283,7 @@ export default function Home() {
 
         .title,
         .description {
-          float: left;
-        }
-
-        .photo_home {
-          float: right;
+          text-align: left;
         }
 
         .description {
